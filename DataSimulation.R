@@ -36,11 +36,11 @@ names <- read.csv('Data/DataForSimulation/randomNames.csv')
 
 # Load the simulated home addresses and clean the data to correct address format.
 homes <- read.csv('Data/DataForSimulation/home_addr.csv')
-home_addr <- data.frame('HSE_NBR' = homes$HSE_NBR, 'STREET' = homes$STREET, 'STTYPE' = homes$STTYPE, 'UNIT_NBR' = homes$UNIT_NBR, 'ZIP_CODE' = homes$ZIP_CODE)
+home_addr <- data.frame('HSE_NBR_home' = homes$HSE_NBR, 'STREET_home' = homes$STREET, 'STTYPE_home' = homes$STTYPE, 'UNIT_NBR_home' = homes$UNIT_NBR, 'ZIP_CODE_home' = homes$ZIP_CODE)
 
 # Load the simulated destination addresses and clean the data to correct address format.
 destinations <- read.csv('Data/DataForSimulation/destination_addr.csv')
-dest_addr <- data.frame('HSE_NBR' = destinations$HSE_NBR, 'STREET' = destinations$STREET, 'STTYPE' = destinations$STTYPE, 'UNIT_NBR' = destinations$UNIT_NBR, 'ZIP_CODE' = destinations$ZIP_CODE)
+dest_addr <- data.frame('HSE_NBR_dest' = destinations$HSE_NBR, 'STREET_dest' = destinations$STREET, 'STTYPE_dest' = destinations$STTYPE, 'UNIT_NBR_dest' = destinations$UNIT_NBR, 'ZIP_CODE_dest' = destinations$ZIP_CODE)
 
 # Time to pick up from home. First simulate some time data from 7am-10am then create dataframe with only the time (date may not be important).
 # hpu = home pick up
