@@ -1,4 +1,4 @@
-"","firstName","lastName","HSE_NBR","STREET","STTYPE","UNIT_NBR","ZIP_CODE","HSE_NBR","STREET","STTYPE","UNIT_NBR","ZIP_CODE","homePickup","destinationDropOff","destinationPickup","homeDropOff"
+"","firstName","lastName","HSE_NBR_home","STREET_home","STTYPE_home","UNIT_NBR_home","ZIP_CODE_home","HSE_NBR_dest","STREET_dest","STTYPE_dest","UNIT_NBR_dest","ZIP_CODE_dest","homePickup","destinationDropOff","destinationPickup","homeDropOff"
 "1","Austin","Davies",222,"33RD","ST","913",532084126,2535,"PROSPECT","AV","213",532114132,"08:55","10:59","14:57","16:56"
 "2","Liam","Springer",935,"CASS","ST","38",532023413,11723,"BROWN DEER","RD","103",532241447,"09:53","09:52","14:51","17:12"
 "3","Tim","Duncan",1434,"LINCOLN","AV","",532153144,728,"JUNEAU","AV","",532022709,"09:46","10:41","16:36","17:38"
