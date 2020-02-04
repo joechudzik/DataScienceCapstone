@@ -1,7 +1,7 @@
 # Joe Chudzik, Reid Holben
 # joseph.chudzik@marquette.edu, reid.holben@marquette.edu
 # Data Science Capstone Project - GoKidGoWeb
-#
+# keywoods: simulation, data wrangling
 
 # Clean the global library.
 rm(list=ls())
