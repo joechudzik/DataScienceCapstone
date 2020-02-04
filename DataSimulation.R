@@ -10,6 +10,8 @@ rm(list=ls())
 #   Set your working directory to the base location of the repository.
 setwd('~/Documents/School/DataScienceCapstone/')
 
+set.seed(42)
+
 # Build a simulated dataset of about 400 individuals
 
 # Name
@@ -38,9 +40,17 @@ names <- read.csv('Data/DataForSimulation/randomNames.csv')
 homes <- read.csv('Data/DataForSimulation/home_addr.csv')
 home_addr <- data.frame('HSE_NBR_home' = homes$HSE_NBR, 'STREET_home' = homes$STREET, 'STTYPE_home' = homes$STTYPE, 'UNIT_NBR_home' = homes$UNIT_NBR, 'ZIP_CODE_home' = homes$ZIP_CODE)
 
-# Load the simulated destination addresses and clean the data to correct address format.
-destinations <- read.csv('Data/DataForSimulation/destination_addr.csv')
-dest_addr <- data.frame('HSE_NBR_dest' = destinations$HSE_NBR, 'STREET_dest' = destinations$STREET, 'STTYPE_dest' = destinations$STTYPE, 'UNIT_NBR_dest' = destinations$UNIT_NBR, 'ZIP_CODE_dest' = destinations$ZIP_CODE)
+# Load in the destinations.
+destinations <- read.csv('Data/DataForSimulation/destinations.csv')
+
+# Repeat new destinations 20 times to match the 400 people in the names dataset. 
+destinations <- destinations[rep(1:nrow(destinations),each=20),]
+
+# Shuffle the row indeces of the destinations dataframe.
+rows <- sample(nrow(destinations))
+
+# Use the random vector above to reorder the destinations dataset.
+destinations <- destinations[rows,]
 
 # Time to pick up from home. First simulate some time data from 7am-10am then create dataframe with only the time (date may not be important).
 # hpu = home pick up
@@ -90,10 +100,10 @@ homeDropoff <- data.frame('homeDropOff' = format(strptime(home_dropoffTime, form
 # Putting everything together.
 #   names, home_addr, dest_addr, homePickup, destinationDropoff, destinationPickup, homeDropoff
 
-simulatedData <- cbind(names, home_addr, dest_addr, homePickup, destinationDropoff, destinationPickup, homeDropoff)
+simulatedData <- cbind(names, home_addr, destinations, homePickup, destinationDropoff, destinationPickup, homeDropoff)
 
 # Write the newly simulated data to data folder.
-#write.csv(simulatedData, '~/Documents/School/DataScienceCapstone/Data/simulatedData.csv')
+#write.csv(simulatedData, '~/Documents/GitHub/DataScienceCapstone/Data/simulatedData.csv')
 
 
 
