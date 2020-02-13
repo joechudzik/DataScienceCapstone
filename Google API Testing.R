@@ -1,37 +1,55 @@
-install.packages("mapsapi")
-install.packages("leaflet")
 library(mapsapi)
 library(leaflet)
 
+rm(list=ls())
+
+data <- read.csv('~/Documents/GitHub/DataScienceCapstone/Data/simulatedData.csv')
+data <- data[1:10,]
+
+# Vectors for origins and destinations.
+origin_vector <- paste0(data$HSE_NBR_home,' ', data$STREET_home, ' ', data$STTYPE_home, ', Milwaukee, WI ', data$ZIP_CODE_home)
+destination_vector <- paste0(data$HSE_NBR,' ', data$STREET, ' ', data$STTYPE, ', Milwaukee, WI ', data$ZIP_CODE)
+
 doc=mp_directions(
-  origin="1313 W Wisconsin Ave, Milwaukee, WI 53233",
-  destination="1500 W Wells Street, Milwaukee, WI 53233",
-  alternatives=TRUE,
+  origin = origin_vector[1],
+  destination = destination_vector[1],
+  alternatives=FALSE,
   key='AIzaSyAwCU0w7-3pLYwtSW_6tA0yRi7B5ENYsGg'
 )
 
-r=mp_get_routes(doc)
+routes <- mp_get_routes(doc)
 
-r
+for(x in 2:length(origin_vector)){
+  doc <- mp_directions(
+    origin = origin_vector[x],
+    destination = destination_vector[x],
+    alternatives = FALSE,
+    key='AIzaSyAwCU0w7-3pLYwtSW_6tA0yRi7B5ENYsGg'
+  )
+  route <- mp_get_routes(doc)
+  
+  routes <- rbind(route, routes)
+}
 
-pal = colorFactor(palette = "Dark2", domain = r$alternative_id)
-leaflet() %>% 
-  addProviderTiles("CartoDB.DarkMatter") %>%
-  addPolylines(data = r, opacity = 1, weight = 7, color = ~pal(alternative_id))
+pal <- colorFactor(palette='Dark2', domain=rownames(routes))
+leaflet() %>%
+  addProviderTiles('CartoDB.Positron') %>%
+  addPolylines(data=routes[1], opacity=1, weight=7, color=~pal(rownames(routes)))
 
-locations = c("1313 W Wisconsin Ave, Milwaukee, WI 53233", "1500 W Wells Street, Milwaukee, WI 53233", "1111 Vel R Phillips Avenue Milwaukee, WI 53203")
+
+# Build destination matrix
 
 doc2 = mp_matrix(
-  origins = locations,
-  destinations = locations,
+  origins = origin_vector,
+  destinations = destination_vector,
   key='AIzaSyAwCU0w7-3pLYwtSW_6tA0yRi7B5ENYsGg'
 )
 
-m = mp_get_matrix(doc2, value = "distance_m") #Distance is meters
-colnames(m) = locations
-rownames(m) = locations
+dest_matrix = mp_get_matrix(doc2, value = "distance_m") #Distance is meters
+colnames(dest_matrix) = paste0('d', rep(1:10))
+rownames(dest_matrix) = paste0('h', rep(1:10))
 
-m
+dest_matrix
 
 doc3=mp_directions(
   origin="11500 E Lave Avenue, Englewood, CO 80111",
