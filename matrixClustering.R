@@ -68,11 +68,11 @@ testlist <- list(test1, test2, test3, test4)
 # How do i put this into a loop?
   matrix[1,1] <- testlist[[1]][1,1]
   matrix[1,2] <- testlist[[1]][1,2]
-  matrix[2,1] <- testlist[[1]][2,1]
-  matrix[2,2] <- testlist[[1]][2,2]
-  
   matrix[1,3] <- testlist[[2]][1,1]
   matrix[1,4] <- testlist[[2]][1,2]
+  
+  matrix[2,1] <- testlist[[1]][2,1]
+  matrix[2,2] <- testlist[[1]][2,2]
   matrix[2,3] <- testlist[[2]][2,1]
   matrix[2,4] <- testlist[[2]][2,2]
   
@@ -87,9 +87,11 @@ testlist <- list(test1, test2, test3, test4)
   matrix[4,4] <- testlist[[4]][2,2]
   
   
-for(i in 1:nrow(matrix)){
-  for(j in 1:ncol(matrix)){
-    matrix[i,j] <- testlist[[j]][1,1]
+for(i in 1:2){
+  for(j in 1:2){
+    matrix[i,j] <- testlist[[i]][i,j]
+    
+    #matrix[i,j] <- testlist[[j]][1,1]
   }
 }
 
