@@ -18,6 +18,7 @@ origin_vector <- paste0(data$HSE_NBR_home,' ', data$STREET_home, ' ', data$STTYP
 destination_vector <- paste0(data$HSE_NBR,' ', data$STREET, ' ', data$STTYPE, ', Milwaukee, WI ', data$ZIP_CODE)
 
 # Build matrices from Google's distance API
+# Naming convention = "rowByColumn"
 originByOriginMatrix <- mp_matrix(
   origins = origin_vector,
   destinations = origin_vector,
@@ -38,60 +39,65 @@ destinationByOriginMatrix <- mp_matrix(
   destinations = origin_vector,
   key='AIzaSyAwCU0w7-3pLYwtSW_6tA0yRi7B5ENYsGg'
 )
-
+# Naming convention = "rowByColumn"
 originByOriginMatrix <- mp_get_matrix(originByOriginMatrix)
 destinationByDestinationMatrix <- mp_get_matrix(destinationByDestinationMatrix)
 originByDestinationMatrix <- mp_get_matrix(originByDestinationMatrix)
 destinationByOriginMatrix <- mp_get_matrix(destinationByOriginMatrix)
 
 
-# Combine the matrices above into a 100x100 matrix then perform some type of clustering
-#    p1 . . p10 d1 .  . . d10
-# p1
+# Combine the matrices above into a 20x20 matrix
+# p1 . . p10    d1 .  . . d10
 # .
 # .
-# p10       p10 d1
+# p10       p10 d1 .  . . d10
 # d1        p1  d1 .  . . d10
 # .
 # .
 # d10       p10 d1 .  . . d10
 
+# Get the matrix size from the number of entries being used. This variable is created to change if we figure out how to 
+#   calculate more than 10 entries.
+matSize <- nrow(data)
 
-matrix <- matrix(0, nrow=4, ncol=4)
-test1 <- matrix(1, nrow=2, ncol=2)
-test2 <- matrix(2, nrow=2, ncol=2)
-test3 <- matrix(3, nrow=2, ncol=2)
-test4 <- matrix(4, nrow=2, ncol=2)
+# Initialize the correlation distance matrix.
+correlationDistanceMatrix <- matrix(0, nrow=matSize*2, ncol=matSize*2)
 
-testlist <- list(test1, test2, test3, test4)
+# Initialize the placement matrix list.
+placementMatrix <- list()
 
-# How do i put this into a loop?
-  matrix[1,1] <- testlist[[1]][1,1]
-  matrix[1,2] <- testlist[[1]][1,2]
-  matrix[1,3] <- testlist[[2]][1,1]
-  matrix[1,4] <- testlist[[2]][1,2]
-  
-  matrix[2,1] <- testlist[[1]][2,1]
-  matrix[2,2] <- testlist[[1]][2,2]
-  matrix[2,3] <- testlist[[2]][2,1]
-  matrix[2,4] <- testlist[[2]][2,2]
-  
-  matrix[3,1] <- testlist[[3]][1,1]
-  matrix[3,2] <- testlist[[3]][1,2]
-  matrix[3,3] <- testlist[[4]][1,1]
-  matrix[3,4] <- testlist[[4]][1,2]
-  
-  matrix[4,1] <- testlist[[3]][2,1]
-  matrix[4,2] <- testlist[[3]][2,2]
-  matrix[4,3] <- testlist[[4]][2,1]
-  matrix[4,4] <- testlist[[4]][2,2]
-  
-  
+# Create a list of 4 lists (one list per distance matrix found above).
+for(i in 1:4){
+  placementMatrix[[i]] <- list()
+}
+
+# Add the respective distance matrices into specific quadrants.
+# Naming convention = "rowByColumn"
+placementMatrix[[1]][[1]] <- originByOriginMatrix
+placementMatrix[[1]][[2]] <- originByDestinationMatrix
+placementMatrix[[2]][[1]] <- destinationByOriginMatrix
+placementMatrix[[2]][[2]] <- destinationByDestinationMatrix
+
+# Create the master distance matrix with the allocated distance matrices above
 for(i in 1:2){
   for(j in 1:2){
-    matrix[i,j] <- testlist[[i]][i,j]
-    
-    #matrix[i,j] <- testlist[[j]][1,1]
+    correlationDistanceMatrix[(i-1)*matSize+1:matSize, (j-1)*matSize+1:matSize] <- placementMatrix[[i]][[j]]
   }
 }
+
+# Add person and destination labels on the rows and columns for easier viewing
+# Refer to data file for actual people/destinations
+colnames(correlationDistanceMatrix) <- c(paste0('p', rep(1:matSize), sep=''), paste0('d', rep(1:matSize), sep=''))
+rownames(correlationDistanceMatrix) <- c(paste0('p', rep(1:matSize), sep=''), paste0('d', rep(1:matSize), sep=''))
+
+
+
+###################################
+###### PERFORM CO CLUSTERING ######
+###################################
+
+# Using the above created correlation distance matrix...
+
+
+
 
