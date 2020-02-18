@@ -1,6 +1,8 @@
 library(mapsapi)
 library(leaflet)
 library(Matrix)
+library(blockcluster)
+library(NbClust)
 
 # Clear the global library.
 rm(list=ls())
@@ -98,6 +100,13 @@ rownames(correlationDistanceMatrix) <- c(paste0('p', rep(1:matSize), sep=''), pa
 
 # Using the above created correlation distance matrix...
 
+out <- coclusterContinuous(correlationDistanceMatrix, nbcocluster=c(2,2))
 
 
+clusters <- hclust(dist(correlationDistanceMatrix, method='euclidean'), method='average')
+plot(clusters)
 
+clustersWCars <- cutree(clusters, k=3)
+plot(clustersWCars)
+
+rect.hclust()
