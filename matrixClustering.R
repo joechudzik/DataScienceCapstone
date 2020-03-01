@@ -2,7 +2,9 @@ library(mapsapi)
 library(leaflet)
 library(Matrix)
 library(blockcluster)
-library(NbClust)
+
+# Used to load the R file with the custom hclust method
+# source('hierarchicalClust.R')
 
 # Clear the global library.
 rm(list=ls())
@@ -13,7 +15,7 @@ data <- read.csv('~/Documents/GitHub/DataScienceCapstone/Data/simulatedData.csv'
 # AS OF NOW, API DOES NOT ALLOW MORE THAN 10 ENTRIES FOR DISTANCE CALCULATIONS IN MATRIX
 #
 # Subset original simulated data for only the fierst 10 entries
-data <- data[1:10,]
+data <- data[1:3,]
 
 # Create vectors for pickup and dropoff locations
 origin_vector <- paste0(data$HSE_NBR_home,' ', data$STREET_home, ' ', data$STTYPE_home, ', Milwaukee, WI ', data$ZIP_CODE_home)
@@ -94,6 +96,16 @@ rownames(correlationDistanceMatrix) <- c(paste0('p', rep(1:matSize), sep=''), pa
 
 
 
+
+
+# Playing around trying to find the cost algorithm
+
+dis <- dist(correlationDistanceMatrix)
+
+
+
+
+
 ###################################
 ###### PERFORM CO CLUSTERING ######
 ###################################
@@ -109,4 +121,7 @@ plot(clusters)
 clustersWCars <- cutree(clusters, k=3)
 plot(clustersWCars)
 
-rect.hclust()
+rect.hclust(clusters, k=3, border=2:6)
+abline(h=3, col='red')
+
+
