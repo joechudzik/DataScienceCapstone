@@ -94,6 +94,8 @@ for(i in 1:2){
 colnames(correlationDistanceMatrix) <- c(paste0('p', rep(1:matSize), sep=''), paste0('d', rep(1:matSize), sep=''))
 rownames(correlationDistanceMatrix) <- c(paste0('p', rep(1:matSize), sep=''), paste0('d', rep(1:matSize), sep=''))
 
+#write.csv(correlationDistanceMatrix, '~Documents/GitHub/DataScienceCapstone/Data/pdist.csv')
+
 
 ###############################
 #### BUILDING PTIME MATRIX ####

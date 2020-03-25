@@ -1,16 +1,14 @@
 # Calculate the cost of each given path
-# May make some changes based on the cost to drive (maybe time as well)
-cost <- function(path, pdist=pdist, ptime=ptime) {
+cost <- function(path, pdist=pdist, ptime=ptime, weight) {
   cost <- NULL
-  # for (i in 1:(length(path)-1)) cost[i] <- (1-lambda)*pdist[path[i],path[i+1]] + lambda*ptime
   # shiny app will have a slider that controls lambda (how important ptime will be)
-  # can we get pairwise times to travel distance?
-  for (i in 1:(length(path)-1)) cost[i] <- pdist[path[i],path[i+1]] #(1-weight)*pdist[path[i],path[i+1]] + weight*ptime
+  # for (i in 1:(length(path)-1)) cost[i] <- pdist[path[i],path[i+1]]
+  for (i in 1:(length(path)-1)) cost[i] <- (1-weight)*pdist[path[i],path[i+1]] + weight*ptime[path[i],path[i+1]]
   return(sum(cost))
 }
 
 # Searching among possible routes by variety of combination of "a" and "b" and pick the optimal one.
-rcost <- function(a,b,pdist=pdist) {
+rcost <- function(a,b,pdist=pdist,ptime=ptime,weight) {
   rcosts <- NULL
   if (is.numeric(a) && is.numeric(b)) {
     routs <- list(c(paste0("p",a),paste0("p",b),paste0("d",a),paste0("d",b)),
@@ -36,17 +34,17 @@ rcost <- function(a,b,pdist=pdist) {
   } else {
     routs <- list(c(a,b),c(b,a))
   }
-  for (i in 1:length(routs)) rcosts[i] <- cost(routs[[i]], pdist)
+  for (i in 1:length(routs)) rcosts[i] <- cost(routs[[i]], pdist, ptime, weight)
   indx <- which.min(rcosts)
   return(list(rcost=rcosts[indx], route=routs[[indx]]))
 }
 
 # Calculate all of the pairwise costs needed to start the algorithm
-pcosts <- function(pdist=pdist) {
+pcosts <- function(pdist=pdist,ptime=ptime,weight) {
   N <- dim(pdist)[1]/2
   pcosts <- list(rcosts=matrix(NA,nr=N,nc=N), routes=array(list(),dim=c(N,N)))
   for (i in 1:(N-1)) for (j in (i+1):N) {
-    pcost.ij <- rcost(i,j,pdist)
+    pcost.ij <- rcost(i,j,pdist,ptime,weight)
     pcosts$rcosts[i,j] <- pcosts$rcosts[j,i] <- pcost.ij$rcost
     pcosts$routes[i,j] <- pcosts$routes[j,i] <- list(pcost.ij$route)
   }
@@ -55,8 +53,8 @@ pcosts <- function(pdist=pdist) {
 }
 
 # Route hclust function
-rhclust <- function(pdist) {
-  temp <- list(pcosts(pdist)); N <- dim(pdist)[1]/2;
+rhclust <- function(pdist,ptime,weight) {
+  temp <- list(pcosts(pdist,ptime,weight)); N <- dim(pdist)[1]/2;
   rhclust <- list(merge=matrix(0,nr=N-1,nc=2), merge.route=list())
   for (i in 1:(N-2)) {
     indx <- rownames(which(temp[[i]]$rcosts==min(temp[[i]]$rcosts, na.rm = T), arr.ind = T))
@@ -69,7 +67,7 @@ rhclust <- function(pdist) {
     cost.j <- list(rcosts=array(NA,length(inds)+1), routes=array(list(),length(inds)+1))
     for (j in 1:length(inds)) {
       if (sign(as.numeric(inds[[j]]))==-1) inds[[j]] <- -as.numeric(inds[[j]]) else inds[[j]] <- rhclust$merge.route[[as.numeric(inds[[j]])]]
-      tmp <- rcost(inds[[j]], rhclust$merge.route[[i]], pdist)
+      tmp <- rcost(inds[[j]], rhclust$merge.route[[i]], pdist, ptime, weight)
       cost.j$rcosts[j] <- tmp$rcost; cost.j$routes[[j]] <- tmp$route
     }
     temp[[(i+1)]]$rcosts <- cbind(rbind(temp[[(i+1)]]$rcosts,cost.j$rcosts[-length(cost.j$rcosts)]),cost.j$rcosts)
@@ -87,20 +85,44 @@ rhclust <- function(pdist) {
 }
 
 # Example
+
+# Clean global environment
+#rm(list=ls())
+
 # pdis matrix that gives pairwise distance between points
 # ptime matrix that gives pairwise time to travel those distances
 pdis <- read.csv('https://raw.githubusercontent.com/joechudzik/DataScienceCapstone/master/Data/pdist.csv')
 row.names(pdis) <- pdis[,1]; pdis <- pdis[,-1]
+ptim <- read.csv('https://raw.githubusercontent.com/joechudzik/DataScienceCapstone/master/Data/ptime.csv')
+row.names(ptim) <- ptim$X; ptim <- ptim[,-1]
 
-rclust <- rhclust(pdis)
-cutree(rclust,3)
-rclust$merge.route[5:7]
-rclust$height[5:7]
+# Testing outputs
+
+# low time importance
+lowTimeImp <- rhclust(pdis, ptim, 0)
+cutree(lowTimeImp,3)
+lowTimeImp$merge.route[5:7]
+lowTimeImp$height[5:7]
+plot(lowTimeImp)
+rect.hclust(lowTimeImp, k=3, border=2:6)
+
+# medium time importance
+medTimeImp <- rhclust(pdis, ptim, 0.5)
+cutree(medTimeImp,3)
+plot(medTimeImp)
+rect.hclust(medTimeImp, k=3, border=2:6)
+
+# high time importance
+highTimeImp <- rhclust(pdis, ptim, 1)
+cutree(highTimeImp,3)
+plot(highTimeImp)
+rect.hclust(highTimeImp, k=3, border=2:6)
 
 plot(rclust)
 rect.hclust(rclust , k = 3, border = 2:6)
 
-library(dendextend)
-rclust.dend <- as.dendrogram(rclust)
-rclust.col <- color_branches(rclust.dend, k=3)
-plot(rclust.col)
+
+# library(dendextend)
+# lowTimeImp.dend <- as.dendrogram(lowTimeImp)
+# lowTimeImp.col <- color_branches(lowTimeImp.dend, k=3)
+# plot(lowTimeImp.col)
