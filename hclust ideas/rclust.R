@@ -1,7 +1,11 @@
 # Calculate the cost of each given path
-cost <- function(path,pdist=pdist) {
+# May make some changes based on the cost to drive (maybe time as well)
+cost <- function(path, pdist=pdist, ptime=ptime) {
   cost <- NULL
-  for (i in 1:(length(path)-1)) cost[i] <- pdist[path[i],path[i+1]]
+  # for (i in 1:(length(path)-1)) cost[i] <- (1-lambda)*pdist[path[i],path[i+1]] + lambda*ptime
+  # shiny app will have a slider that controls lambda (how important ptime will be)
+  # can we get pairwise times to travel distance?
+  for (i in 1:(length(path)-1)) cost[i] <- pdist[path[i],path[i+1]] #(1-weight)*pdist[path[i],path[i+1]] + weight*ptime
   return(sum(cost))
 }
 
@@ -18,6 +22,7 @@ rcost <- function(a,b,pdist=pdist) {
   } else if (is.numeric(a) || is.numeric(b)) {
     if (is.numeric(a)) {tem <- a; a <- b; b <- tem; rm("tem")}
     b <- paste0(c("p","d"),b)
+    # may need to incorporate ptime here just like line 5
     pdis <- pdist[b,a]; i <- which.min(pdis[1,]); j <- which.min(pdis[2,])
     if (i < j) {
       routs <- list(c(a[0:(i-1)],b[1],a[i:(j-1)],b[2],a[j:length(a)]),
@@ -82,6 +87,8 @@ rhclust <- function(pdist) {
 }
 
 # Example
+# pdis matrix that gives pairwise distance between points
+# ptime matrix that gives pairwise time to travel those distances
 pdis <- read.csv('https://raw.githubusercontent.com/joechudzik/DataScienceCapstone/master/Data/pdist.csv')
 row.names(pdis) <- pdis[,1]; pdis <- pdis[,-1]
 
