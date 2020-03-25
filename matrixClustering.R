@@ -15,7 +15,7 @@ data <- read.csv('~/Documents/GitHub/DataScienceCapstone/Data/simulatedData.csv'
 # AS OF NOW, API DOES NOT ALLOW MORE THAN 10 ENTRIES FOR DISTANCE CALCULATIONS IN MATRIX
 #
 # Subset original simulated data for only the fierst 10 entries
-data <- data[1:3,]
+data <- data[1:10,]
 
 # Create vectors for pickup and dropoff locations
 origin_vector <- paste0(data$HSE_NBR_home,' ', data$STREET_home, ' ', data$STTYPE_home, ', Milwaukee, WI ', data$ZIP_CODE_home)
@@ -95,12 +95,92 @@ colnames(correlationDistanceMatrix) <- c(paste0('p', rep(1:matSize), sep=''), pa
 rownames(correlationDistanceMatrix) <- c(paste0('p', rep(1:matSize), sep=''), paste0('d', rep(1:matSize), sep=''))
 
 
+###############################
+#### BUILDING PTIME MATRIX ####
+###############################
+
+# Building ptime matrix
+origByOrigTimeMat <- matrix(0, nrow=matSize, ncol=matSize, 
+                            dimnames=list(origin_vector, origin_vector))
+destByDestTimeMat <- matrix(0, nrow=matSize, ncol=matSize, 
+                            dimnames=list(origin_vector, origin_vector))
+origByDestTimeMat <- matrix(0, nrow=matSize, ncol=matSize, 
+                            dimnames=list(origin_vector, origin_vector))
+destByOrigTimeMat <- matrix(0, nrow=matSize, ncol=matSize, 
+                            dimnames=list(origin_vector, origin_vector))
+
+for(i in 1:length(origin_vector)){
+  for(j in 1:length(origin_vector)){
+    originByOriginTime <- mp_directions(
+      origin = origin_vector[i],
+      destination = origin_vector[j],
+      alternatives = FALSE,
+      key='AIzaSyAwCU0w7-3pLYwtSW_6tA0yRi7B5ENYsGg'
+    )
+    originByOriginTime <- mp_get_routes(originByOriginTime)
+    origByOrigTimeMat[i,j] <- originByOriginTime$duration_s
+    
+    destinationByDestinationTime <- mp_directions(
+      origin = destination_vector[i],
+      destination = destination_vector[j],
+      alternatives = FALSE,
+      key='AIzaSyAwCU0w7-3pLYwtSW_6tA0yRi7B5ENYsGg'
+    )
+    destinationByDestinationTime <- mp_get_routes(destinationByDestinationTime)
+    destByDestTimeMat[i,j] <- destinationByDestinationTime$duration_s
+    
+    originByDestinationTime <- mp_directions(
+      origin = origin_vector[i],
+      destination = destination_vector[j],
+      alternatives = FALSE,
+      key='AIzaSyAwCU0w7-3pLYwtSW_6tA0yRi7B5ENYsGg'
+    )
+    originByDestinationTime <- mp_get_routes(originByDestinationTime)
+    origByDestTimeMat[i,j] <- originByDestinationTime$duration_s
+    
+    destinationByOriginTime <- mp_directions(
+      origin = destination_vector[i],
+      destination = origin_vector[j],
+      alternatives = FALSE,
+      key='AIzaSyAwCU0w7-3pLYwtSW_6tA0yRi7B5ENYsGg'
+    )
+    destinationByOriginTime <- mp_get_routes(destinationByOriginTime)
+    destByOrigTimeMat[i,j] <- destinationByOriginTime$duration_s
+  }
+}
+
+correlationTimeMatrix <- matrix(0, nrow=matSize*2, ncol=matSize*2)
+
+# Initialize the placement matrix list.
+placementTimeMatrix <- list()
+
+# Create a list of 4 lists (one list per distance matrix found above).
+for(i in 1:4){
+  placementTimeMatrix[[i]] <- list()
+}
+
+# Add the respective distance matrices into specific quadrants.
+# Naming convention = "rowByColumn"
+placementTimeMatrix[[1]][[1]] <- origByOrigTimeMat
+placementTimeMatrix[[1]][[2]] <- origByDestTimeMat
+placementTimeMatrix[[2]][[1]] <- destByOrigTimeMat
+placementTimeMatrix[[2]][[2]] <- destByDestTimeMat
+
+# Create the master distance matrix with the allocated distance matrices above
+for(i in 1:2){
+  for(j in 1:2){
+    correlationTimeMatrix[(i-1)*matSize+1:matSize, (j-1)*matSize+1:matSize] <- placementTimeMatrix[[i]][[j]]
+  }
+}
+
+# Add person and destination labels on the rows and columns for easier viewing
+# Refer to data file for actual people/destinations
+colnames(correlationTimeMatrix) <- c(paste0('p', rep(1:matSize), sep=''), paste0('d', rep(1:matSize), sep=''))
+rownames(correlationTimeMatrix) <- c(paste0('p', rep(1:matSize), sep=''), paste0('d', rep(1:matSize), sep=''))
+
+#write.csv(correlationTimeMatrix, '~/Documents/GitHub/DataScienceCapstone/Data/ptime.csv')
 
 
-
-# Playing around trying to find the cost algorithm
-
-dis <- dist(correlationDistanceMatrix)
 
 
 

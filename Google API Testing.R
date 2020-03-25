@@ -19,6 +19,8 @@ doc=mp_directions(
 
 routes <- mp_get_routes(doc)
 
+
+
 for(x in 2:length(origin_vector)){
   doc <- mp_directions(
     origin = origin_vector[x],
