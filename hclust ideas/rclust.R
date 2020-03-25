@@ -91,35 +91,33 @@ rhclust <- function(pdist,ptime,weight) {
 
 # pdis matrix that gives pairwise distance between points
 # ptime matrix that gives pairwise time to travel those distances
-pdis <- read.csv('https://raw.githubusercontent.com/joechudzik/DataScienceCapstone/master/Data/pdist.csv')
-row.names(pdis) <- pdis[,1]; pdis <- pdis[,-1]
-ptim <- read.csv('https://raw.githubusercontent.com/joechudzik/DataScienceCapstone/master/Data/ptime.csv')
-row.names(ptim) <- ptim$X; ptim <- ptim[,-1]
+# pdis <- read.csv('https://raw.githubusercontent.com/joechudzik/DataScienceCapstone/master/Data/pdist.csv')
+# row.names(pdis) <- pdis[,1]; pdis <- pdis[,-1]
+# ptim <- read.csv('https://raw.githubusercontent.com/joechudzik/DataScienceCapstone/master/Data/ptime.csv')
+# row.names(ptim) <- ptim$X; ptim <- ptim[,-1]
 
 # Testing outputs
 
-# low time importance
-lowTimeImp <- rhclust(pdis, ptim, 0)
-cutree(lowTimeImp,3)
-lowTimeImp$merge.route[5:7]
-lowTimeImp$height[5:7]
-plot(lowTimeImp)
-rect.hclust(lowTimeImp, k=3, border=2:6)
+# # low time importance
+# lowTimeImp <- rhclust(pdis, ptim, 0)
+# cutree(lowTimeImp,3)
+# lowTimeImp$merge.route[5:7]
+# lowTimeImp$height[5:7]
+# plot(lowTimeImp, main='Low time importance')
+# rect.hclust(lowTimeImp, k=3, border=2:6)
+# 
+# # medium time importance
+# medTimeImp <- rhclust(pdis, ptim, 0.5)
+# cutree(medTimeImp,3)
+# plot(medTimeImp, main='Medium time importance')
+# rect.hclust(medTimeImp, k=3, border=2:6)
+# 
+# # high time importance
+# highTimeImp <- rhclust(pdis, ptim, 1)
+# cutree(highTimeImp,3)
+# plot(highTimeImp, main='High time importance')
+# rect.hclust(highTimeImp, k=3, border=2:6)
 
-# medium time importance
-medTimeImp <- rhclust(pdis, ptim, 0.5)
-cutree(medTimeImp,3)
-plot(medTimeImp)
-rect.hclust(medTimeImp, k=3, border=2:6)
-
-# high time importance
-highTimeImp <- rhclust(pdis, ptim, 1)
-cutree(highTimeImp,3)
-plot(highTimeImp)
-rect.hclust(highTimeImp, k=3, border=2:6)
-
-plot(rclust)
-rect.hclust(rclust , k = 3, border = 2:6)
 
 
 # library(dendextend)
