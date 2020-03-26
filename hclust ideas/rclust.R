@@ -20,7 +20,6 @@ rcost <- function(a,b,pdist=pdist,ptime=ptime,weight) {
   } else if (is.numeric(a) || is.numeric(b)) {
     if (is.numeric(a)) {tem <- a; a <- b; b <- tem; rm("tem")}
     b <- paste0(c("p","d"),b)
-    # may need to incorporate ptime here just like line 5
     pdis <- pdist[b,a]; i <- which.min(pdis[1,]); j <- which.min(pdis[2,])
     if (i < j) {
       routs <- list(c(a[0:(i-1)],b[1],a[i:(j-1)],b[2],a[j:length(a)]),
@@ -84,43 +83,3 @@ rhclust <- function(pdist,ptime,weight) {
   return(rhclust)
 }
 
-# Example
-
-# Clean global environment
-#rm(list=ls())
-
-# pdis matrix that gives pairwise distance between points
-# ptime matrix that gives pairwise time to travel those distances
-# pdis <- read.csv('https://raw.githubusercontent.com/joechudzik/DataScienceCapstone/master/Data/pdist.csv')
-# row.names(pdis) <- pdis[,1]; pdis <- pdis[,-1]
-# ptim <- read.csv('https://raw.githubusercontent.com/joechudzik/DataScienceCapstone/master/Data/ptime.csv')
-# row.names(ptim) <- ptim$X; ptim <- ptim[,-1]
-
-# Testing outputs
-
-# # low time importance
-# lowTimeImp <- rhclust(pdis, ptim, 0)
-# cutree(lowTimeImp,3)
-# lowTimeImp$merge.route[5:7]
-# lowTimeImp$height[5:7]
-# plot(lowTimeImp, main='Low time importance')
-# rect.hclust(lowTimeImp, k=3, border=2:6)
-# 
-# # medium time importance
-# medTimeImp <- rhclust(pdis, ptim, 0.5)
-# cutree(medTimeImp,3)
-# plot(medTimeImp, main='Medium time importance')
-# rect.hclust(medTimeImp, k=3, border=2:6)
-# 
-# # high time importance
-# highTimeImp <- rhclust(pdis, ptim, 1)
-# cutree(highTimeImp,3)
-# plot(highTimeImp, main='High time importance')
-# rect.hclust(highTimeImp, k=3, border=2:6)
-
-
-
-# library(dendextend)
-# lowTimeImp.dend <- as.dendrogram(lowTimeImp)
-# lowTimeImp.col <- color_branches(lowTimeImp.dend, k=3)
-# plot(lowTimeImp.col)
