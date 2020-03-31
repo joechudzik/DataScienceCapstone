@@ -2,7 +2,17 @@ library(mapsapi)
 library(leaflet)
 library(shiny)
 
-data <- read.csv('~/Documents/simulatedData.csv')
+# Bring in redefined hclust algorithm
+source('~/Documents/GitHub/DataScienceCapstone/hclust ideas/rclust.R')
+
+# Bring in dissimilarity matrices (time and distance) to be used in rhclust
+pdis <- read.csv('https://raw.githubusercontent.com/joechudzik/DataScienceCapstone/master/Data/pdist.csv')
+row.names(pdis) <- pdis[,1]; pdis <- pdis[,-1]
+ptim <- read.csv('https://raw.githubusercontent.com/joechudzik/DataScienceCapstone/master/Data/ptime.csv')
+row.names(ptim) <- ptim$X; ptim <- ptim[,-1]
+
+# Main data file
+data <- read.csv('~/Documents/GitHub/DataScienceCapstone/Data/simulatedData.csv')
 data <- data[1:10,]
 
 # Vectors for origins and destinations.
@@ -45,17 +55,18 @@ ui <- fluidPage(
     sidebarPanel(
       
       # Input: Simple integer interval ----
-      sliderInput("integer", "Time Factor:",
-                  min = 1, max = 3,
-                  value = 2),
+      sliderInput("timeImportanceWeight", "Time Factor:",
+                  min = 0, max = 1,
+                  value = 0.5),
     ),
     
     # Main panel for displaying outputs ----
     mainPanel(
       
       # Output: Table summarizing the values entered ----
-      tableOutput("values")
-      
+      tableOutput("values"),
+      plotOutput('optimalDendrogram'),
+      textOutput('optimalCompletePath')
     )
   )
 )
@@ -76,9 +87,21 @@ server <- function(input, output, session) {
     
     data.frame(
       Name = c("Time Factor"),
-      Value = as.character(c(input$integer)),
+      Value = as.character(c(input$timeImportanceWeight)),
       stringsAsFactors = FALSE)
     
+  })
+  
+  output$optimalDendrogram <- renderPlot({
+    optimalCluster <- rhclust(pdis, ptim, input$timeImportanceWeight)
+    optimalPlot <- plot(optimalCluster); optimalPlot <- rect.hclust(optimalCluster, k=3, border=2:6)
+    optimalPlot
+  })
+  
+  output$optimalCompletePath <- renderText({
+    optimalCluster <- rhclust(pdis, ptim, input$timeImportanceWeight)
+    optimalPath <- optimalCluster$merge.route
+    paste0(optimalPath[[length(optimalPath)]])
   })
   
   # Show the values in an HTML table ----
