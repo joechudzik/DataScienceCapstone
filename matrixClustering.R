@@ -11,6 +11,36 @@ rm(list=ls())
 
 data <- read.csv('~/Documents/GitHub/DataScienceCapstone/Data/simulatedData.csv')
 
+
+# Simulating better times for improved algorithm
+# 
+ept_range <- seq(as.POSIXct('7:00z', format='%H:%M'), as.POSIXct('10:00z', format='%H:%M'), by=(60*15))
+edt_range <- seq(as.POSIXct('12:00z', format='%H:%M'), as.POSIXct('17:00z', format='%H:%M'), by=(60*15))
+
+# repeat ept_range & edt_range and sample it to randomize. Limit the vector to 400 elements
+ept <- sample(rep(ept_range, 31)); ept <- ept[1:400]
+edt <- sample(rep(edt_range, 31)); edt <- edt[1:400]
+
+# initialize latest pickup time and latest dropoff time with corresponding earlier values (just for memory allocation)
+lpt <- ept
+ldt <- edt
+
+# offset created by selecting a random number between 0:12 (multiple of 5 minutes within an hour), 
+#   multiply by amount of second in a minute, and add it to ept & edt to create lpt or ldt
+for(x in 1:length(ept)){
+  offset_pickup <- sample(0:12, 1)*5*60
+  offset_dropoff <- sample(0:12, 1)*5*60
+  lpt[x] <- ept[x] + offset_pickup
+  ldt[x] <- edt[x] + offset_pickup
+}
+
+dataForSpecificTimeAlgorithm <- cbind(data[,1:14], ept, lpt, edt, ldt)
+#write.csv(dataForSpecificTimeAlgorithm, '~/Documents/GitHub/DataScienceCapstone/Data/dataForSpecificTimeAlgorithm.csv')
+
+
+
+
+
 #
 # AS OF NOW, API DOES NOT ALLOW MORE THAN 10 ENTRIES FOR DISTANCE CALCULATIONS IN MATRIX
 #

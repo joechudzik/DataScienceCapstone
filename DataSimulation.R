@@ -52,6 +52,7 @@ rows <- sample(nrow(destinations))
 # Use the random vector above to reorder the destinations dataset.
 destinations <- destinations[rows,]
 
+
 # Time to pick up from home. First simulate some time data from 7am-10am then create dataframe with only the time (date may not be important).
 # hpu = home pick up
 
@@ -95,6 +96,44 @@ difference_hdo <- sample(1:seconds_hdo, 400, replace=T)
 home_dropoffTime <- homeDropoff_start + difference_hdo
 
 homeDropoff <- data.frame('homeDropOff' = format(strptime(home_dropoffTime, format='%Y-%m-%d %H:%M:%S'), '%H:%M'))
+
+
+
+# Simulating earliest pickup time
+
+# Create sequence of times between (7a-10a) and (12p-5p) by 15 minute intervals as pick up times
+ept_range <- seq(as.POSIXct('7:00z', format='%H:%M'), as.POSIXct('10:00z', format='%H:%M'), by=(60*15))
+edt_range <- seq(as.POSIXct('12:00z', format='%H:%M'), as.POSIXct('17:00z', format='%H:%M'), by=(60*15))
+
+# repeat ept_range & edt_range and sample it to randomize. Limit the vector to 400 elements
+ept <- sample(rep(ept_range, 31)); ept <- ept[1:400]
+edt <- sample(rep(edt_range, 31)); edt <- edt[1:400]
+
+# initialize latest pickup time and latest dropoff time with corresponding earlier values (just for memory allocation)
+lpt <- ept
+ldt <- edt
+
+# offset created by selecting a random number between 0:12 (multiple of 5 minutes within an hour), 
+#   multiply by amount of second in a minute, and add it to ept & edt to create lpt or ldt
+for(x in 1:length(ept)){
+  offset_pickup <- sample(0:12, 1)*5*60
+  offset_dropoff <- sample(0:12, 1)*5*60
+  lpt[x] <- ept[x] + offset_pickup
+  ldt[x] <- edt[x] + offset_pickup
+}
+
+
+#dataForRevisedAlgorithm <- cbind(home_addr, ept, lpt, edt, ldt, destinations)
+
+
+
+# Simulating latest pickup time
+
+# Simulating new drop off time
+
+
+
+
 
 
 # Putting everything together.
