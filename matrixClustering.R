@@ -38,7 +38,7 @@ dataForSpecificTimeAlgorithm <- cbind(data[,1:14], ept, lpt, edt, ldt)
 #write.csv(dataForSpecificTimeAlgorithm, '~/Documents/GitHub/DataScienceCapstone/Data/dataForSpecificTimeAlgorithm.csv')
 
 
-
+data <- dataForSpecificTimeAlgorithm
 
 
 #
