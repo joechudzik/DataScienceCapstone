@@ -11,6 +11,7 @@ rm(list=ls())
 
 data <- read.csv('~/Documents/GitHub/DataScienceCapstone/Data/simulatedData.csv')
 
+set.seed(42)
 
 # Simulating better times for improved algorithm
 # 
@@ -35,6 +36,13 @@ for(x in 1:length(ept)){
 }
 
 dataForSpecificTimeAlgorithm <- cbind(data[,1:14], ept, lpt, edt, ldt)
+
+# Arbitrarily choosing random times to null
+dataForSpecificTimeAlgorithm$ept[sample(nrow(dataForSpecificTimeAlgorithm),196)] <- NA
+dataForSpecificTimeAlgorithm$lpt[sample(nrow(dataForSpecificTimeAlgorithm),143)] <- NA
+dataForSpecificTimeAlgorithm$edt[sample(nrow(dataForSpecificTimeAlgorithm),289)] <- NA
+dataForSpecificTimeAlgorithm$ldt[sample(nrow(dataForSpecificTimeAlgorithm),78)] <- NA
+
 #write.csv(dataForSpecificTimeAlgorithm, '~/Documents/GitHub/DataScienceCapstone/Data/dataForSpecificTimeAlgorithm.csv')
 
 
