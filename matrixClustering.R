@@ -18,6 +18,10 @@ set.seed(42)
 ept_range <- seq(as.POSIXct('7:00z', format='%H:%M'), as.POSIXct('10:00z', format='%H:%M'), by=(60*15))
 edt_range <- seq(as.POSIXct('12:00z', format='%H:%M'), as.POSIXct('17:00z', format='%H:%M'), by=(60*15))
 
+# Convert times to seconds
+ept_range <- difftime(ept_range, as.POSIXct('00:00z',format='%H:%M'), units='secs')
+edt_range <- difftime(edt_range, as.POSIXct('00:00z',format='%H:%M'), units='secs')
+
 # repeat ept_range & edt_range and sample it to randomize. Limit the vector to 400 elements
 ept <- sample(rep(ept_range, 31)); ept <- ept[1:400]
 edt <- sample(rep(edt_range, 31)); edt <- edt[1:400]
@@ -43,7 +47,7 @@ dataForSpecificTimeAlgorithm$lpt[sample(nrow(dataForSpecificTimeAlgorithm),143)]
 dataForSpecificTimeAlgorithm$edt[sample(nrow(dataForSpecificTimeAlgorithm),289)] <- NA
 dataForSpecificTimeAlgorithm$ldt[sample(nrow(dataForSpecificTimeAlgorithm),78)] <- NA
 
-#write.csv(dataForSpecificTimeAlgorithm, '~/Documents/GitHub/DataScienceCapstone/Data/dataForSpecificTimeAlgorithm.csv')
+write.csv(dataForSpecificTimeAlgorithm, '~/Documents/GitHub/DataScienceCapstone/Data/dataForSpecificTimeAlgorithm.csv')
 
 
 data <- dataForSpecificTimeAlgorithm
