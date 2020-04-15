@@ -1,5 +1,6 @@
 
 # Clean the global library
+rm(list=ls())
 
 # Geocode API key = AIzaSyAVPhF7x_vfjIxHAlMry0k6M5tgC3ZjYeI
 # Maps API key = AIzaSyAwCU0w7-3pLYwtSW_6tA0yRi7B5ENYsGg
@@ -9,7 +10,7 @@ library(mapsapi)
 library(ggmap)
 library(ggrepel)
 
-data <- read.csv('~/Documents/GitHub/DataScienceCapstone/Data/simulatedData.csv')
+data <- read.csv('~/Documents/GitHub/DataScienceCapstone/Data/dataForSpecificTimeAlgorithm.csv')
 data <- data[1:10,]
 
 pdis <- read.csv('https://raw.githubusercontent.com/joechudzik/DataScienceCapstone/master/Data/pdist.csv')
@@ -25,7 +26,7 @@ destination_vector <- paste0(data$HSE_NBR,' ', data$STREET, ' ', data$STTYPE, ',
 
 register_google(key='AIzaSyAVPhF7x_vfjIxHAlMry0k6M5tgC3ZjYeI')
 origin_locs <- geocode(origin_vector); origin_locs$type <- 'Pickup'; origin_locs$index <- paste0('p', rep(1:10), sep='')
-destination_locs <- geocode(destination_vector); destination_locs$type <- 'Dropoff'; destination_locs$index <- c('d1', 'd1', 'd3', 'd4', 'd5', 'd6', 'd7', 'd8', 'd5', 'd9')
+destination_locs <- geocode(destination_vector); destination_locs$type <- 'Dropoff'; destination_locs$index <- paste0('d', rep(1:10), sep='')
 locs <- rbind(origin_locs, destination_locs)
 
 mke <- c(lon = -87.9065, lat = 43.0389)

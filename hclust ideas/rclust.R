@@ -1,14 +1,67 @@
+library(data.table)
+
 # Calculate the cost of each given path
-cost <- function(path, pdist=pdist, ptime=ptime, weight) {
+cost <- function(path, pdist=pdist, ptime=ptime, weight, data) {
   cost <- NULL
   # shiny app will have a slider that controls lambda (how important ptime will be)
   # for (i in 1:(length(path)-1)) cost[i] <- pdist[path[i],path[i+1]]
-  for (i in 1:(length(path)-1)) cost[i] <- (1-weight)*pdist[path[i],path[i+1]] + weight*ptime[path[i],path[i+1]]
-  return(sum(cost))
+  #for (i in 1:(length(path)-1)) cost[i] <- (1-weight)*pdist[path[i],path[i+1]] + weight*ptime[path[i],path[i+1]]
+  
+  # Build dtime vector
+  dtime <- rep(0, length(path))
+  for(i in 1:(length(path)-1)) dtime[i+1] <- ptime[path[i],path[i+1]]
+  
+  # Build routeTime table
+  routeTime <- data.table(path=path, et=c(0), lt=c(0))
+  
+  for (i in 1:length(path)){
+    # Retrieve the location type (pickup or dropoff) and the corresponding index
+    locationType <- substr(path[i], 1, 1)
+    locationIndex <- as.integer(substr(path[i], 2, length(path[i])+1))
+    
+    # If location type is a pickup, allocate corresponding ept and lpt to the correct row in routeTime
+    #   Otherwise if an error occurred, just fill with NA
+    switch(locationType,
+           'p' = {routeTime$et[i] <- data$ept[locationIndex]; routeTime$lt[i] <- data$lpt[locationIndex]},
+           'd' = {routeTime$et[i] <- data$edt[locationIndex]; routeTime$lt[i] <- data$ldt[locationIndex]},
+           {routeTimes$et[i] <- NA; routeTimes$lt[i] <- NA})
+  }
+  
+  # Find the cumulative distance
+  est <- routeTime$et - cumsum(dtime)
+  lst <- routeTime$lt - cumsum(dtime)
+  
+  # Logic of function (testing if path works)
+  if( max(est, na.rm=T) > min(lst, na.rm=T) ){
+    return(100000000)
+  }
+  else{
+    st <- min(lst, max(est), na.rm=T)
+    trip_time <- st + dtime
+    wait_time <- routeTime$et - trip_time
+    for(i in 1:length(wait_time)){ if( is.na(wait_time[i]) ) wait_time[i] <- 0}
+    trip_time <- trip_time + wait_time
+    new_time <- wait_time + dtime
+    for (i in 1:(length(path)-1)) cost[i] <- (1-weight)*pdist[path[i],path[i+1]] + weight*trip_time[i]
+    return(sum(cost))
+  }
+  #return(sum(cost))
 }
 
+cost(test_path, pdis, ptim, test_weight, data)
+
+data <- read.csv('~/Documents/GitHub/DataScienceCapstone/Data/dataForSpecificTimeAlgorithm.csv')
+data <- data[1:10,]
+pdis <- read.csv('https://raw.githubusercontent.com/joechudzik/DataScienceCapstone/master/Data/pdist.csv')
+row.names(pdis) <- pdis[,1]; pdis <- pdis[,-1]
+ptim <- read.csv('https://raw.githubusercontent.com/joechudzik/DataScienceCapstone/master/Data/ptime.csv')
+row.names(ptim) <- ptim$X; ptim <- ptim[,-1]
+
+test_path <- c('p1','p2','d1','d2')
+test_weight = 0.5
+
 # Searching among possible routes by variety of combination of "a" and "b" and pick the optimal one.
-rcost <- function(a,b,pdist=pdist,ptime=ptime,weight) {
+rcost <- function(a,b,pdist=pdist,ptime=ptime,weight,data) {
   rcosts <- NULL
   if (is.numeric(a) && is.numeric(b)) {
     routs <- list(c(paste0("p",a),paste0("p",b),paste0("d",a),paste0("d",b)),
@@ -33,17 +86,18 @@ rcost <- function(a,b,pdist=pdist,ptime=ptime,weight) {
   } else {
     routs <- list(c(a,b),c(b,a))
   }
-  for (i in 1:length(routs)) rcosts[i] <- cost(routs[[i]], pdist, ptime, weight)
+  for (i in 1:length(routs)) rcosts[i] <- cost(routs[[i]], pdist, ptime, weight, data)
+  # May need to add some logic to remove the very high or NA value from rcosts
   indx <- which.min(rcosts)
   return(list(rcost=rcosts[indx], route=routs[[indx]]))
 }
 
 # Calculate all of the pairwise costs needed to start the algorithm
-pcosts <- function(pdist=pdist,ptime=ptime,weight) {
+pcosts <- function(pdist=pdist,ptime=ptime,weight, data) {
   N <- dim(pdist)[1]/2
   pcosts <- list(rcosts=matrix(NA,nr=N,nc=N), routes=array(list(),dim=c(N,N)))
   for (i in 1:(N-1)) for (j in (i+1):N) {
-    pcost.ij <- rcost(i,j,pdist,ptime,weight)
+    pcost.ij <- rcost(i,j,pdist,ptime,weight,data)
     pcosts$rcosts[i,j] <- pcosts$rcosts[j,i] <- pcost.ij$rcost
     pcosts$routes[i,j] <- pcosts$routes[j,i] <- list(pcost.ij$route)
   }
@@ -52,8 +106,8 @@ pcosts <- function(pdist=pdist,ptime=ptime,weight) {
 }
 
 # Route hclust function
-rhclust <- function(pdist,ptime,weight) {
-  temp <- list(pcosts(pdist,ptime,weight)); N <- dim(pdist)[1]/2;
+rhclust <- function(pdist,ptime,weight, data) {
+  temp <- list(pcosts(pdist,ptime,weight,data)); N <- dim(pdist)[1]/2;
   rhclust <- list(merge=matrix(0,nr=N-1,nc=2), merge.route=list())
   for (i in 1:(N-2)) {
     indx <- rownames(which(temp[[i]]$rcosts==min(temp[[i]]$rcosts, na.rm = T), arr.ind = T))
@@ -66,7 +120,7 @@ rhclust <- function(pdist,ptime,weight) {
     cost.j <- list(rcosts=array(NA,length(inds)+1), routes=array(list(),length(inds)+1))
     for (j in 1:length(inds)) {
       if (sign(as.numeric(inds[[j]]))==-1) inds[[j]] <- -as.numeric(inds[[j]]) else inds[[j]] <- rhclust$merge.route[[as.numeric(inds[[j]])]]
-      tmp <- rcost(inds[[j]], rhclust$merge.route[[i]], pdist, ptime, weight)
+      tmp <- rcost(inds[[j]], rhclust$merge.route[[i]], pdist, ptime, weight, data)
       cost.j$rcosts[j] <- tmp$rcost; cost.j$routes[[j]] <- tmp$route
     }
     temp[[(i+1)]]$rcosts <- cbind(rbind(temp[[(i+1)]]$rcosts,cost.j$rcosts[-length(cost.j$rcosts)]),cost.j$rcosts)
@@ -82,4 +136,9 @@ rhclust <- function(pdist,ptime,weight) {
   rhclust$order <- unlist(as.dendrogram(rhclust))
   return(rhclust)
 }
+
+temp <- rhclust(pdis, ptim, 0.5, data)
+cutree(temp,3)
+plot(temp)
+rect.hclust(temp, k=3, border=2:6)
 
