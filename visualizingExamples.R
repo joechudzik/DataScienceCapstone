@@ -36,6 +36,8 @@ ggmap(get_googlemap(center = mke, zoom=11)) +
   geom_label_repel(data=locs, aes(x=lon, y=lat, label=index), size=3, vjust=1.25, hjust=-1)
 
 
+test <- rhclust(pdis, ptim, 05, data)
+
 
 # Newly designed hclust algorithm
 

@@ -33,6 +33,7 @@ cost <- function(path, pdist=pdist, ptime=ptime, weight, data) {
   
   # Logic of function (testing if path works)
   if( max(est, na.rm=T) > min(lst, na.rm=T) ){
+  #if (sum(est < rev(cummin(rev(lst))), na.rm=T) < length(est)){
     return(100000000)
   }
   else{
@@ -45,20 +46,7 @@ cost <- function(path, pdist=pdist, ptime=ptime, weight, data) {
     for (i in 1:(length(path)-1)) cost[i] <- (1-weight)*pdist[path[i],path[i+1]] + weight*trip_time[i]
     return(sum(cost))
   }
-  #return(sum(cost))
 }
-
-cost(test_path, pdis, ptim, test_weight, data)
-
-data <- read.csv('~/Documents/GitHub/DataScienceCapstone/Data/dataForSpecificTimeAlgorithm.csv')
-data <- data[1:10,]
-pdis <- read.csv('https://raw.githubusercontent.com/joechudzik/DataScienceCapstone/master/Data/pdist.csv')
-row.names(pdis) <- pdis[,1]; pdis <- pdis[,-1]
-ptim <- read.csv('https://raw.githubusercontent.com/joechudzik/DataScienceCapstone/master/Data/ptime.csv')
-row.names(ptim) <- ptim$X; ptim <- ptim[,-1]
-
-test_path <- c('p1','p2','d1','d2')
-test_weight = 0.5
 
 # Searching among possible routes by variety of combination of "a" and "b" and pick the optimal one.
 rcost <- function(a,b,pdist=pdist,ptime=ptime,weight,data) {
@@ -110,7 +98,8 @@ rhclust <- function(pdist,ptime,weight, data) {
   temp <- list(pcosts(pdist,ptime,weight,data)); N <- dim(pdist)[1]/2;
   rhclust <- list(merge=matrix(0,nr=N-1,nc=2), merge.route=list())
   for (i in 1:(N-2)) {
-    indx <- rownames(which(temp[[i]]$rcosts==min(temp[[i]]$rcosts, na.rm = T), arr.ind = T))
+    indx <- rownames(which(temp[[i]]$rcosts==min(temp[[i]]$rcosts, na.rm = T), arr.ind = T))[1:2]
+    print(as.numeric(indx))
     rhclust$merge[i,] <- as.numeric(indx); rhclust$merge.route[i] <- temp[[i]]$routes[indx[1],indx[2]]; 
     rhclust$height[i] <- temp[[i]]$rcosts[indx[1],indx[2]]
     ind <- !colnames(temp[[i]]$rcosts)%in%indx
@@ -141,4 +130,15 @@ temp <- rhclust(pdis, ptim, 0.5, data)
 cutree(temp,3)
 plot(temp)
 rect.hclust(temp, k=3, border=2:6)
+
+
+data <- read.csv('~/Documents/GitHub/DataScienceCapstone/Data/dataForSpecificTimeAlgorithm.csv')
+data <- data[1:10,]
+pdis <- read.csv('https://raw.githubusercontent.com/joechudzik/DataScienceCapstone/master/Data/pdist.csv')
+row.names(pdis) <- pdis[,1]; pdis <- pdis[,-1]
+ptim <- read.csv('https://raw.githubusercontent.com/joechudzik/DataScienceCapstone/master/Data/ptime.csv')
+row.names(ptim) <- ptim$X; ptim <- ptim[,-1]
+
+test_path <- c('p1','p2','d1','d2')
+test_weight = 0.5
 

@@ -1,401 +1,401 @@
-"","X.1","X","firstName","lastName","HSE_NBR_home","STREET_home","STTYPE_home","UNIT_NBR_home","ZIP_CODE_home","HSE_NBR","STREET","STTYPE","ZIP_CODE","DEST_NAME","ept","lpt","edt","ldt"
-"1",1,19.5,"Austin","Davies",222,"33RD","ST","913",532084126,6215,"WARNIMONT","AVE",53220,"Driver's Education Class",NA,29700,61200,62100
-"2",2,19.13,"Liam","Springer",935,"CASS","ST","38",532023413,6215,"WARNIMONT","AVE",53220,"Driver's Education Class",36000,NA,NA,49200
-"3",3,6.13,"Tim","Duncan",1434,"LINCOLN","AV","",532153144,2751,"LENOX","ST",53207,"Bay View High School",NA,34200,49500,NA
-"4",4,17.9,"Jessica","Davidson",7470,"GLENBROOK","RD","317",532231132,9050,"SWAN","RD",53224,"Northwest YMCA",31500,31500,NA,47700
-"5",5,13.14,"Dominic","Hardacre",6338,"20TH","ST","",532215255,2419,"KENWOOD","BLVD",53211,"Helene Zelazo Center for the Performing Arts",33300,33600,NA,46200
-"6",6,11.5,"Audrey","Alsop",1601,"BRADFORD","AV","",532110000,1532,"WELLS","ST",53233,"Jimmy Johns",NA,36300,54000,55200
-"7",7,15.1,"Blake","Abraham",1919,"SUMMIT","AV","4E",532021365,1111,"VEL R PHILLIPS","AVE",53203,"Fiserv Forum",NA,NA,NA,61800
-"8",8,3.12,"Chloe","Hemmings",5865,"64TH","ST","",532181919,4965,"20TH","ST",53221,"Ronal Reagan High School",26100,27600,NA,NA
-"9",9,13.17,"Julian","Sharp",2477,"6TH","ST","",532153224,2419,"KENWOOD","BLVD",53211,"Helene Zelazo Center for the Performing Arts",NA,38100,NA,NA
-"10",10,14.15,"Nicholas","Murray",2744,"24TH","PL","",532061139,1641,"MILLER PARK","WAY",53214,"Culver's",NA,30600,NA,NA
-"11",1,19.5,"Austin","Davies",222,"33RD","ST","913",532084126,6215,"WARNIMONT","AVE",53220,"Driver's Education Class",NA,NA,43200,44100
-"12",2,19.13,"Liam","Springer",935,"CASS","ST","38",532023413,6215,"WARNIMONT","AVE",53220,"Driver's Education Class",32400,35700,NA,54600
-"13",3,6.13,"Tim","Duncan",1434,"LINCOLN","AV","",532153144,2751,"LENOX","ST",53207,"Bay View High School",26100,NA,54900,55200
-"14",4,17.9,"Jessica","Davidson",7470,"GLENBROOK","RD","317",532231132,9050,"SWAN","RD",53224,"Northwest YMCA",NA,33900,NA,60900
-"15",5,13.14,"Dominic","Hardacre",6338,"20TH","ST","",532215255,2419,"KENWOOD","BLVD",53211,"Helene Zelazo Center for the Performing Arts",NA,28200,NA,55200
-"16",6,11.5,"Audrey","Alsop",1601,"BRADFORD","AV","",532110000,1532,"WELLS","ST",53233,"Jimmy Johns",25200,27900,60300,63000
-"17",7,15.1,"Blake","Abraham",1919,"SUMMIT","AV","4E",532021365,1111,"VEL R PHILLIPS","AVE",53203,"Fiserv Forum",NA,NA,58500,62100
-"18",8,3.12,"Chloe","Hemmings",5865,"64TH","ST","",532181919,4965,"20TH","ST",53221,"Ronal Reagan High School",NA,33300,NA,54000
-"19",9,13.17,"Julian","Sharp",2477,"6TH","ST","",532153224,2419,"KENWOOD","BLVD",53211,"Helene Zelazo Center for the Performing Arts",NA,28500,NA,56400
-"20",10,14.15,"Nicholas","Murray",2744,"24TH","PL","",532061139,1641,"MILLER PARK","WAY",53214,"Culver's",NA,34500,51300,54300
-"21",1,19.5,"Austin","Davies",222,"33RD","ST","913",532084126,6215,"WARNIMONT","AVE",53220,"Driver's Education Class",32400,33300,NA,51300
-"22",2,19.13,"Liam","Springer",935,"CASS","ST","38",532023413,6215,"WARNIMONT","AVE",53220,"Driver's Education Class",NA,27000,NA,NA
-"23",3,6.13,"Tim","Duncan",1434,"LINCOLN","AV","",532153144,2751,"LENOX","ST",53207,"Bay View High School",NA,NA,NA,49200
-"24",4,17.9,"Jessica","Davidson",7470,"GLENBROOK","RD","317",532231132,9050,"SWAN","RD",53224,"Northwest YMCA",NA,32400,NA,NA
-"25",5,13.14,"Dominic","Hardacre",6338,"20TH","ST","",532215255,2419,"KENWOOD","BLVD",53211,"Helene Zelazo Center for the Performing Arts",NA,NA,NA,48300
-"26",6,11.5,"Audrey","Alsop",1601,"BRADFORD","AV","",532110000,1532,"WELLS","ST",53233,"Jimmy Johns",NA,NA,NA,54600
-"27",7,15.1,"Blake","Abraham",1919,"SUMMIT","AV","4E",532021365,1111,"VEL R PHILLIPS","AVE",53203,"Fiserv Forum",28800,31800,48600,51600
-"28",8,3.12,"Chloe","Hemmings",5865,"64TH","ST","",532181919,4965,"20TH","ST",53221,"Ronal Reagan High School",27000,30000,NA,59700
-"29",9,13.17,"Julian","Sharp",2477,"6TH","ST","",532153224,2419,"KENWOOD","BLVD",53211,"Helene Zelazo Center for the Performing Arts",35100,NA,45900,48300
-"30",10,14.15,"Nicholas","Murray",2744,"24TH","PL","",532061139,1641,"MILLER PARK","WAY",53214,"Culver's",25200,28800,NA,51300
-"31",1,19.5,"Austin","Davies",222,"33RD","ST","913",532084126,6215,"WARNIMONT","AVE",53220,"Driver's Education Class",NA,27000,NA,52200
-"32",2,19.13,"Liam","Springer",935,"CASS","ST","38",532023413,6215,"WARNIMONT","AVE",53220,"Driver's Education Class",27000,30000,NA,54300
-"33",3,6.13,"Tim","Duncan",1434,"LINCOLN","AV","",532153144,2751,"LENOX","ST",53207,"Bay View High School",25200,25200,52200,NA
-"34",4,17.9,"Jessica","Davidson",7470,"GLENBROOK","RD","317",532231132,9050,"SWAN","RD",53224,"Northwest YMCA",NA,33300,NA,48600
-"35",5,13.14,"Dominic","Hardacre",6338,"20TH","ST","",532215255,2419,"KENWOOD","BLVD",53211,"Helene Zelazo Center for the Performing Arts",26100,27900,55800,57600
-"36",6,11.5,"Audrey","Alsop",1601,"BRADFORD","AV","",532110000,1532,"WELLS","ST",53233,"Jimmy Johns",NA,NA,NA,NA
-"37",7,15.1,"Blake","Abraham",1919,"SUMMIT","AV","4E",532021365,1111,"VEL R PHILLIPS","AVE",53203,"Fiserv Forum",NA,28800,45000,46800
-"38",8,3.12,"Chloe","Hemmings",5865,"64TH","ST","",532181919,4965,"20TH","ST",53221,"Ronal Reagan High School",35100,NA,NA,43200
-"39",9,13.17,"Julian","Sharp",2477,"6TH","ST","",532153224,2419,"KENWOOD","BLVD",53211,"Helene Zelazo Center for the Performing Arts",29700,NA,NA,59400
-"40",10,14.15,"Nicholas","Murray",2744,"24TH","PL","",532061139,1641,"MILLER PARK","WAY",53214,"Culver's",NA,28800,NA,55800
-"41",1,19.5,"Austin","Davies",222,"33RD","ST","913",532084126,6215,"WARNIMONT","AVE",53220,"Driver's Education Class",NA,NA,59400,61200
-"42",2,19.13,"Liam","Springer",935,"CASS","ST","38",532023413,6215,"WARNIMONT","AVE",53220,"Driver's Education Class",26100,NA,NA,57600
-"43",3,6.13,"Tim","Duncan",1434,"LINCOLN","AV","",532153144,2751,"LENOX","ST",53207,"Bay View High School",NA,26400,NA,NA
-"44",4,17.9,"Jessica","Davidson",7470,"GLENBROOK","RD","317",532231132,9050,"SWAN","RD",53224,"Northwest YMCA",NA,NA,NA,45900
-"45",5,13.14,"Dominic","Hardacre",6338,"20TH","ST","",532215255,2419,"KENWOOD","BLVD",53211,"Helene Zelazo Center for the Performing Arts",35100,36600,NA,51000
-"46",6,11.5,"Audrey","Alsop",1601,"BRADFORD","AV","",532110000,1532,"WELLS","ST",53233,"Jimmy Johns",NA,29400,NA,NA
-"47",7,15.1,"Blake","Abraham",1919,"SUMMIT","AV","4E",532021365,1111,"VEL R PHILLIPS","AVE",53203,"Fiserv Forum",NA,28800,NA,57600
-"48",8,3.12,"Chloe","Hemmings",5865,"64TH","ST","",532181919,4965,"20TH","ST",53221,"Ronal Reagan High School",NA,NA,NA,51900
-"49",9,13.17,"Julian","Sharp",2477,"6TH","ST","",532153224,2419,"KENWOOD","BLVD",53211,"Helene Zelazo Center for the Performing Arts",30600,NA,50400,53700
-"50",10,14.15,"Nicholas","Murray",2744,"24TH","PL","",532061139,1641,"MILLER PARK","WAY",53214,"Culver's",NA,38700,NA,64800
-"51",1,19.5,"Austin","Davies",222,"33RD","ST","913",532084126,6215,"WARNIMONT","AVE",53220,"Driver's Education Class",NA,NA,NA,61200
-"52",2,19.13,"Liam","Springer",935,"CASS","ST","38",532023413,6215,"WARNIMONT","AVE",53220,"Driver's Education Class",NA,NA,NA,56700
-"53",3,6.13,"Tim","Duncan",1434,"LINCOLN","AV","",532153144,2751,"LENOX","ST",53207,"Bay View High School",33300,36300,NA,NA
-"54",4,17.9,"Jessica","Davidson",7470,"GLENBROOK","RD","317",532231132,9050,"SWAN","RD",53224,"Northwest YMCA",NA,27900,47700,NA
-"55",5,13.14,"Dominic","Hardacre",6338,"20TH","ST","",532215255,2419,"KENWOOD","BLVD",53211,"Helene Zelazo Center for the Performing Arts",33300,34500,NA,46200
-"56",6,11.5,"Audrey","Alsop",1601,"BRADFORD","AV","",532110000,1532,"WELLS","ST",53233,"Jimmy Johns",25200,NA,50400,50400
-"57",7,15.1,"Blake","Abraham",1919,"SUMMIT","AV","4E",532021365,1111,"VEL R PHILLIPS","AVE",53203,"Fiserv Forum",26100,NA,NA,61500
-"58",8,3.12,"Chloe","Hemmings",5865,"64TH","ST","",532181919,4965,"20TH","ST",53221,"Ronal Reagan High School",31500,NA,NA,47400
-"59",9,13.17,"Julian","Sharp",2477,"6TH","ST","",532153224,2419,"KENWOOD","BLVD",53211,"Helene Zelazo Center for the Performing Arts",NA,NA,NA,46800
-"60",10,14.15,"Nicholas","Murray",2744,"24TH","PL","",532061139,1641,"MILLER PARK","WAY",53214,"Culver's",31500,NA,NA,62700
-"61",1,19.5,"Austin","Davies",222,"33RD","ST","913",532084126,6215,"WARNIMONT","AVE",53220,"Driver's Education Class",34200,NA,NA,44400
-"62",2,19.13,"Liam","Springer",935,"CASS","ST","38",532023413,6215,"WARNIMONT","AVE",53220,"Driver's Education Class",NA,36600,NA,48300
-"63",3,6.13,"Tim","Duncan",1434,"LINCOLN","AV","",532153144,2751,"LENOX","ST",53207,"Bay View High School",NA,30600,NA,62100
-"64",4,17.9,"Jessica","Davidson",7470,"GLENBROOK","RD","317",532231132,9050,"SWAN","RD",53224,"Northwest YMCA",NA,36000,NA,63000
-"65",5,13.14,"Dominic","Hardacre",6338,"20TH","ST","",532215255,2419,"KENWOOD","BLVD",53211,"Helene Zelazo Center for the Performing Arts",NA,29100,47700,49800
-"66",6,11.5,"Audrey","Alsop",1601,"BRADFORD","AV","",532110000,1532,"WELLS","ST",53233,"Jimmy Johns",36000,NA,NA,63900
-"67",7,15.1,"Blake","Abraham",1919,"SUMMIT","AV","4E",532021365,1111,"VEL R PHILLIPS","AVE",53203,"Fiserv Forum",NA,26700,43200,44700
-"68",8,3.12,"Chloe","Hemmings",5865,"64TH","ST","",532181919,4965,"20TH","ST",53221,"Ronal Reagan High School",NA,NA,55800,57300
-"69",9,13.17,"Julian","Sharp",2477,"6TH","ST","",532153224,2419,"KENWOOD","BLVD",53211,"Helene Zelazo Center for the Performing Arts",NA,37200,NA,45300
-"70",10,14.15,"Nicholas","Murray",2744,"24TH","PL","",532061139,1641,"MILLER PARK","WAY",53214,"Culver's",27000,28200,47700,48900
-"71",1,19.5,"Austin","Davies",222,"33RD","ST","913",532084126,6215,"WARNIMONT","AVE",53220,"Driver's Education Class",NA,29700,48600,52200
-"72",2,19.13,"Liam","Springer",935,"CASS","ST","38",532023413,6215,"WARNIMONT","AVE",53220,"Driver's Education Class",31500,31500,53100,53100
-"73",3,6.13,"Tim","Duncan",1434,"LINCOLN","AV","",532153144,2751,"LENOX","ST",53207,"Bay View High School",NA,33900,NA,60900
-"74",4,17.9,"Jessica","Davidson",7470,"GLENBROOK","RD","317",532231132,9050,"SWAN","RD",53224,"Northwest YMCA",NA,NA,50400,NA
-"75",5,13.14,"Dominic","Hardacre",6338,"20TH","ST","",532215255,2419,"KENWOOD","BLVD",53211,"Helene Zelazo Center for the Performing Arts",NA,NA,NA,46500
-"76",6,11.5,"Audrey","Alsop",1601,"BRADFORD","AV","",532110000,1532,"WELLS","ST",53233,"Jimmy Johns",29700,NA,NA,NA
-"77",7,15.1,"Blake","Abraham",1919,"SUMMIT","AV","4E",532021365,1111,"VEL R PHILLIPS","AVE",53203,"Fiserv Forum",NA,30000,52200,55200
-"78",8,3.12,"Chloe","Hemmings",5865,"64TH","ST","",532181919,4965,"20TH","ST",53221,"Ronal Reagan High School",25200,NA,49500,50400
-"79",9,13.17,"Julian","Sharp",2477,"6TH","ST","",532153224,2419,"KENWOOD","BLVD",53211,"Helene Zelazo Center for the Performing Arts",34200,37800,NA,60300
-"80",10,14.15,"Nicholas","Murray",2744,"24TH","PL","",532061139,1641,"MILLER PARK","WAY",53214,"Culver's",25200,NA,59400,59400
-"81",1,19.5,"Austin","Davies",222,"33RD","ST","913",532084126,6215,"WARNIMONT","AVE",53220,"Driver's Education Class",29700,32700,NA,57000
-"82",2,19.13,"Liam","Springer",935,"CASS","ST","38",532023413,6215,"WARNIMONT","AVE",53220,"Driver's Education Class",35100,NA,NA,NA
-"83",3,6.13,"Tim","Duncan",1434,"LINCOLN","AV","",532153144,2751,"LENOX","ST",53207,"Bay View High School",35100,35100,46800,46800
-"84",4,17.9,"Jessica","Davidson",7470,"GLENBROOK","RD","317",532231132,9050,"SWAN","RD",53224,"Northwest YMCA",31500,NA,NA,45900
-"85",5,13.14,"Dominic","Hardacre",6338,"20TH","ST","",532215255,2419,"KENWOOD","BLVD",53211,"Helene Zelazo Center for the Performing Arts",25200,27300,NA,51600
-"86",6,11.5,"Audrey","Alsop",1601,"BRADFORD","AV","",532110000,1532,"WELLS","ST",53233,"Jimmy Johns",NA,NA,NA,51300
-"87",7,15.1,"Blake","Abraham",1919,"SUMMIT","AV","4E",532021365,1111,"VEL R PHILLIPS","AVE",53203,"Fiserv Forum",NA,35400,NA,50700
-"88",8,3.12,"Chloe","Hemmings",5865,"64TH","ST","",532181919,4965,"20TH","ST",53221,"Ronal Reagan High School",NA,30300,NA,58200
-"89",9,13.17,"Julian","Sharp",2477,"6TH","ST","",532153224,2419,"KENWOOD","BLVD",53211,"Helene Zelazo Center for the Performing Arts",25200,NA,61200,64200
-"90",10,14.15,"Nicholas","Murray",2744,"24TH","PL","",532061139,1641,"MILLER PARK","WAY",53214,"Culver's",NA,29700,NA,55800
-"91",1,19.5,"Austin","Davies",222,"33RD","ST","913",532084126,6215,"WARNIMONT","AVE",53220,"Driver's Education Class",NA,28200,NA,50700
-"92",2,19.13,"Liam","Springer",935,"CASS","ST","38",532023413,6215,"WARNIMONT","AVE",53220,"Driver's Education Class",NA,37500,NA,46500
-"93",3,6.13,"Tim","Duncan",1434,"LINCOLN","AV","",532153144,2751,"LENOX","ST",53207,"Bay View High School",27900,NA,59400,NA
-"94",4,17.9,"Jessica","Davidson",7470,"GLENBROOK","RD","317",532231132,9050,"SWAN","RD",53224,"Northwest YMCA",27900,30900,45900,48900
-"95",5,13.14,"Dominic","Hardacre",6338,"20TH","ST","",532215255,2419,"KENWOOD","BLVD",53211,"Helene Zelazo Center for the Performing Arts",25200,NA,NA,47100
-"96",6,11.5,"Audrey","Alsop",1601,"BRADFORD","AV","",532110000,1532,"WELLS","ST",53233,"Jimmy Johns",NA,30600,NA,51300
-"97",7,15.1,"Blake","Abraham",1919,"SUMMIT","AV","4E",532021365,1111,"VEL R PHILLIPS","AVE",53203,"Fiserv Forum",35100,NA,NA,NA
-"98",8,3.12,"Chloe","Hemmings",5865,"64TH","ST","",532181919,4965,"20TH","ST",53221,"Ronal Reagan High School",34200,34800,NA,46500
-"99",9,13.17,"Julian","Sharp",2477,"6TH","ST","",532153224,2419,"KENWOOD","BLVD",53211,"Helene Zelazo Center for the Performing Arts",32400,NA,NA,53100
-"100",10,14.15,"Nicholas","Murray",2744,"24TH","PL","",532061139,1641,"MILLER PARK","WAY",53214,"Culver's",30600,31800,NA,56100
-"101",1,19.5,"Austin","Davies",222,"33RD","ST","913",532084126,6215,"WARNIMONT","AVE",53220,"Driver's Education Class",31500,33900,NA,50100
-"102",2,19.13,"Liam","Springer",935,"CASS","ST","38",532023413,6215,"WARNIMONT","AVE",53220,"Driver's Education Class",NA,27600,NA,NA
-"103",3,6.13,"Tim","Duncan",1434,"LINCOLN","AV","",532153144,2751,"LENOX","ST",53207,"Bay View High School",NA,NA,NA,47400
-"104",4,17.9,"Jessica","Davidson",7470,"GLENBROOK","RD","317",532231132,9050,"SWAN","RD",53224,"Northwest YMCA",36000,38400,NA,45600
-"105",5,13.14,"Dominic","Hardacre",6338,"20TH","ST","",532215255,2419,"KENWOOD","BLVD",53211,"Helene Zelazo Center for the Performing Arts",26100,28800,54900,57600
-"106",6,11.5,"Audrey","Alsop",1601,"BRADFORD","AV","",532110000,1532,"WELLS","ST",53233,"Jimmy Johns",NA,NA,NA,52800
-"107",7,15.1,"Blake","Abraham",1919,"SUMMIT","AV","4E",532021365,1111,"VEL R PHILLIPS","AVE",53203,"Fiserv Forum",27000,30300,NA,56400
-"108",8,3.12,"Chloe","Hemmings",5865,"64TH","ST","",532181919,4965,"20TH","ST",53221,"Ronal Reagan High School",33300,NA,NA,62700
-"109",9,13.17,"Julian","Sharp",2477,"6TH","ST","",532153224,2419,"KENWOOD","BLVD",53211,"Helene Zelazo Center for the Performing Arts",28800,29700,59400,NA
-"110",10,14.15,"Nicholas","Murray",2744,"24TH","PL","",532061139,1641,"MILLER PARK","WAY",53214,"Culver's",36000,36600,60300,60900
-"111",1,19.5,"Austin","Davies",222,"33RD","ST","913",532084126,6215,"WARNIMONT","AVE",53220,"Driver's Education Class",NA,36000,49500,52200
-"112",2,19.13,"Liam","Springer",935,"CASS","ST","38",532023413,6215,"WARNIMONT","AVE",53220,"Driver's Education Class",NA,NA,49500,50100
-"113",3,6.13,"Tim","Duncan",1434,"LINCOLN","AV","",532153144,2751,"LENOX","ST",53207,"Bay View High School",34200,NA,NA,55200
-"114",4,17.9,"Jessica","Davidson",7470,"GLENBROOK","RD","317",532231132,9050,"SWAN","RD",53224,"Northwest YMCA",26100,29100,61200,64200
-"115",5,13.14,"Dominic","Hardacre",6338,"20TH","ST","",532215255,2419,"KENWOOD","BLVD",53211,"Helene Zelazo Center for the Performing Arts",NA,NA,58500,59400
-"116",6,11.5,"Audrey","Alsop",1601,"BRADFORD","AV","",532110000,1532,"WELLS","ST",53233,"Jimmy Johns",25200,25200,NA,NA
-"117",7,15.1,"Blake","Abraham",1919,"SUMMIT","AV","4E",532021365,1111,"VEL R PHILLIPS","AVE",53203,"Fiserv Forum",NA,34200,NA,NA
-"118",8,3.12,"Chloe","Hemmings",5865,"64TH","ST","",532181919,4965,"20TH","ST",53221,"Ronal Reagan High School",34200,34200,57600,57600
-"119",9,13.17,"Julian","Sharp",2477,"6TH","ST","",532153224,2419,"KENWOOD","BLVD",53211,"Helene Zelazo Center for the Performing Arts",29700,30000,NA,NA
-"120",10,14.15,"Nicholas","Murray",2744,"24TH","PL","",532061139,1641,"MILLER PARK","WAY",53214,"Culver's",NA,27000,NA,45000
-"121",1,19.5,"Austin","Davies",222,"33RD","ST","913",532084126,6215,"WARNIMONT","AVE",53220,"Driver's Education Class",33300,NA,44100,47100
-"122",2,19.13,"Liam","Springer",935,"CASS","ST","38",532023413,6215,"WARNIMONT","AVE",53220,"Driver's Education Class",32400,NA,NA,54300
-"123",3,6.13,"Tim","Duncan",1434,"LINCOLN","AV","",532153144,2751,"LENOX","ST",53207,"Bay View High School",NA,NA,50400,52800
-"124",4,17.9,"Jessica","Davidson",7470,"GLENBROOK","RD","317",532231132,9050,"SWAN","RD",53224,"Northwest YMCA",33300,36300,NA,60600
-"125",5,13.14,"Dominic","Hardacre",6338,"20TH","ST","",532215255,2419,"KENWOOD","BLVD",53211,"Helene Zelazo Center for the Performing Arts",29700,31500,NA,46800
-"126",6,11.5,"Audrey","Alsop",1601,"BRADFORD","AV","",532110000,1532,"WELLS","ST",53233,"Jimmy Johns",29700,30000,NA,61500
-"127",7,15.1,"Blake","Abraham",1919,"SUMMIT","AV","4E",532021365,1111,"VEL R PHILLIPS","AVE",53203,"Fiserv Forum",31500,34200,NA,NA
-"128",8,3.12,"Chloe","Hemmings",5865,"64TH","ST","",532181919,4965,"20TH","ST",53221,"Ronal Reagan High School",NA,33000,NA,NA
-"129",9,13.17,"Julian","Sharp",2477,"6TH","ST","",532153224,2419,"KENWOOD","BLVD",53211,"Helene Zelazo Center for the Performing Arts",35100,35100,NA,NA
-"130",10,14.15,"Nicholas","Murray",2744,"24TH","PL","",532061139,1641,"MILLER PARK","WAY",53214,"Culver's",27900,28800,NA,NA
-"131",1,19.5,"Austin","Davies",222,"33RD","ST","913",532084126,6215,"WARNIMONT","AVE",53220,"Driver's Education Class",NA,NA,NA,44700
-"132",2,19.13,"Liam","Springer",935,"CASS","ST","38",532023413,6215,"WARNIMONT","AVE",53220,"Driver's Education Class",32400,32700,NA,52500
-"133",3,6.13,"Tim","Duncan",1434,"LINCOLN","AV","",532153144,2751,"LENOX","ST",53207,"Bay View High School",27000,29700,49500,NA
-"134",4,17.9,"Jessica","Davidson",7470,"GLENBROOK","RD","317",532231132,9050,"SWAN","RD",53224,"Northwest YMCA",29700,30600,44100,45000
-"135",5,13.14,"Dominic","Hardacre",6338,"20TH","ST","",532215255,2419,"KENWOOD","BLVD",53211,"Helene Zelazo Center for the Performing Arts",NA,34800,NA,58200
-"136",6,11.5,"Audrey","Alsop",1601,"BRADFORD","AV","",532110000,1532,"WELLS","ST",53233,"Jimmy Johns",36000,37800,NA,61200
-"137",7,15.1,"Blake","Abraham",1919,"SUMMIT","AV","4E",532021365,1111,"VEL R PHILLIPS","AVE",53203,"Fiserv Forum",NA,NA,NA,49500
-"138",8,3.12,"Chloe","Hemmings",5865,"64TH","ST","",532181919,4965,"20TH","ST",53221,"Ronal Reagan High School",28800,32400,53100,56700
-"139",9,13.17,"Julian","Sharp",2477,"6TH","ST","",532153224,2419,"KENWOOD","BLVD",53211,"Helene Zelazo Center for the Performing Arts",31500,33600,NA,54300
-"140",10,14.15,"Nicholas","Murray",2744,"24TH","PL","",532061139,1641,"MILLER PARK","WAY",53214,"Culver's",35100,38400,NA,58200
-"141",1,19.5,"Austin","Davies",222,"33RD","ST","913",532084126,6215,"WARNIMONT","AVE",53220,"Driver's Education Class",NA,27300,47700,NA
-"142",2,19.13,"Liam","Springer",935,"CASS","ST","38",532023413,6215,"WARNIMONT","AVE",53220,"Driver's Education Class",32400,NA,NA,47700
-"143",3,6.13,"Tim","Duncan",1434,"LINCOLN","AV","",532153144,2751,"LENOX","ST",53207,"Bay View High School",28800,30600,NA,52200
-"144",4,17.9,"Jessica","Davidson",7470,"GLENBROOK","RD","317",532231132,9050,"SWAN","RD",53224,"Northwest YMCA",28800,NA,NA,47700
-"145",5,13.14,"Dominic","Hardacre",6338,"20TH","ST","",532215255,2419,"KENWOOD","BLVD",53211,"Helene Zelazo Center for the Performing Arts",NA,30300,NA,NA
-"146",6,11.5,"Audrey","Alsop",1601,"BRADFORD","AV","",532110000,1532,"WELLS","ST",53233,"Jimmy Johns",27000,28500,NA,50100
-"147",7,15.1,"Blake","Abraham",1919,"SUMMIT","AV","4E",532021365,1111,"VEL R PHILLIPS","AVE",53203,"Fiserv Forum",NA,29100,NA,NA
-"148",8,3.12,"Chloe","Hemmings",5865,"64TH","ST","",532181919,4965,"20TH","ST",53221,"Ronal Reagan High School",31500,34200,NA,59400
-"149",9,13.17,"Julian","Sharp",2477,"6TH","ST","",532153224,2419,"KENWOOD","BLVD",53211,"Helene Zelazo Center for the Performing Arts",29700,30300,57600,58200
-"150",10,14.15,"Nicholas","Murray",2744,"24TH","PL","",532061139,1641,"MILLER PARK","WAY",53214,"Culver's",35100,35400,NA,48000
-"151",1,19.5,"Austin","Davies",222,"33RD","ST","913",532084126,6215,"WARNIMONT","AVE",53220,"Driver's Education Class",NA,34200,NA,50400
-"152",2,19.13,"Liam","Springer",935,"CASS","ST","38",532023413,6215,"WARNIMONT","AVE",53220,"Driver's Education Class",27900,NA,53100,53400
-"153",3,6.13,"Tim","Duncan",1434,"LINCOLN","AV","",532153144,2751,"LENOX","ST",53207,"Bay View High School",25200,27300,NA,NA
-"154",4,17.9,"Jessica","Davidson",7470,"GLENBROOK","RD","317",532231132,9050,"SWAN","RD",53224,"Northwest YMCA",31500,33300,NA,50400
-"155",5,13.14,"Dominic","Hardacre",6338,"20TH","ST","",532215255,2419,"KENWOOD","BLVD",53211,"Helene Zelazo Center for the Performing Arts",36000,NA,NA,60600
-"156",6,11.5,"Audrey","Alsop",1601,"BRADFORD","AV","",532110000,1532,"WELLS","ST",53233,"Jimmy Johns",26100,NA,60300,NA
-"157",7,15.1,"Blake","Abraham",1919,"SUMMIT","AV","4E",532021365,1111,"VEL R PHILLIPS","AVE",53203,"Fiserv Forum",30600,31500,NA,NA
-"158",8,3.12,"Chloe","Hemmings",5865,"64TH","ST","",532181919,4965,"20TH","ST",53221,"Ronal Reagan High School",NA,NA,NA,59100
-"159",9,13.17,"Julian","Sharp",2477,"6TH","ST","",532153224,2419,"KENWOOD","BLVD",53211,"Helene Zelazo Center for the Performing Arts",NA,NA,NA,59700
-"160",10,14.15,"Nicholas","Murray",2744,"24TH","PL","",532061139,1641,"MILLER PARK","WAY",53214,"Culver's",NA,31500,45000,45900
-"161",1,19.5,"Austin","Davies",222,"33RD","ST","913",532084126,6215,"WARNIMONT","AVE",53220,"Driver's Education Class",NA,30600,NA,62100
-"162",2,19.13,"Liam","Springer",935,"CASS","ST","38",532023413,6215,"WARNIMONT","AVE",53220,"Driver's Education Class",NA,29100,NA,NA
-"163",3,6.13,"Tim","Duncan",1434,"LINCOLN","AV","",532153144,2751,"LENOX","ST",53207,"Bay View High School",NA,28200,NA,46200
-"164",4,17.9,"Jessica","Davidson",7470,"GLENBROOK","RD","317",532231132,9050,"SWAN","RD",53224,"Northwest YMCA",32400,33000,NA,45600
-"165",5,13.14,"Dominic","Hardacre",6338,"20TH","ST","",532215255,2419,"KENWOOD","BLVD",53211,"Helene Zelazo Center for the Performing Arts",34200,NA,NA,58800
-"166",6,11.5,"Audrey","Alsop",1601,"BRADFORD","AV","",532110000,1532,"WELLS","ST",53233,"Jimmy Johns",27900,30600,43200,45900
-"167",7,15.1,"Blake","Abraham",1919,"SUMMIT","AV","4E",532021365,1111,"VEL R PHILLIPS","AVE",53203,"Fiserv Forum",NA,28500,51300,51900
-"168",8,3.12,"Chloe","Hemmings",5865,"64TH","ST","",532181919,4965,"20TH","ST",53221,"Ronal Reagan High School",27900,NA,NA,55200
-"169",9,13.17,"Julian","Sharp",2477,"6TH","ST","",532153224,2419,"KENWOOD","BLVD",53211,"Helene Zelazo Center for the Performing Arts",26100,27000,NA,NA
-"170",10,14.15,"Nicholas","Murray",2744,"24TH","PL","",532061139,1641,"MILLER PARK","WAY",53214,"Culver's",32400,33000,NA,58200
-"171",1,19.5,"Austin","Davies",222,"33RD","ST","913",532084126,6215,"WARNIMONT","AVE",53220,"Driver's Education Class",26100,NA,NA,NA
-"172",2,19.13,"Liam","Springer",935,"CASS","ST","38",532023413,6215,"WARNIMONT","AVE",53220,"Driver's Education Class",26100,27600,NA,51900
-"173",3,6.13,"Tim","Duncan",1434,"LINCOLN","AV","",532153144,2751,"LENOX","ST",53207,"Bay View High School",30600,NA,51300,53400
-"174",4,17.9,"Jessica","Davidson",7470,"GLENBROOK","RD","317",532231132,9050,"SWAN","RD",53224,"Northwest YMCA",30600,NA,NA,NA
-"175",5,13.14,"Dominic","Hardacre",6338,"20TH","ST","",532215255,2419,"KENWOOD","BLVD",53211,"Helene Zelazo Center for the Performing Arts",30600,NA,NA,56400
-"176",6,11.5,"Audrey","Alsop",1601,"BRADFORD","AV","",532110000,1532,"WELLS","ST",53233,"Jimmy Johns",33300,33900,57600,58200
-"177",7,15.1,"Blake","Abraham",1919,"SUMMIT","AV","4E",532021365,1111,"VEL R PHILLIPS","AVE",53203,"Fiserv Forum",NA,35400,NA,59700
-"178",8,3.12,"Chloe","Hemmings",5865,"64TH","ST","",532181919,4965,"20TH","ST",53221,"Ronal Reagan High School",32400,33000,NA,53700
-"179",9,13.17,"Julian","Sharp",2477,"6TH","ST","",532153224,2419,"KENWOOD","BLVD",53211,"Helene Zelazo Center for the Performing Arts",NA,31500,NA,56700
-"180",10,14.15,"Nicholas","Murray",2744,"24TH","PL","",532061139,1641,"MILLER PARK","WAY",53214,"Culver's",27900,28200,NA,45300
-"181",1,19.5,"Austin","Davies",222,"33RD","ST","913",532084126,6215,"WARNIMONT","AVE",53220,"Driver's Education Class",33300,33600,NA,52500
-"182",2,19.13,"Liam","Springer",935,"CASS","ST","38",532023413,6215,"WARNIMONT","AVE",53220,"Driver's Education Class",NA,NA,58500,61200
-"183",3,6.13,"Tim","Duncan",1434,"LINCOLN","AV","",532153144,2751,"LENOX","ST",53207,"Bay View High School",NA,31200,NA,58200
-"184",4,17.9,"Jessica","Davidson",7470,"GLENBROOK","RD","317",532231132,9050,"SWAN","RD",53224,"Northwest YMCA",29700,31200,61200,62700
-"185",5,13.14,"Dominic","Hardacre",6338,"20TH","ST","",532215255,2419,"KENWOOD","BLVD",53211,"Helene Zelazo Center for the Performing Arts",NA,34200,44100,47700
-"186",6,11.5,"Audrey","Alsop",1601,"BRADFORD","AV","",532110000,1532,"WELLS","ST",53233,"Jimmy Johns",NA,NA,NA,45000
-"187",7,15.1,"Blake","Abraham",1919,"SUMMIT","AV","4E",532021365,1111,"VEL R PHILLIPS","AVE",53203,"Fiserv Forum",28800,NA,NA,59400
-"188",8,3.12,"Chloe","Hemmings",5865,"64TH","ST","",532181919,4965,"20TH","ST",53221,"Ronal Reagan High School",NA,37200,NA,NA
-"189",9,13.17,"Julian","Sharp",2477,"6TH","ST","",532153224,2419,"KENWOOD","BLVD",53211,"Helene Zelazo Center for the Performing Arts",NA,29100,NA,50700
-"190",10,14.15,"Nicholas","Murray",2744,"24TH","PL","",532061139,1641,"MILLER PARK","WAY",53214,"Culver's",33300,36600,NA,56400
-"191",1,19.5,"Austin","Davies",222,"33RD","ST","913",532084126,6215,"WARNIMONT","AVE",53220,"Driver's Education Class",NA,28200,NA,NA
-"192",2,19.13,"Liam","Springer",935,"CASS","ST","38",532023413,6215,"WARNIMONT","AVE",53220,"Driver's Education Class",NA,35100,54900,55800
-"193",3,6.13,"Tim","Duncan",1434,"LINCOLN","AV","",532153144,2751,"LENOX","ST",53207,"Bay View High School",NA,NA,NA,NA
-"194",4,17.9,"Jessica","Davidson",7470,"GLENBROOK","RD","317",532231132,9050,"SWAN","RD",53224,"Northwest YMCA",34200,36600,NA,59100
-"195",5,13.14,"Dominic","Hardacre",6338,"20TH","ST","",532215255,2419,"KENWOOD","BLVD",53211,"Helene Zelazo Center for the Performing Arts",NA,30600,NA,NA
-"196",6,11.5,"Audrey","Alsop",1601,"BRADFORD","AV","",532110000,1532,"WELLS","ST",53233,"Jimmy Johns",NA,36300,50400,51600
-"197",7,15.1,"Blake","Abraham",1919,"SUMMIT","AV","4E",532021365,1111,"VEL R PHILLIPS","AVE",53203,"Fiserv Forum",NA,NA,NA,NA
-"198",8,3.12,"Chloe","Hemmings",5865,"64TH","ST","",532181919,4965,"20TH","ST",53221,"Ronal Reagan High School",34200,NA,NA,60000
-"199",9,13.17,"Julian","Sharp",2477,"6TH","ST","",532153224,2419,"KENWOOD","BLVD",53211,"Helene Zelazo Center for the Performing Arts",NA,NA,45000,NA
-"200",10,14.15,"Nicholas","Murray",2744,"24TH","PL","",532061139,1641,"MILLER PARK","WAY",53214,"Culver's",NA,33300,55800,58500
-"201",1,19.5,"Austin","Davies",222,"33RD","ST","913",532084126,6215,"WARNIMONT","AVE",53220,"Driver's Education Class",29700,30000,NA,NA
-"202",2,19.13,"Liam","Springer",935,"CASS","ST","38",532023413,6215,"WARNIMONT","AVE",53220,"Driver's Education Class",25200,26100,NA,44100
-"203",3,6.13,"Tim","Duncan",1434,"LINCOLN","AV","",532153144,2751,"LENOX","ST",53207,"Bay View High School",NA,NA,NA,47400
-"204",4,17.9,"Jessica","Davidson",7470,"GLENBROOK","RD","317",532231132,9050,"SWAN","RD",53224,"Northwest YMCA",NA,36300,NA,48900
-"205",5,13.14,"Dominic","Hardacre",6338,"20TH","ST","",532215255,2419,"KENWOOD","BLVD",53211,"Helene Zelazo Center for the Performing Arts",32400,34200,NA,54000
-"206",6,11.5,"Audrey","Alsop",1601,"BRADFORD","AV","",532110000,1532,"WELLS","ST",53233,"Jimmy Johns",33300,35700,NA,52800
-"207",7,15.1,"Blake","Abraham",1919,"SUMMIT","AV","4E",532021365,1111,"VEL R PHILLIPS","AVE",53203,"Fiserv Forum",32400,NA,NA,45000
-"208",8,3.12,"Chloe","Hemmings",5865,"64TH","ST","",532181919,4965,"20TH","ST",53221,"Ronal Reagan High School",27900,29100,NA,45300
-"209",9,13.17,"Julian","Sharp",2477,"6TH","ST","",532153224,2419,"KENWOOD","BLVD",53211,"Helene Zelazo Center for the Performing Arts",NA,NA,NA,48900
-"210",10,14.15,"Nicholas","Murray",2744,"24TH","PL","",532061139,1641,"MILLER PARK","WAY",53214,"Culver's",NA,34800,NA,NA
-"211",1,19.5,"Austin","Davies",222,"33RD","ST","913",532084126,6215,"WARNIMONT","AVE",53220,"Driver's Education Class",30600,31500,NA,50400
-"212",2,19.13,"Liam","Springer",935,"CASS","ST","38",532023413,6215,"WARNIMONT","AVE",53220,"Driver's Education Class",31500,NA,NA,57000
-"213",3,6.13,"Tim","Duncan",1434,"LINCOLN","AV","",532153144,2751,"LENOX","ST",53207,"Bay View High School",35100,36900,NA,49500
-"214",4,17.9,"Jessica","Davidson",7470,"GLENBROOK","RD","317",532231132,9050,"SWAN","RD",53224,"Northwest YMCA",NA,36600,NA,NA
-"215",5,13.14,"Dominic","Hardacre",6338,"20TH","ST","",532215255,2419,"KENWOOD","BLVD",53211,"Helene Zelazo Center for the Performing Arts",NA,35100,48600,52200
-"216",6,11.5,"Audrey","Alsop",1601,"BRADFORD","AV","",532110000,1532,"WELLS","ST",53233,"Jimmy Johns",NA,30900,NA,45300
-"217",7,15.1,"Blake","Abraham",1919,"SUMMIT","AV","4E",532021365,1111,"VEL R PHILLIPS","AVE",53203,"Fiserv Forum",NA,NA,61200,NA
-"218",8,3.12,"Chloe","Hemmings",5865,"64TH","ST","",532181919,4965,"20TH","ST",53221,"Ronal Reagan High School",NA,26100,56700,56700
-"219",9,13.17,"Julian","Sharp",2477,"6TH","ST","",532153224,2419,"KENWOOD","BLVD",53211,"Helene Zelazo Center for the Performing Arts",36000,38700,NA,46800
-"220",10,14.15,"Nicholas","Murray",2744,"24TH","PL","",532061139,1641,"MILLER PARK","WAY",53214,"Culver's",NA,28800,NA,NA
-"221",1,19.5,"Austin","Davies",222,"33RD","ST","913",532084126,6215,"WARNIMONT","AVE",53220,"Driver's Education Class",NA,NA,NA,45600
-"222",2,19.13,"Liam","Springer",935,"CASS","ST","38",532023413,6215,"WARNIMONT","AVE",53220,"Driver's Education Class",25200,NA,44100,NA
-"223",3,6.13,"Tim","Duncan",1434,"LINCOLN","AV","",532153144,2751,"LENOX","ST",53207,"Bay View High School",27000,NA,NA,48900
-"224",4,17.9,"Jessica","Davidson",7470,"GLENBROOK","RD","317",532231132,9050,"SWAN","RD",53224,"Northwest YMCA",NA,28800,50400,50400
-"225",5,13.14,"Dominic","Hardacre",6338,"20TH","ST","",532215255,2419,"KENWOOD","BLVD",53211,"Helene Zelazo Center for the Performing Arts",NA,NA,NA,55800
-"226",6,11.5,"Audrey","Alsop",1601,"BRADFORD","AV","",532110000,1532,"WELLS","ST",53233,"Jimmy Johns",NA,NA,NA,44400
-"227",7,15.1,"Blake","Abraham",1919,"SUMMIT","AV","4E",532021365,1111,"VEL R PHILLIPS","AVE",53203,"Fiserv Forum",27000,29100,NA,56100
-"228",8,3.12,"Chloe","Hemmings",5865,"64TH","ST","",532181919,4965,"20TH","ST",53221,"Ronal Reagan High School",NA,30600,NA,53100
-"229",9,13.17,"Julian","Sharp",2477,"6TH","ST","",532153224,2419,"KENWOOD","BLVD",53211,"Helene Zelazo Center for the Performing Arts",NA,NA,61200,63300
-"230",10,14.15,"Nicholas","Murray",2744,"24TH","PL","",532061139,1641,"MILLER PARK","WAY",53214,"Culver's",NA,30300,49500,51900
-"231",1,19.5,"Austin","Davies",222,"33RD","ST","913",532084126,6215,"WARNIMONT","AVE",53220,"Driver's Education Class",NA,NA,NA,48300
-"232",2,19.13,"Liam","Springer",935,"CASS","ST","38",532023413,6215,"WARNIMONT","AVE",53220,"Driver's Education Class",NA,NA,NA,50700
-"233",3,6.13,"Tim","Duncan",1434,"LINCOLN","AV","",532153144,2751,"LENOX","ST",53207,"Bay View High School",28800,NA,NA,48900
-"234",4,17.9,"Jessica","Davidson",7470,"GLENBROOK","RD","317",532231132,9050,"SWAN","RD",53224,"Northwest YMCA",26100,NA,NA,63000
-"235",5,13.14,"Dominic","Hardacre",6338,"20TH","ST","",532215255,2419,"KENWOOD","BLVD",53211,"Helene Zelazo Center for the Performing Arts",26100,27900,48600,50400
-"236",6,11.5,"Audrey","Alsop",1601,"BRADFORD","AV","",532110000,1532,"WELLS","ST",53233,"Jimmy Johns",NA,31500,NA,61200
-"237",7,15.1,"Blake","Abraham",1919,"SUMMIT","AV","4E",532021365,1111,"VEL R PHILLIPS","AVE",53203,"Fiserv Forum",33300,35400,NA,NA
-"238",8,3.12,"Chloe","Hemmings",5865,"64TH","ST","",532181919,4965,"20TH","ST",53221,"Ronal Reagan High School",26100,29100,NA,48900
-"239",9,13.17,"Julian","Sharp",2477,"6TH","ST","",532153224,2419,"KENWOOD","BLVD",53211,"Helene Zelazo Center for the Performing Arts",NA,29100,NA,61500
-"240",10,14.15,"Nicholas","Murray",2744,"24TH","PL","",532061139,1641,"MILLER PARK","WAY",53214,"Culver's",28800,NA,NA,48900
-"241",1,19.5,"Austin","Davies",222,"33RD","ST","913",532084126,6215,"WARNIMONT","AVE",53220,"Driver's Education Class",NA,35700,NA,60000
-"242",2,19.13,"Liam","Springer",935,"CASS","ST","38",532023413,6215,"WARNIMONT","AVE",53220,"Driver's Education Class",NA,NA,NA,59100
-"243",3,6.13,"Tim","Duncan",1434,"LINCOLN","AV","",532153144,2751,"LENOX","ST",53207,"Bay View High School",NA,NA,NA,63600
-"244",4,17.9,"Jessica","Davidson",7470,"GLENBROOK","RD","317",532231132,9050,"SWAN","RD",53224,"Northwest YMCA",29700,33300,NA,61200
-"245",5,13.14,"Dominic","Hardacre",6338,"20TH","ST","",532215255,2419,"KENWOOD","BLVD",53211,"Helene Zelazo Center for the Performing Arts",NA,27600,59400,60000
-"246",6,11.5,"Audrey","Alsop",1601,"BRADFORD","AV","",532110000,1532,"WELLS","ST",53233,"Jimmy Johns",25200,NA,NA,NA
-"247",7,15.1,"Blake","Abraham",1919,"SUMMIT","AV","4E",532021365,1111,"VEL R PHILLIPS","AVE",53203,"Fiserv Forum",36000,36300,NA,NA
-"248",8,3.12,"Chloe","Hemmings",5865,"64TH","ST","",532181919,4965,"20TH","ST",53221,"Ronal Reagan High School",34200,37200,NA,NA
-"249",9,13.17,"Julian","Sharp",2477,"6TH","ST","",532153224,2419,"KENWOOD","BLVD",53211,"Helene Zelazo Center for the Performing Arts",NA,37200,NA,49800
-"250",10,14.15,"Nicholas","Murray",2744,"24TH","PL","",532061139,1641,"MILLER PARK","WAY",53214,"Culver's",NA,35400,NA,58800
-"251",1,19.5,"Austin","Davies",222,"33RD","ST","913",532084126,6215,"WARNIMONT","AVE",53220,"Driver's Education Class",NA,NA,NA,51000
-"252",2,19.13,"Liam","Springer",935,"CASS","ST","38",532023413,6215,"WARNIMONT","AVE",53220,"Driver's Education Class",NA,NA,NA,57900
-"253",3,6.13,"Tim","Duncan",1434,"LINCOLN","AV","",532153144,2751,"LENOX","ST",53207,"Bay View High School",26100,27600,NA,46500
-"254",4,17.9,"Jessica","Davidson",7470,"GLENBROOK","RD","317",532231132,9050,"SWAN","RD",53224,"Northwest YMCA",NA,27600,NA,44700
-"255",5,13.14,"Dominic","Hardacre",6338,"20TH","ST","",532215255,2419,"KENWOOD","BLVD",53211,"Helene Zelazo Center for the Performing Arts",NA,NA,NA,62100
-"256",6,11.5,"Audrey","Alsop",1601,"BRADFORD","AV","",532110000,1532,"WELLS","ST",53233,"Jimmy Johns",26100,NA,NA,NA
-"257",7,15.1,"Blake","Abraham",1919,"SUMMIT","AV","4E",532021365,1111,"VEL R PHILLIPS","AVE",53203,"Fiserv Forum",27900,28200,NA,59700
-"258",8,3.12,"Chloe","Hemmings",5865,"64TH","ST","",532181919,4965,"20TH","ST",53221,"Ronal Reagan High School",25200,28200,50400,53400
-"259",9,13.17,"Julian","Sharp",2477,"6TH","ST","",532153224,2419,"KENWOOD","BLVD",53211,"Helene Zelazo Center for the Performing Arts",NA,29700,NA,58500
-"260",10,14.15,"Nicholas","Murray",2744,"24TH","PL","",532061139,1641,"MILLER PARK","WAY",53214,"Culver's",29700,30600,NA,48600
-"261",1,19.5,"Austin","Davies",222,"33RD","ST","913",532084126,6215,"WARNIMONT","AVE",53220,"Driver's Education Class",NA,NA,NA,51600
-"262",2,19.13,"Liam","Springer",935,"CASS","ST","38",532023413,6215,"WARNIMONT","AVE",53220,"Driver's Education Class",28800,30000,NA,45300
-"263",3,6.13,"Tim","Duncan",1434,"LINCOLN","AV","",532153144,2751,"LENOX","ST",53207,"Bay View High School",36000,NA,NA,63900
-"264",4,17.9,"Jessica","Davidson",7470,"GLENBROOK","RD","317",532231132,9050,"SWAN","RD",53224,"Northwest YMCA",27000,29100,NA,51600
-"265",5,13.14,"Dominic","Hardacre",6338,"20TH","ST","",532215255,2419,"KENWOOD","BLVD",53211,"Helene Zelazo Center for the Performing Arts",NA,NA,57600,59700
-"266",6,11.5,"Audrey","Alsop",1601,"BRADFORD","AV","",532110000,1532,"WELLS","ST",53233,"Jimmy Johns",29700,32700,NA,53400
-"267",7,15.1,"Blake","Abraham",1919,"SUMMIT","AV","4E",532021365,1111,"VEL R PHILLIPS","AVE",53203,"Fiserv Forum",27000,28800,NA,62100
-"268",8,3.12,"Chloe","Hemmings",5865,"64TH","ST","",532181919,4965,"20TH","ST",53221,"Ronal Reagan High School",34200,36000,NA,56700
-"269",9,13.17,"Julian","Sharp",2477,"6TH","ST","",532153224,2419,"KENWOOD","BLVD",53211,"Helene Zelazo Center for the Performing Arts",25200,NA,NA,50700
-"270",10,14.15,"Nicholas","Murray",2744,"24TH","PL","",532061139,1641,"MILLER PARK","WAY",53214,"Culver's",NA,27900,NA,52200
-"271",1,19.5,"Austin","Davies",222,"33RD","ST","913",532084126,6215,"WARNIMONT","AVE",53220,"Driver's Education Class",NA,NA,NA,NA
-"272",2,19.13,"Liam","Springer",935,"CASS","ST","38",532023413,6215,"WARNIMONT","AVE",53220,"Driver's Education Class",36000,NA,NA,58800
-"273",3,6.13,"Tim","Duncan",1434,"LINCOLN","AV","",532153144,2751,"LENOX","ST",53207,"Bay View High School",NA,31800,50400,50700
-"274",4,17.9,"Jessica","Davidson",7470,"GLENBROOK","RD","317",532231132,9050,"SWAN","RD",53224,"Northwest YMCA",35100,37800,NA,56700
-"275",5,13.14,"Dominic","Hardacre",6338,"20TH","ST","",532215255,2419,"KENWOOD","BLVD",53211,"Helene Zelazo Center for the Performing Arts",34200,NA,NA,63000
-"276",6,11.5,"Audrey","Alsop",1601,"BRADFORD","AV","",532110000,1532,"WELLS","ST",53233,"Jimmy Johns",NA,NA,49500,51600
-"277",7,15.1,"Blake","Abraham",1919,"SUMMIT","AV","4E",532021365,1111,"VEL R PHILLIPS","AVE",53203,"Fiserv Forum",NA,33000,NA,53700
-"278",8,3.12,"Chloe","Hemmings",5865,"64TH","ST","",532181919,4965,"20TH","ST",53221,"Ronal Reagan High School",NA,35400,NA,52500
-"279",9,13.17,"Julian","Sharp",2477,"6TH","ST","",532153224,2419,"KENWOOD","BLVD",53211,"Helene Zelazo Center for the Performing Arts",25200,26400,NA,55200
-"280",10,14.15,"Nicholas","Murray",2744,"24TH","PL","",532061139,1641,"MILLER PARK","WAY",53214,"Culver's",NA,33600,NA,55200
-"281",1,19.5,"Austin","Davies",222,"33RD","ST","913",532084126,6215,"WARNIMONT","AVE",53220,"Driver's Education Class",30600,NA,NA,45900
-"282",2,19.13,"Liam","Springer",935,"CASS","ST","38",532023413,6215,"WARNIMONT","AVE",53220,"Driver's Education Class",30600,33900,NA,49200
-"283",3,6.13,"Tim","Duncan",1434,"LINCOLN","AV","",532153144,2751,"LENOX","ST",53207,"Bay View High School",NA,35700,56700,59100
-"284",4,17.9,"Jessica","Davidson",7470,"GLENBROOK","RD","317",532231132,9050,"SWAN","RD",53224,"Northwest YMCA",26100,26400,NA,48900
-"285",5,13.14,"Dominic","Hardacre",6338,"20TH","ST","",532215255,2419,"KENWOOD","BLVD",53211,"Helene Zelazo Center for the Performing Arts",NA,30600,NA,62100
-"286",6,11.5,"Audrey","Alsop",1601,"BRADFORD","AV","",532110000,1532,"WELLS","ST",53233,"Jimmy Johns",31500,NA,NA,58800
-"287",7,15.1,"Blake","Abraham",1919,"SUMMIT","AV","4E",532021365,1111,"VEL R PHILLIPS","AVE",53203,"Fiserv Forum",25200,NA,47700,49800
-"288",8,3.12,"Chloe","Hemmings",5865,"64TH","ST","",532181919,4965,"20TH","ST",53221,"Ronal Reagan High School",25200,NA,NA,45000
-"289",9,13.17,"Julian","Sharp",2477,"6TH","ST","",532153224,2419,"KENWOOD","BLVD",53211,"Helene Zelazo Center for the Performing Arts",NA,29400,45000,45600
-"290",10,14.15,"Nicholas","Murray",2744,"24TH","PL","",532061139,1641,"MILLER PARK","WAY",53214,"Culver's",NA,NA,NA,53100
-"291",1,19.5,"Austin","Davies",222,"33RD","ST","913",532084126,6215,"WARNIMONT","AVE",53220,"Driver's Education Class",NA,35400,NA,47100
-"292",2,19.13,"Liam","Springer",935,"CASS","ST","38",532023413,6215,"WARNIMONT","AVE",53220,"Driver's Education Class",NA,29100,NA,NA
-"293",3,6.13,"Tim","Duncan",1434,"LINCOLN","AV","",532153144,2751,"LENOX","ST",53207,"Bay View High School",NA,36000,NA,57600
-"294",4,17.9,"Jessica","Davidson",7470,"GLENBROOK","RD","317",532231132,9050,"SWAN","RD",53224,"Northwest YMCA",35100,35100,NA,NA
-"295",5,13.14,"Dominic","Hardacre",6338,"20TH","ST","",532215255,2419,"KENWOOD","BLVD",53211,"Helene Zelazo Center for the Performing Arts",NA,35700,NA,45600
-"296",6,11.5,"Audrey","Alsop",1601,"BRADFORD","AV","",532110000,1532,"WELLS","ST",53233,"Jimmy Johns",NA,34800,NA,52800
-"297",7,15.1,"Blake","Abraham",1919,"SUMMIT","AV","4E",532021365,1111,"VEL R PHILLIPS","AVE",53203,"Fiserv Forum",NA,32400,58500,59400
-"298",8,3.12,"Chloe","Hemmings",5865,"64TH","ST","",532181919,4965,"20TH","ST",53221,"Ronal Reagan High School",NA,NA,NA,54300
-"299",9,13.17,"Julian","Sharp",2477,"6TH","ST","",532153224,2419,"KENWOOD","BLVD",53211,"Helene Zelazo Center for the Performing Arts",33300,36300,NA,NA
-"300",10,14.15,"Nicholas","Murray",2744,"24TH","PL","",532061139,1641,"MILLER PARK","WAY",53214,"Culver's",NA,33900,NA,NA
-"301",1,19.5,"Austin","Davies",222,"33RD","ST","913",532084126,6215,"WARNIMONT","AVE",53220,"Driver's Education Class",NA,NA,NA,NA
-"302",2,19.13,"Liam","Springer",935,"CASS","ST","38",532023413,6215,"WARNIMONT","AVE",53220,"Driver's Education Class",NA,32400,53100,54900
-"303",3,6.13,"Tim","Duncan",1434,"LINCOLN","AV","",532153144,2751,"LENOX","ST",53207,"Bay View High School",33300,35100,57600,59400
-"304",4,17.9,"Jessica","Davidson",7470,"GLENBROOK","RD","317",532231132,9050,"SWAN","RD",53224,"Northwest YMCA",NA,NA,NA,47700
-"305",5,13.14,"Dominic","Hardacre",6338,"20TH","ST","",532215255,2419,"KENWOOD","BLVD",53211,"Helene Zelazo Center for the Performing Arts",NA,NA,NA,45900
-"306",6,11.5,"Audrey","Alsop",1601,"BRADFORD","AV","",532110000,1532,"WELLS","ST",53233,"Jimmy Johns",NA,27900,NA,61200
-"307",7,15.1,"Blake","Abraham",1919,"SUMMIT","AV","4E",532021365,1111,"VEL R PHILLIPS","AVE",53203,"Fiserv Forum",36000,39000,46800,49800
-"308",8,3.12,"Chloe","Hemmings",5865,"64TH","ST","",532181919,4965,"20TH","ST",53221,"Ronal Reagan High School",NA,30600,NA,60300
-"309",9,13.17,"Julian","Sharp",2477,"6TH","ST","",532153224,2419,"KENWOOD","BLVD",53211,"Helene Zelazo Center for the Performing Arts",NA,32700,NA,48900
-"310",10,14.15,"Nicholas","Murray",2744,"24TH","PL","",532061139,1641,"MILLER PARK","WAY",53214,"Culver's",NA,34800,NA,51000
-"311",1,19.5,"Austin","Davies",222,"33RD","ST","913",532084126,6215,"WARNIMONT","AVE",53220,"Driver's Education Class",NA,NA,NA,50700
-"312",2,19.13,"Liam","Springer",935,"CASS","ST","38",532023413,6215,"WARNIMONT","AVE",53220,"Driver's Education Class",NA,34500,58500,61500
-"313",3,6.13,"Tim","Duncan",1434,"LINCOLN","AV","",532153144,2751,"LENOX","ST",53207,"Bay View High School",27000,27600,NA,56400
-"314",4,17.9,"Jessica","Davidson",7470,"GLENBROOK","RD","317",532231132,9050,"SWAN","RD",53224,"Northwest YMCA",35100,37800,46800,49500
-"315",5,13.14,"Dominic","Hardacre",6338,"20TH","ST","",532215255,2419,"KENWOOD","BLVD",53211,"Helene Zelazo Center for the Performing Arts",27000,27900,NA,61200
-"316",6,11.5,"Audrey","Alsop",1601,"BRADFORD","AV","",532110000,1532,"WELLS","ST",53233,"Jimmy Johns",27000,27300,45000,45300
-"317",7,15.1,"Blake","Abraham",1919,"SUMMIT","AV","4E",532021365,1111,"VEL R PHILLIPS","AVE",53203,"Fiserv Forum",NA,26400,NA,49800
-"318",8,3.12,"Chloe","Hemmings",5865,"64TH","ST","",532181919,4965,"20TH","ST",53221,"Ronal Reagan High School",NA,NA,NA,54900
-"319",9,13.17,"Julian","Sharp",2477,"6TH","ST","",532153224,2419,"KENWOOD","BLVD",53211,"Helene Zelazo Center for the Performing Arts",29700,30000,NA,55200
-"320",10,14.15,"Nicholas","Murray",2744,"24TH","PL","",532061139,1641,"MILLER PARK","WAY",53214,"Culver's",29700,NA,NA,51900
-"321",1,19.5,"Austin","Davies",222,"33RD","ST","913",532084126,6215,"WARNIMONT","AVE",53220,"Driver's Education Class",NA,33600,57600,57900
-"322",2,19.13,"Liam","Springer",935,"CASS","ST","38",532023413,6215,"WARNIMONT","AVE",53220,"Driver's Education Class",NA,NA,52200,55200
-"323",3,6.13,"Tim","Duncan",1434,"LINCOLN","AV","",532153144,2751,"LENOX","ST",53207,"Bay View High School",NA,NA,NA,57600
-"324",4,17.9,"Jessica","Davidson",7470,"GLENBROOK","RD","317",532231132,9050,"SWAN","RD",53224,"Northwest YMCA",NA,NA,NA,NA
-"325",5,13.14,"Dominic","Hardacre",6338,"20TH","ST","",532215255,2419,"KENWOOD","BLVD",53211,"Helene Zelazo Center for the Performing Arts",NA,32400,NA,55800
-"326",6,11.5,"Audrey","Alsop",1601,"BRADFORD","AV","",532110000,1532,"WELLS","ST",53233,"Jimmy Johns",31500,33000,NA,54600
-"327",7,15.1,"Blake","Abraham",1919,"SUMMIT","AV","4E",532021365,1111,"VEL R PHILLIPS","AVE",53203,"Fiserv Forum",36000,36300,NA,48900
-"328",8,3.12,"Chloe","Hemmings",5865,"64TH","ST","",532181919,4965,"20TH","ST",53221,"Ronal Reagan High School",NA,28500,61200,63600
-"329",9,13.17,"Julian","Sharp",2477,"6TH","ST","",532153224,2419,"KENWOOD","BLVD",53211,"Helene Zelazo Center for the Performing Arts",NA,NA,NA,52500
-"330",10,14.15,"Nicholas","Murray",2744,"24TH","PL","",532061139,1641,"MILLER PARK","WAY",53214,"Culver's",27900,30900,NA,62400
-"331",1,19.5,"Austin","Davies",222,"33RD","ST","913",532084126,6215,"WARNIMONT","AVE",53220,"Driver's Education Class",NA,NA,NA,NA
-"332",2,19.13,"Liam","Springer",935,"CASS","ST","38",532023413,6215,"WARNIMONT","AVE",53220,"Driver's Education Class",35100,38400,NA,51000
-"333",3,6.13,"Tim","Duncan",1434,"LINCOLN","AV","",532153144,2751,"LENOX","ST",53207,"Bay View High School",32400,33300,NA,NA
-"334",4,17.9,"Jessica","Davidson",7470,"GLENBROOK","RD","317",532231132,9050,"SWAN","RD",53224,"Northwest YMCA",NA,32700,NA,47100
-"335",5,13.14,"Dominic","Hardacre",6338,"20TH","ST","",532215255,2419,"KENWOOD","BLVD",53211,"Helene Zelazo Center for the Performing Arts",36000,38400,NA,NA
-"336",6,11.5,"Audrey","Alsop",1601,"BRADFORD","AV","",532110000,1532,"WELLS","ST",53233,"Jimmy Johns",32400,NA,46800,48900
-"337",7,15.1,"Blake","Abraham",1919,"SUMMIT","AV","4E",532021365,1111,"VEL R PHILLIPS","AVE",53203,"Fiserv Forum",34200,36300,54900,57000
-"338",8,3.12,"Chloe","Hemmings",5865,"64TH","ST","",532181919,4965,"20TH","ST",53221,"Ronal Reagan High School",30600,NA,NA,NA
-"339",9,13.17,"Julian","Sharp",2477,"6TH","ST","",532153224,2419,"KENWOOD","BLVD",53211,"Helene Zelazo Center for the Performing Arts",33300,NA,NA,54900
-"340",10,14.15,"Nicholas","Murray",2744,"24TH","PL","",532061139,1641,"MILLER PARK","WAY",53214,"Culver's",NA,35700,61200,64500
-"341",1,19.5,"Austin","Davies",222,"33RD","ST","913",532084126,6215,"WARNIMONT","AVE",53220,"Driver's Education Class",NA,NA,59400,62400
-"342",2,19.13,"Liam","Springer",935,"CASS","ST","38",532023413,6215,"WARNIMONT","AVE",53220,"Driver's Education Class",29700,30600,NA,46800
-"343",3,6.13,"Tim","Duncan",1434,"LINCOLN","AV","",532153144,2751,"LENOX","ST",53207,"Bay View High School",33300,36600,43200,46500
-"344",4,17.9,"Jessica","Davidson",7470,"GLENBROOK","RD","317",532231132,9050,"SWAN","RD",53224,"Northwest YMCA",NA,28200,NA,NA
-"345",5,13.14,"Dominic","Hardacre",6338,"20TH","ST","",532215255,2419,"KENWOOD","BLVD",53211,"Helene Zelazo Center for the Performing Arts",36000,36900,49500,50400
-"346",6,11.5,"Audrey","Alsop",1601,"BRADFORD","AV","",532110000,1532,"WELLS","ST",53233,"Jimmy Johns",30600,NA,NA,53400
-"347",7,15.1,"Blake","Abraham",1919,"SUMMIT","AV","4E",532021365,1111,"VEL R PHILLIPS","AVE",53203,"Fiserv Forum",34200,35700,52200,53700
-"348",8,3.12,"Chloe","Hemmings",5865,"64TH","ST","",532181919,4965,"20TH","ST",53221,"Ronal Reagan High School",27900,30000,NA,55200
-"349",9,13.17,"Julian","Sharp",2477,"6TH","ST","",532153224,2419,"KENWOOD","BLVD",53211,"Helene Zelazo Center for the Performing Arts",30600,31200,NA,47400
-"350",10,14.15,"Nicholas","Murray",2744,"24TH","PL","",532061139,1641,"MILLER PARK","WAY",53214,"Culver's",NA,NA,NA,55500
-"351",1,19.5,"Austin","Davies",222,"33RD","ST","913",532084126,6215,"WARNIMONT","AVE",53220,"Driver's Education Class",31500,34800,NA,60000
-"352",2,19.13,"Liam","Springer",935,"CASS","ST","38",532023413,6215,"WARNIMONT","AVE",53220,"Driver's Education Class",27900,NA,60300,63300
-"353",3,6.13,"Tim","Duncan",1434,"LINCOLN","AV","",532153144,2751,"LENOX","ST",53207,"Bay View High School",34200,34800,54900,55500
-"354",4,17.9,"Jessica","Davidson",7470,"GLENBROOK","RD","317",532231132,9050,"SWAN","RD",53224,"Northwest YMCA",30600,31200,NA,NA
-"355",5,13.14,"Dominic","Hardacre",6338,"20TH","ST","",532215255,2419,"KENWOOD","BLVD",53211,"Helene Zelazo Center for the Performing Arts",NA,32400,NA,48600
-"356",6,11.5,"Audrey","Alsop",1601,"BRADFORD","AV","",532110000,1532,"WELLS","ST",53233,"Jimmy Johns",NA,36000,NA,NA
-"357",7,15.1,"Blake","Abraham",1919,"SUMMIT","AV","4E",532021365,1111,"VEL R PHILLIPS","AVE",53203,"Fiserv Forum",NA,26700,55800,56400
-"358",8,3.12,"Chloe","Hemmings",5865,"64TH","ST","",532181919,4965,"20TH","ST",53221,"Ronal Reagan High School",28800,NA,NA,59700
-"359",9,13.17,"Julian","Sharp",2477,"6TH","ST","",532153224,2419,"KENWOOD","BLVD",53211,"Helene Zelazo Center for the Performing Arts",29700,NA,NA,62100
-"360",10,14.15,"Nicholas","Murray",2744,"24TH","PL","",532061139,1641,"MILLER PARK","WAY",53214,"Culver's",32400,34500,61200,63300
-"361",1,19.5,"Austin","Davies",222,"33RD","ST","913",532084126,6215,"WARNIMONT","AVE",53220,"Driver's Education Class",35100,37200,NA,47100
-"362",2,19.13,"Liam","Springer",935,"CASS","ST","38",532023413,6215,"WARNIMONT","AVE",53220,"Driver's Education Class",32400,34200,NA,54000
-"363",3,6.13,"Tim","Duncan",1434,"LINCOLN","AV","",532153144,2751,"LENOX","ST",53207,"Bay View High School",36000,39300,49500,52800
-"364",4,17.9,"Jessica","Davidson",7470,"GLENBROOK","RD","317",532231132,9050,"SWAN","RD",53224,"Northwest YMCA",NA,NA,54000,NA
-"365",5,13.14,"Dominic","Hardacre",6338,"20TH","ST","",532215255,2419,"KENWOOD","BLVD",53211,"Helene Zelazo Center for the Performing Arts",NA,NA,NA,57600
-"366",6,11.5,"Audrey","Alsop",1601,"BRADFORD","AV","",532110000,1532,"WELLS","ST",53233,"Jimmy Johns",NA,30300,56700,58200
-"367",7,15.1,"Blake","Abraham",1919,"SUMMIT","AV","4E",532021365,1111,"VEL R PHILLIPS","AVE",53203,"Fiserv Forum",NA,36000,48600,NA
-"368",8,3.12,"Chloe","Hemmings",5865,"64TH","ST","",532181919,4965,"20TH","ST",53221,"Ronal Reagan High School",27900,28200,47700,NA
-"369",9,13.17,"Julian","Sharp",2477,"6TH","ST","",532153224,2419,"KENWOOD","BLVD",53211,"Helene Zelazo Center for the Performing Arts",NA,36300,NA,48000
-"370",10,14.15,"Nicholas","Murray",2744,"24TH","PL","",532061139,1641,"MILLER PARK","WAY",53214,"Culver's",28800,32100,NA,50100
-"371",1,19.5,"Austin","Davies",222,"33RD","ST","913",532084126,6215,"WARNIMONT","AVE",53220,"Driver's Education Class",NA,26700,54900,56400
-"372",2,19.13,"Liam","Springer",935,"CASS","ST","38",532023413,6215,"WARNIMONT","AVE",53220,"Driver's Education Class",NA,29400,NA,NA
-"373",3,6.13,"Tim","Duncan",1434,"LINCOLN","AV","",532153144,2751,"LENOX","ST",53207,"Bay View High School",26100,29700,45900,NA
-"374",4,17.9,"Jessica","Davidson",7470,"GLENBROOK","RD","317",532231132,9050,"SWAN","RD",53224,"Northwest YMCA",32400,35400,NA,NA
-"375",5,13.14,"Dominic","Hardacre",6338,"20TH","ST","",532215255,2419,"KENWOOD","BLVD",53211,"Helene Zelazo Center for the Performing Arts",NA,NA,NA,60900
-"376",6,11.5,"Audrey","Alsop",1601,"BRADFORD","AV","",532110000,1532,"WELLS","ST",53233,"Jimmy Johns",28800,30600,NA,46800
-"377",7,15.1,"Blake","Abraham",1919,"SUMMIT","AV","4E",532021365,1111,"VEL R PHILLIPS","AVE",53203,"Fiserv Forum",NA,NA,NA,NA
-"378",8,3.12,"Chloe","Hemmings",5865,"64TH","ST","",532181919,4965,"20TH","ST",53221,"Ronal Reagan High School",27900,NA,57600,61200
-"379",9,13.17,"Julian","Sharp",2477,"6TH","ST","",532153224,2419,"KENWOOD","BLVD",53211,"Helene Zelazo Center for the Performing Arts",36000,36000,NA,55800
-"380",10,14.15,"Nicholas","Murray",2744,"24TH","PL","",532061139,1641,"MILLER PARK","WAY",53214,"Culver's",NA,32400,55800,57600
-"381",1,19.5,"Austin","Davies",222,"33RD","ST","913",532084126,6215,"WARNIMONT","AVE",53220,"Driver's Education Class",31500,33600,NA,60600
-"382",2,19.13,"Liam","Springer",935,"CASS","ST","38",532023413,6215,"WARNIMONT","AVE",53220,"Driver's Education Class",NA,38100,NA,61500
-"383",3,6.13,"Tim","Duncan",1434,"LINCOLN","AV","",532153144,2751,"LENOX","ST",53207,"Bay View High School",35100,35100,NA,54900
-"384",4,17.9,"Jessica","Davidson",7470,"GLENBROOK","RD","317",532231132,9050,"SWAN","RD",53224,"Northwest YMCA",NA,29100,NA,NA
-"385",5,13.14,"Dominic","Hardacre",6338,"20TH","ST","",532215255,2419,"KENWOOD","BLVD",53211,"Helene Zelazo Center for the Performing Arts",33300,35400,NA,45300
-"386",6,11.5,"Audrey","Alsop",1601,"BRADFORD","AV","",532110000,1532,"WELLS","ST",53233,"Jimmy Johns",27900,NA,NA,57300
-"387",7,15.1,"Blake","Abraham",1919,"SUMMIT","AV","4E",532021365,1111,"VEL R PHILLIPS","AVE",53203,"Fiserv Forum",NA,30600,NA,53100
-"388",8,3.12,"Chloe","Hemmings",5865,"64TH","ST","",532181919,4965,"20TH","ST",53221,"Ronal Reagan High School",33300,NA,58500,61800
-"389",9,13.17,"Julian","Sharp",2477,"6TH","ST","",532153224,2419,"KENWOOD","BLVD",53211,"Helene Zelazo Center for the Performing Arts",NA,NA,NA,43800
-"390",10,14.15,"Nicholas","Murray",2744,"24TH","PL","",532061139,1641,"MILLER PARK","WAY",53214,"Culver's",NA,NA,49500,51000
-"391",1,19.5,"Austin","Davies",222,"33RD","ST","913",532084126,6215,"WARNIMONT","AVE",53220,"Driver's Education Class",34200,NA,47700,49800
-"392",2,19.13,"Liam","Springer",935,"CASS","ST","38",532023413,6215,"WARNIMONT","AVE",53220,"Driver's Education Class",NA,NA,NA,55200
-"393",3,6.13,"Tim","Duncan",1434,"LINCOLN","AV","",532153144,2751,"LENOX","ST",53207,"Bay View High School",27000,27900,NA,51300
-"394",4,17.9,"Jessica","Davidson",7470,"GLENBROOK","RD","317",532231132,9050,"SWAN","RD",53224,"Northwest YMCA",NA,NA,NA,57600
-"395",5,13.14,"Dominic","Hardacre",6338,"20TH","ST","",532215255,2419,"KENWOOD","BLVD",53211,"Helene Zelazo Center for the Performing Arts",NA,36900,57600,58500
-"396",6,11.5,"Audrey","Alsop",1601,"BRADFORD","AV","",532110000,1532,"WELLS","ST",53233,"Jimmy Johns",NA,NA,NA,45900
-"397",7,15.1,"Blake","Abraham",1919,"SUMMIT","AV","4E",532021365,1111,"VEL R PHILLIPS","AVE",53203,"Fiserv Forum",NA,32100,NA,58200
-"398",8,3.12,"Chloe","Hemmings",5865,"64TH","ST","",532181919,4965,"20TH","ST",53221,"Ronal Reagan High School",27900,NA,59400,NA
-"399",9,13.17,"Julian","Sharp",2477,"6TH","ST","",532153224,2419,"KENWOOD","BLVD",53211,"Helene Zelazo Center for the Performing Arts",NA,29100,NA,56100
-"400",10,14.15,"Nicholas","Murray",2744,"24TH","PL","",532061139,1641,"MILLER PARK","WAY",53214,"Culver's",NA,NA,NA,NA
+"","X","firstName","lastName","HSE_NBR_home","STREET_home","STTYPE_home","UNIT_NBR_home","ZIP_CODE_home","HSE_NBR","STREET","STTYPE","ZIP_CODE","DEST_NAME","DEST_NAME_TYPE","ept","lpt","edt","ldt"
+"1",19.5,"Austin","Davies",222,"33RD","ST","913",532084126,6215,"WARNIMONT","AVE",53220,"Driver's Education Class","Event",NA,30300,61200,62700
+"2",19.13,"Liam","Springer",935,"CASS","ST","38",532023413,6215,"WARNIMONT","AVE",53220,"Driver's Education Class","Event",36000,NA,NA,49500
+"3",6.13,"Tim","Duncan",1434,"LINCOLN","AV","",532153144,2751,"LENOX","ST",53207,"Bay View High School","School",NA,34800,49500,NA
+"4",17.9,"Jessica","Davidson",7470,"GLENBROOK","RD","317",532231132,9050,"SWAN","RD",53224,"Northwest YMCA","Sport",31500,32100,NA,48300
+"5",13.14,"Dominic","Hardacre",6338,"20TH","ST","",532215255,2419,"KENWOOD","BLVD",53211,"Helene Zelazo Center for the Performing Arts","Band Rehearsal",33300,34200,NA,46800
+"6",11.5,"Audrey","Alsop",1601,"BRADFORD","AV","",532110000,1532,"WELLS","ST",53233,"Jimmy Johns","Job",NA,36900,54000,55800
+"7",15.1,"Blake","Abraham",1919,"SUMMIT","AV","4E",532021365,1111,"VEL R PHILLIPS","AVE",53203,"Fiserv Forum","Event",NA,NA,NA,61800
+"8",3.12,"Chloe","Hemmings",5865,"64TH","ST","",532181919,4965,"20TH","ST",53221,"Ronal Reagan High School","School",26100,27900,NA,NA
+"9",13.17,"Julian","Sharp",2477,"6TH","ST","",532153224,2419,"KENWOOD","BLVD",53211,"Helene Zelazo Center for the Performing Arts","Band Rehearsal",NA,38400,NA,NA
+"10",14.15,"Nicholas","Murray",2744,"24TH","PL","",532061139,1641,"MILLER PARK","WAY",53214,"Culver's","Job",NA,30900,NA,NA
+"11",9.18,"David","Reid",2337,"10TH","ST","",532063117,1818,"CANAL","ST",53233,"Marquette University Valley Fields","Sport",NA,NA,43200,44400
+"12",14.19,"Joseph","Wilkins",9132,"DIXON","ST","203",532141351,1641,"MILLER PARK","WAY",53214,"Culver's","Job",32400,36000,NA,54900
+"13",19.2,"Ryan","Murray",2619,"LOGAN","AV","",532071805,6215,"WARNIMONT","AVE",53220,"Driver's Education Class","Event",26100,NA,54900,55800
+"14",5.18,"Thomas","Grant",3025,"55TH","ST","",532101564,517,"WISCONSIN","AVE",53202,"Milwaukee Federal Building","Job",NA,34200,NA,61200
+"15",20.9,"Trevor","Hughes",8183,"107TH","ST","B",532242573,2520,"NATIONAL","AVE",53204,"McDonald's","Job",NA,28800,NA,55800
+"16",19.1,"Stephen","McLean",3356,"11TH","ST","",532060000,6215,"WARNIMONT","AVE",53220,"Driver's Education Class","Event",25200,27900,60300,63000
+"17",19.15,"Brian","Vaughan",8616,"CONGRESS","ST","4",532255117,6215,"WARNIMONT","AVE",53220,"Driver's Education Class","Event",NA,NA,58500,62100
+"18",3.4,"John","Walsh",9341,"SILVER SPRING","DR","",532250000,4965,"20TH","ST",53221,"Ronal Reagan High School","School",NA,33300,NA,54000
+"19",10.1,"Zoe","Hardacre",3609,"TUCKER","PL","105",532222709,3401,"WISCONSIN","AVE",53208,"Marquette University High School","School",NA,28800,NA,56700
+"20",11.13,"Michael","Ogden",4042,"86TH","ST","",532221702,1532,"WELLS","ST",53233,"Jimmy Johns","Job",NA,34500,51300,54300
+"21",18.3,"Jennifer","Oliver",3201,"FRATNEY","ST","",532120000,5130,"53RD","ST",53218,"Hampton Fieldhouse","Sport",32400,33600,NA,51600
+"22",20.12,"Joanne","Howard",1809,"3RD","ST","",532044014,2520,"NATIONAL","AVE",53204,"McDonald's","Job",NA,27300,NA,NA
+"23",20.18,"Rachel","Davidson",5253,"LOVERS LANE","RD","306",532253001,2520,"NATIONAL","AVE",53204,"McDonald's","Job",NA,NA,NA,49500
+"24",18.16,"Felicity","Bailey",3026,"MITCHELL","ST","",532152119,5130,"53RD","ST",53218,"Hampton Fieldhouse","Sport",NA,33000,NA,NA
+"25",2.1,"Justin","Butler",2904,"WISCONSIN","AV","",532080000,8400,"BURLEIGH","ST",53222,"Milwaukee School of Languages","School",NA,NA,NA,48300
+"26",10.12,"Rose","Black",4436,"92ND","ST","3",532254804,3401,"WISCONSIN","AVE",53208,"Marquette University High School","School",NA,NA,NA,54900
+"27",8.5,"Ryan","Mackay",5909,"41ST","ST","",532093930,6000,"RYAN","RD",53132,"Milwaukee County Sports Complex","Sport",28800,31800,48600,51600
+"28",17.17,"Benjamin","Hardacre",4848,"14TH","ST","1",532212827,9050,"SWAN","RD",53224,"Northwest YMCA","Sport",27000,30000,NA,59700
+"29",9.6,"Faith","Tucker",1420,"WARNIMONT","AV","21",532073517,1818,"CANAL","ST",53233,"Marquette University Valley Fields","Sport",35100,NA,45900,48300
+"30",16.1,"Megan","Lambert",7300,"DEAN","RD","269",532232604,400,"KILBOURN","AVE",53203,"UW-Milwaukee Panther Arena","Event",25200,28800,NA,51300
+"31",14.12,"Sarah","Rutherford",2219,"55TH","ST","",532081017,1641,"MILLER PARK","WAY",53214,"Culver's","Job",NA,27600,NA,52800
+"32",15.19,"Lucas","Metcalfe",3730,"KAUL","AV","",532093641,1111,"VEL R PHILLIPS","AVE",53203,"Fiserv Forum","Event",27000,30300,NA,54600
+"33",8.2,"Dan","Blake",826,"OTJEN","ST","",532071808,6000,"RYAN","RD",53132,"Milwaukee County Sports Complex","Sport",25200,25800,52200,NA
+"34",13.11,"Paul","Buckland",3171,"HERMAN","ST","",532072849,2419,"KENWOOD","BLVD",53211,"Helene Zelazo Center for the Performing Arts","Band Rehearsal",NA,33300,NA,48600
+"35",1.1,"Leah","Stewart",3738,"42ND","ST","",532163047,1801,"OLIVE","ST",53209,"Rufus King High School","School",26100,28200,55800,57900
+"36",16.4,"Brian","Hudson",3122,"PALMER","ST","",532122050,400,"KILBOURN","AVE",53203,"UW-Milwaukee Panther Arena","Event",NA,NA,NA,NA
+"37",1.2,"Benjamin","Murray",3737,"55TH","ST","",532162837,1801,"OLIVE","ST",53209,"Rufus King High School","School",NA,29100,45000,47100
+"38",4.15,"Dylan","Kerr",9908,"BELOIT","RD","",532274237,4601,"84TH","ST",53225,"Hmong American Peace Academy","School",35100,NA,NA,43800
+"39",17.8,"Harry","Hardacre",1728,"40TH","ST","",532081822,9050,"SWAN","RD",53224,"Northwest YMCA","Sport",29700,NA,NA,60000
+"40",12,"Peter","Abraham",728,"24TH","ST","",532041001,2907,"OAKLAND","AVE",53211,"Blaze Pizza","Job",NA,28800,NA,55800
+"41",7.16,"Virginia","Bell",3133,"25TH","ST","",532154416,5225,"LINCOLN CREEK","DR",53218,"Congress School","School",NA,NA,59400,61500
+"42",8.16,"Irene","Martin",4240,"68TH","ST","",532161117,6000,"RYAN","RD",53132,"Milwaukee County Sports Complex","Sport",26100,NA,NA,58200
+"43",1.13,"Molly","Jones",2536,"CRAMER","ST","",532113904,1801,"OLIVE","ST",53209,"Rufus King High School","School",NA,27000,NA,NA
+"44",18.7,"Una","Walsh",4240,"75TH","ST","",532161002,5130,"53RD","ST",53218,"Hampton Fieldhouse","Sport",NA,NA,NA,46200
+"45",8.13,"Jack","Kelly",411,"31ST","ST","",532084236,6000,"RYAN","RD",53132,"Milwaukee County Sports Complex","Sport",35100,36900,NA,51300
+"46",17.19,"Steven","Gray",1363,"40TH","ST","24",532082858,9050,"SWAN","RD",53224,"Northwest YMCA","Sport",NA,29700,NA,NA
+"47",16.14,"Warren","Bell",6220,"107TH","ST","",532251303,400,"KILBOURN","AVE",53203,"UW-Milwaukee Panther Arena","Event",NA,29400,NA,58200
+"48",12.5,"Connor","North",2470,"15TH","ST","",532153133,2907,"OAKLAND","AVE",53211,"Blaze Pizza","Job",NA,NA,NA,52200
+"49",18.1,"Audrey","Johnston",903,"KILBOURN","AV","63",532023421,5130,"53RD","ST",53218,"Hampton Fieldhouse","Sport",30600,NA,50400,53700
+"50",11.17,"Austin","Reid",6808,"PARK MANOR","DR","",532244636,1532,"WELLS","ST",53233,"Jimmy Johns","Job",NA,38700,NA,64800
+"51",6.16,"Rose","Campbell",9900,"BELOIT","RD","",532274237,2751,"LENOX","ST",53207,"Bay View High School","School",NA,NA,NA,61500
+"52",7.1,"Maria","Knox",1246,"VAN BUREN","ST","",532022607,5225,"LINCOLN CREEK","DR",53218,"Congress School","School",NA,NA,NA,57000
+"53",7.18,"Jessica","Roberts",3951,"10TH","ST","",532063320,5225,"LINCOLN CREEK","DR",53218,"Congress School","School",33300,36600,NA,NA
+"54",19.9,"Alison","Piper",3137,"SHERMAN","BL","",532163544,6215,"WARNIMONT","AVE",53220,"Driver's Education Class","Event",NA,28200,47700,NA
+"55",18.17,"Audrey","Anderson",1017,"37TH","ST","",532082815,5130,"53RD","ST",53218,"Hampton Fieldhouse","Sport",33300,34800,NA,46500
+"56",13.18,"Jonathan","Stewart",2725,"HIGHLAND","BL","308",532083277,2419,"KENWOOD","BLVD",53211,"Helene Zelazo Center for the Performing Arts","Band Rehearsal",25200,NA,50400,51000
+"57",12.12,"Kylie","Bailey",8610,"MELVINA","ST","F",532222848,2907,"OAKLAND","AVE",53211,"Blaze Pizza","Job",26100,NA,NA,62100
+"58",3.18,"Thomas","McDonald",1236,"14TH","ST","",532052519,4965,"20TH","ST",53221,"Ronal Reagan High School","School",31500,NA,NA,47700
+"59",5.9,"Benjamin","Jones",2768,"23RD","ST","",532061609,517,"WISCONSIN","AVE",53202,"Milwaukee Federal Building","Job",NA,NA,NA,47400
+"60",9.15,"Emma","Bell",10313,"FOND DU LAC","AV","",532245503,1818,"CANAL","ST",53233,"Marquette University Valley Fields","Sport",31500,NA,NA,62700
+"61",12.9,"Jennifer","Johnston",2517,"CENTER","ST","",532061154,2907,"OAKLAND","AVE",53211,"Blaze Pizza","Job",34200,NA,NA,44700
+"62",17.13,"Richard","Knox",3700,"5TH","ST","",532124120,9050,"SWAN","RD",53224,"Northwest YMCA","Sport",NA,36900,NA,48600
+"63",13.16,"Molly","Jackson",5227,"TEUTONIA","AV","",532094818,2419,"KENWOOD","BLVD",53211,"Helene Zelazo Center for the Performing Arts","Band Rehearsal",NA,30900,NA,62400
+"64",10.1,"Jan","Mathis",825,"22ND","ST","211",532331608,3401,"WISCONSIN","AVE",53208,"Marquette University High School","School",NA,36300,NA,63300
+"65",15.5,"Olivia","Wallace",2566,"FREDERICK","AV","",532114025,1111,"VEL R PHILLIPS","AVE",53203,"Fiserv Forum","Event",NA,29400,47700,50100
+"66",4.3,"Jan","Morgan",2567,"52ND","ST","",532102730,4601,"84TH","ST",53225,"Hmong American Peace Academy","School",36000,NA,NA,63900
+"67",5.1,"William","Parr",2443,"CRAMER","ST","24",532114314,517,"WISCONSIN","AVE",53202,"Milwaukee Federal Building","Job",NA,27000,43200,45000
+"68",20.1,"Blake","Duncan",1075,"46TH","ST","",532083121,2520,"NATIONAL","AVE",53204,"McDonald's","Job",NA,NA,55800,57600
+"69",12.1,"Benjamin","Walsh",4920,"74TH","ST","",532183821,2907,"OAKLAND","AVE",53211,"Blaze Pizza","Job",NA,37500,NA,45600
+"70",4.19,"James","Wallace",2561,"15TH","ST","",532062002,4601,"84TH","ST",53225,"Hmong American Peace Academy","School",27000,28500,47700,49200
+"71",1.14,"Jasmine","Cameron",5406,"24TH","ST","",532213710,1801,"OLIVE","ST",53209,"Rufus King High School","School",NA,29700,48600,52200
+"72",3.6,"Sebastian","May",2119,"CLARKE","ST","",532061517,4965,"20TH","ST",53221,"Ronal Reagan High School","School",31500,32100,53100,53700
+"73",4.1,"James","Payne",2620,"LENOX","ST","",532072131,4601,"84TH","ST",53225,"Hmong American Peace Academy","School",NA,33900,NA,60900
+"74",18.18,"Steven","Walsh",3677,"82ND","ST","",532201025,5130,"53RD","ST",53218,"Hampton Fieldhouse","Sport",NA,NA,50400,NA
+"75",4.4,"Katherine","Payne",3011,"MC KINLEY","BL","2",532082933,4601,"84TH","ST",53225,"Hmong American Peace Academy","School",NA,NA,NA,46800
+"76",12.13,"Una","Cameron",3006,"HIGHLAND","BL","102",532083246,2907,"OAKLAND","AVE",53211,"Blaze Pizza","Job",29700,NA,NA,NA
+"77",19.3,"Anne","Grant",8746,"CARMEN","AV","1",532252849,6215,"WARNIMONT","AVE",53220,"Driver's Education Class","Event",NA,30000,52200,55200
+"78",18.8,"Peter","Reid",8719,"BRENTWOOD","AV","",532245305,5130,"53RD","ST",53218,"Hampton Fieldhouse","Sport",25200,NA,49500,50700
+"79",9.5,"Justin","Gray",4413,"CAPITOL","DR","",532161540,1818,"CANAL","ST",53233,"Marquette University Valley Fields","Sport",34200,37800,NA,60300
+"80",1,"Angela","Gray",2909,"15TH","PL","",532153718,1801,"OLIVE","ST",53209,"Rufus King High School","School",25200,NA,59400,60000
+"81",10.6,"Dorothy","Vaughan",1633,"35TH","ST","",532080000,3401,"WISCONSIN","AVE",53208,"Marquette University High School","School",29700,32700,NA,57000
+"82",3.1,"Yvonne","McDonald",4221,"6TH","ST","E10",532211761,4965,"20TH","ST",53221,"Ronal Reagan High School","School",35100,NA,NA,NA
+"83",6.14,"Sam","Gibson",4431,"49TH","ST","",532185702,2751,"LENOX","ST",53207,"Bay View High School","School",35100,35700,46800,47400
+"84",11.4,"Sally","Fraser",2122,"38TH","ST","",532081329,1532,"WELLS","ST",53233,"Jimmy Johns","Job",31500,NA,NA,46500
+"85",13.5,"Rachel","Dowd",7515,"81ST","ST","",532230000,2419,"KENWOOD","BLVD",53211,"Helene Zelazo Center for the Performing Arts","Band Rehearsal",25200,27600,NA,51900
+"86",9.17,"Lily","Butler",1237,"MADISON","ST","",532042220,1818,"CANAL","ST",53233,"Marquette University Valley Fields","Sport",NA,NA,NA,51300
+"87",4.13,"Alexander","Randall",2917,"57TH","ST","",532101536,4601,"84TH","ST",53225,"Hmong American Peace Academy","School",NA,35700,NA,51000
+"88",2.8,"Harry","Dowd",2246,"EDGERTON","AV","",532213531,8400,"BURLEIGH","ST",53222,"Milwaukee School of Languages","School",NA,30300,NA,58200
+"89",2.6,"Adam","Thomson",2978,"60TH","ST","",532101401,8400,"BURLEIGH","ST",53222,"Milwaukee School of Languages","School",25200,NA,61200,64200
+"90",5.14,"Bernadette","Reid",3418,"53RD","ST","",532163258,517,"WISCONSIN","AVE",53202,"Milwaukee Federal Building","Job",NA,30000,NA,56100
+"91",11.6,"Paul","Newman",2546,"BRISBANE","AV","",532071502,1532,"WELLS","ST",53233,"Jimmy Johns","Job",NA,28500,NA,51000
+"92",17,"Leah","Springer",623,"BURLEIGH","ST","",532122120,9050,"SWAN","RD",53224,"Northwest YMCA","Sport",NA,37800,NA,46800
+"93",17.5,"Dylan","Roberts",3243,"13TH","ST","",532062766,9050,"SWAN","RD",53224,"Northwest YMCA","Sport",27900,NA,59400,NA
+"94",15.6,"Isaac","Hudson",4638,"30TH","ST","",532096016,1111,"VEL R PHILLIPS","AVE",53203,"Fiserv Forum","Event",27900,31200,45900,49200
+"95",15.3,"Fiona","MacDonald",6221,"BIRCH","AV","",532183135,1111,"VEL R PHILLIPS","AVE",53203,"Fiserv Forum","Event",25200,NA,NA,47100
+"96",12.3,"Isaac","Dickens",3105,"GRANT","ST","",532152448,2907,"OAKLAND","AVE",53211,"Blaze Pizza","Job",NA,30900,NA,51600
+"97",6.1,"Deirdre","Terry",8315,"OKLAHOMA","AV","4",532193531,2751,"LENOX","ST",53207,"Bay View High School","School",35100,NA,NA,NA
+"98",17.6,"Christopher","Scott",1931,"KENWOOD","BL","",532113007,9050,"SWAN","RD",53224,"Northwest YMCA","Sport",34200,35400,NA,47100
+"99",12.4,"Carolyn","White",8243,"ACACIA","ST","",532235525,2907,"OAKLAND","AVE",53211,"Blaze Pizza","Job",32400,NA,NA,53400
+"100",16.19,"Chloe","Kelly",231,"80TH","ST","",532141420,400,"KILBOURN","AVE",53203,"UW-Milwaukee Panther Arena","Event",30600,32100,NA,56400
+"101",10.7,"Joan","Thomson",7074,"BECKETT","AV","",532162048,3401,"WISCONSIN","AVE",53208,"Marquette University High School","School",31500,34200,NA,50400
+"102",16.7,"Nicholas","Mackay",1224,"45TH","ST","",532082735,400,"KILBOURN","AVE",53203,"UW-Milwaukee Panther Arena","Event",NA,27900,NA,NA
+"103",15.18,"Ryan","Fisher",3172,"40TH","ST","",532163611,1111,"VEL R PHILLIPS","AVE",53203,"Fiserv Forum","Event",NA,NA,NA,47700
+"104",6.15,"Sonia","Edmunds",2458,"9TH","ST","",532153210,2751,"LENOX","ST",53207,"Bay View High School","School",36000,38700,NA,45900
+"105",14.18,"Piers","Ross",2059,"36TH","ST","",532152001,1641,"MILLER PARK","WAY",53214,"Culver's","Job",26100,28800,54900,57600
+"106",16.5,"Peter","Hamilton",3747,"63RD","ST","",532162136,400,"KILBOURN","AVE",53203,"UW-Milwaukee Panther Arena","Event",NA,NA,NA,53100
+"107",18.1,"Paul","Underwood",311,"LOCUST","ST","",532122344,5130,"53RD","ST",53218,"Hampton Fieldhouse","Sport",27000,30300,NA,56400
+"108",11.14,"Harry","Ellison",327,"DOVER","ST","",532072003,1532,"WELLS","ST",53233,"Jimmy Johns","Job",33300,NA,NA,63000
+"109",16.2,"Ava","Rutherford",2818,"50TH","ST","",532101653,400,"KILBOURN","AVE",53203,"UW-Milwaukee Panther Arena","Event",28800,30000,59400,NA
+"110",16.8,"Lisa","North",138,"PLEASANT","ST","",532120000,400,"KILBOURN","AVE",53203,"UW-Milwaukee Panther Arena","Event",36000,37200,60300,61500
+"111",9.16,"Cameron","Watson",3023,"DOWNER","AV","",532113337,1818,"CANAL","ST",53233,"Marquette University Valley Fields","Sport",NA,36000,49500,52200
+"112",13.1,"Piers","Reid",6508,"CARMEN","AV","",532182313,2419,"KENWOOD","BLVD",53211,"Helene Zelazo Center for the Performing Arts","Band Rehearsal",NA,NA,49500,50400
+"113",11.16,"Edward","McLean",5232,"34TH","ST","",532094702,1532,"WELLS","ST",53233,"Jimmy Johns","Job",34200,NA,NA,55500
+"114",7.9,"Ruth","Rutherford",5040,"49TH","ST","",532180000,5225,"LINCOLN CREEK","DR",53218,"Congress School","School",26100,29100,61200,64200
+"115",18.15,"Brian","Berry",2970,"44TH","ST","",532193406,5130,"53RD","ST",53218,"Hampton Fieldhouse","Sport",NA,NA,58500,60000
+"116",17.15,"Alexandra","Scott",1421,"WRIGHT","ST","",532060000,9050,"SWAN","RD",53224,"Northwest YMCA","Sport",25200,25800,NA,NA
+"117",20.13,"Justin","McLean",3934,"36TH","ST","",532162509,2520,"NATIONAL","AVE",53204,"McDonald's","Job",NA,34500,NA,NA
+"118",6,"Emily","Metcalfe",3223,"BUFFUM","ST","",532122151,2751,"LENOX","ST",53207,"Bay View High School","School",34200,34800,57600,58200
+"119",9.12,"Warren","Edmunds",2485,"7TH","ST","",532153226,1818,"CANAL","ST",53233,"Marquette University Valley Fields","Sport",29700,30300,NA,NA
+"120",19.19,"Edward","Gill",4118,"83RD","ST","",532221806,6215,"WARNIMONT","AVE",53220,"Driver's Education Class","Event",NA,27600,NA,45600
+"121",5.19,"Matt","Reid",4025,"60TH","ST","2",532161246,517,"WISCONSIN","AVE",53202,"Milwaukee Federal Building","Job",33300,NA,44100,47100
+"122",16.17,"Andrew","Clark",2230,"LAYTON","AV","221",532212791,400,"KILBOURN","AVE",53203,"UW-Milwaukee Panther Arena","Event",32400,NA,NA,54600
+"123",8.19,"Phil","Langdon",4208,"FAIRMOUNT","AV","",532090000,6000,"RYAN","RD",53132,"Milwaukee County Sports Complex","Sport",NA,NA,50400,53100
+"124",9.3,"Nicholas","Lambert",1444,"WALNUT","ST","",532051635,1818,"CANAL","ST",53233,"Marquette University Valley Fields","Sport",33300,36300,NA,60600
+"125",10.18,"Amelia","McGrath",3151,"PALMER","ST","",532122049,3401,"WISCONSIN","AVE",53208,"Marquette University High School","School",29700,31800,NA,47100
+"126",6.8,"Joshua","Dickens",3155,"77TH","ST","326",532193708,2751,"LENOX","ST",53207,"Bay View High School","School",29700,30600,NA,62100
+"127",19.6,"Elizabeth","Underwood",4660,"40TH","ST","",532095810,6215,"WARNIMONT","AVE",53220,"Driver's Education Class","Event",31500,34200,NA,NA
+"128",14.2,"Tracey","Reid",2238,"MOUND","ST","",532071334,1641,"MILLER PARK","WAY",53214,"Culver's","Job",NA,33000,NA,NA
+"129",17.14,"Jessica","Young",1922,"PALMER","ST","3",532123720,9050,"SWAN","RD",53224,"Northwest YMCA","Sport",35100,35700,NA,NA
+"130",10.16,"Molly","Dickens",2238,"FARWELL","AV","",532021117,3401,"WISCONSIN","AVE",53208,"Marquette University High School","School",27900,29100,NA,NA
+"131",13.3,"Blake","Buckland",2439,"SCOTT","ST","",532041932,2419,"KENWOOD","BLVD",53211,"Helene Zelazo Center for the Performing Arts","Band Rehearsal",NA,NA,NA,45000
+"132",9.2,"Diane","Quinn",2365,"1ST","ST","3",532123223,1818,"CANAL","ST",53233,"Marquette University Valley Fields","Sport",32400,33300,NA,53100
+"133",9.9,"Joanne","Baker",3501,"FOREST HOME","AV","",532150000,1818,"CANAL","ST",53233,"Marquette University Valley Fields","Sport",27000,30000,49500,NA
+"134",13.1,"Bella","Bond",1626,"PROSPECT","AV","503",532022417,2419,"KENWOOD","BLVD",53211,"Helene Zelazo Center for the Performing Arts","Band Rehearsal",29700,31200,44100,45600
+"135",12.6,"Trevor","Martin",1821,"KENWOOD","BL","",532113006,2907,"OAKLAND","AVE",53211,"Blaze Pizza","Job",NA,34800,NA,58200
+"136",15.4,"Amelia","Fisher",3136,"48TH","ST","",532163342,1111,"VEL R PHILLIPS","AVE",53203,"Fiserv Forum","Event",36000,38100,NA,61500
+"137",15.7,"Melanie","Lambert",923,"18TH","ST","3",532041128,1111,"VEL R PHILLIPS","AVE",53203,"Fiserv Forum","Event",NA,NA,NA,49800
+"138",2.9,"Lisa","Buckland",1339,"MC KINLEY","AV","",532052536,8400,"BURLEIGH","ST",53222,"Milwaukee School of Languages","School",28800,32400,53100,56700
+"139",11,"Eric","King",10213,"FOND DU LAC","AV","127",532245171,1532,"WELLS","ST",53233,"Jimmy Johns","Job",31500,33900,NA,54600
+"140",14.8,"Brian","Young",3375,"98TH","ST","",532274213,1641,"MILLER PARK","WAY",53214,"Culver's","Job",35100,38400,NA,58200
+"141",2.18,"Neil","Martin",2540,"46TH","ST","",532102920,8400,"BURLEIGH","ST",53222,"Milwaukee School of Languages","School",NA,27600,47700,NA
+"142",2,"Kylie","Vance",1348,"44TH","ST","31",532082732,8400,"BURLEIGH","ST",53222,"Milwaukee School of Languages","School",32400,NA,NA,48300
+"143",6.19,"Dominic","Slater",2647,"9TH","PL","",532153427,2751,"LENOX","ST",53207,"Bay View High School","School",28800,30900,NA,52500
+"144",14.1,"Michael","Ferguson",1824,"22ND","ST","",532050000,1641,"MILLER PARK","WAY",53214,"Culver's","Job",28800,NA,NA,48000
+"145",19.8,"Victoria","Jones",2616,"FREDERICK","AV","108",532113602,6215,"WARNIMONT","AVE",53220,"Driver's Education Class","Event",NA,30600,NA,NA
+"146",11.8,"Benjamin","Watson",5767,"42ND","ST","",532093960,1532,"WELLS","ST",53233,"Jimmy Johns","Job",27000,28800,NA,50400
+"147",3.3,"Michael","Taylor",8955,"70TH","ST","",532232151,4965,"20TH","ST",53221,"Ronal Reagan High School","School",NA,29700,NA,NA
+"148",12.19,"Boris","Scott",1619,"30TH","ST","",532151942,2907,"OAKLAND","AVE",53211,"Blaze Pizza","Job",31500,34500,NA,59700
+"149",16.13,"Andrea","Jones",1913,"52ND","ST","",532081753,400,"KILBOURN","AVE",53203,"UW-Milwaukee Panther Arena","Event",29700,30600,57600,58500
+"150",2.17,"Dan","Avery",2423,"FRATNEY","ST","",532122932,8400,"BURLEIGH","ST",53222,"Milwaukee School of Languages","School",35100,36000,NA,48600
+"151",9.19,"Jacob","Graham",2101,"ST PAUL","AV","",532332560,1818,"CANAL","ST",53233,"Marquette University Valley Fields","Sport",NA,34200,NA,50400
+"152",5,"Luke","Grant",2729,"RICHARDS","ST","",532120000,517,"WISCONSIN","AVE",53202,"Milwaukee Federal Building","Job",27900,NA,53100,54000
+"153",10.13,"Carolyn","Rampling",5425,"FOREST HOME","AV","1",532201412,3401,"WISCONSIN","AVE",53208,"Marquette University High School","School",25200,27600,NA,NA
+"154",5.17,"Dan","Dowd",7611,"WABASH","CT","3",532232538,517,"WISCONSIN","AVE",53202,"Milwaukee Federal Building","Job",31500,33600,NA,50700
+"155",19.11,"Boris","Gibson",7713,"SHERIDAN","AV","A",532182638,6215,"WARNIMONT","AVE",53220,"Driver's Education Class","Event",36000,NA,NA,61200
+"156",17.16,"Leah","McDonald",3846,"52ND","ST","",532162308,9050,"SWAN","RD",53224,"Northwest YMCA","Sport",26100,NA,60300,NA
+"157",3.5,"Yvonne","Jackson",10524,"VILLARD","AV","",532253939,4965,"20TH","ST",53221,"Ronal Reagan High School","School",30600,32100,NA,NA
+"158",1.7,"Edward","Turner",1824,"THOMAS","AV","",532114358,1801,"OLIVE","ST",53209,"Rufus King High School","School",NA,NA,NA,59100
+"159",2.12,"Wanda","MacDonald",1953,"20TH","ST","",532051554,8400,"BURLEIGH","ST",53222,"Milwaukee School of Languages","School",NA,NA,NA,60000
+"160",14.16,"David","Langdon",2039,"15TH","PL","",532043704,1641,"MILLER PARK","WAY",53214,"Culver's","Job",NA,32100,45000,46500
+"161",16.1,"Carl","Hodges",1626,"PROSPECT","AV","808",532022422,400,"KILBOURN","AVE",53203,"UW-Milwaukee Panther Arena","Event",NA,30900,NA,62400
+"162",7.11,"Jason","Ferguson",2579,"TERRACE","AV","",532113821,5225,"LINCOLN CREEK","DR",53218,"Congress School","School",NA,29400,NA,NA
+"163",8.3,"Owen","Jones",1958,"24TH","ST","",532043613,6000,"RYAN","RD",53132,"Milwaukee County Sports Complex","Sport",NA,28500,NA,46500
+"164",20.4,"Blake","Stewart",3739,"40TH","ST","",532163026,2520,"NATIONAL","AVE",53204,"McDonald's","Job",32400,33600,NA,46200
+"165",7.6,"Evan","Alsop",1925,"49TH","ST","",532081735,5225,"LINCOLN CREEK","DR",53218,"Congress School","School",34200,NA,NA,59400
+"166",3.2,"Sebastian","Oliver",4941,"57TH","ST","",532184241,4965,"20TH","ST",53221,"Ronal Reagan High School","School",27900,30900,43200,46200
+"167",6.5,"Emma","Simpson",7841,"VAN BECK","AV","",532202227,2751,"LENOX","ST",53207,"Bay View High School","School",NA,29100,51300,52500
+"168",14.13,"Sonia","Short",2257,"SUMMIT","AV","",532021245,1641,"MILLER PARK","WAY",53214,"Culver's","Job",27900,NA,NA,55500
+"169",16.11,"Robert","Robertson",4719,"48TH","ST","",532185122,400,"KILBOURN","AVE",53203,"UW-Milwaukee Panther Arena","Event",26100,27600,NA,NA
+"170",12.14,"Alan","Ross",7342,"BECKETT","AV","",532161010,2907,"OAKLAND","AVE",53211,"Blaze Pizza","Job",32400,33600,NA,58800
+"171",9.7,"Chloe","Morrison",2503,"4TH","ST","",532122713,1818,"CANAL","ST",53233,"Marquette University Valley Fields","Sport",26100,NA,NA,NA
+"172",19.1,"Anthony","Butler",1229,"33RD","ST","",532080000,6215,"WARNIMONT","AVE",53220,"Driver's Education Class","Event",26100,27900,NA,52200
+"173",12.8,"Alison","Buckland",178,"90TH","ST","",532264510,2907,"OAKLAND","AVE",53211,"Blaze Pizza","Job",30600,NA,51300,53700
+"174",6.9,"Melanie","Mathis",2323,"EUCLID","AV","",532072903,2751,"LENOX","ST",53207,"Bay View High School","School",30600,NA,NA,NA
+"175",5.16,"Gabrielle","Skinner",1104,"VAN BUREN","ST","8",532023220,517,"WISCONSIN","AVE",53202,"Milwaukee Federal Building","Job",30600,NA,NA,56700
+"176",20.3,"Anna","Welch",7901,"GLENBROOK","RD","245",532231027,2520,"NATIONAL","AVE",53204,"McDonald's","Job",33300,34200,57600,58500
+"177",10.4,"Theresa","Miller",6087,"37TH","ST","",532093662,3401,"WISCONSIN","AVE",53208,"Marquette University High School","School",NA,36000,NA,60300
+"178",7.12,"Julia","MacDonald",3835,"HUMBOLDT","BL","1",532121311,5225,"LINCOLN CREEK","DR",53218,"Congress School","School",32400,33300,NA,54000
+"179",15.9,"Hannah","Bailey",1107,"SCOTT","ST","",532042228,1111,"VEL R PHILLIPS","AVE",53203,"Fiserv Forum","Event",NA,31800,NA,57000
+"180",14.7,"Wanda","Wright",1510,"MAPLEWOOD","CT","",532214350,1641,"MILLER PARK","WAY",53214,"Culver's","Job",27900,28800,NA,45900
+"181",11.1,"Joshua","Hughes",502,"PLAINFIELD","AV","",532075151,1532,"WELLS","ST",53233,"Jimmy Johns","Job",33300,34200,NA,53100
+"182",10.8,"Karen","Langdon",10165,"GRANTOSA","DR","",532221316,3401,"WISCONSIN","AVE",53208,"Marquette University High School","School",NA,NA,58500,61500
+"183",4.9,"Sarah","Roberts",6683,"80TH","ST","",532235564,4601,"84TH","ST",53225,"Hmong American Peace Academy","School",NA,31500,NA,58500
+"184",3.16,"Nicholas","Lewis",528,"62ND","ST","",532141852,4965,"20TH","ST",53221,"Ronal Reagan High School","School",29700,31500,61200,63000
+"185",9,"Gabrielle","Wallace",6740,"19TH","ST","",532215221,1818,"CANAL","ST",53233,"Marquette University Valley Fields","Sport",NA,34200,44100,47700
+"186",11.15,"Edward","Hunter",2536,"STATE","ST","",532330000,1532,"WELLS","ST",53233,"Jimmy Johns","Job",NA,NA,NA,45300
+"187",14.1,"Rose","Hunter",4523,"TAYLOR","AV","",532075229,1641,"MILLER PARK","WAY",53214,"Culver's","Job",28800,NA,NA,60000
+"188",9.8,"Abigail","Terry",3636,"15TH","ST","",532211604,1818,"CANAL","ST",53233,"Marquette University Valley Fields","Sport",NA,37200,NA,NA
+"189",16.12,"Dominic","Springer",8035,"CRAWFORD","AV","",532201637,400,"KILBOURN","AVE",53203,"UW-Milwaukee Panther Arena","Event",NA,29400,NA,51000
+"190",4,"Piers","Knox",8667,"GRANVILLE","RD","",532240000,4601,"84TH","ST",53225,"Hmong American Peace Academy","School",33300,36900,NA,56700
+"191",3,"Samantha","Brown",2942,"16TH","ST","",532153723,4965,"20TH","ST",53221,"Ronal Reagan High School","School",NA,28500,NA,NA
+"192",13,"Sarah","Mackenzie",3145,"11TH","ST","",532062748,2419,"KENWOOD","BLVD",53211,"Helene Zelazo Center for the Performing Arts","Band Rehearsal",NA,35400,54900,56100
+"193",12.11,"Alexander","Bower",1003,"NORTH","AV","",532051332,2907,"OAKLAND","AVE",53211,"Blaze Pizza","Job",NA,NA,NA,NA
+"194",11.7,"Brian","Jackson",3824,"58TH","ST","",532202055,1532,"WELLS","ST",53233,"Jimmy Johns","Job",34200,36600,NA,59100
+"195",20.16,"Alison","Gibson",8065,"107TH","ST","",532242507,2520,"NATIONAL","AVE",53204,"McDonald's","Job",NA,30600,NA,NA
+"196",1.1,"Maria","MacLeod",8850,"POTOMAC","AV","",532254132,1801,"OLIVE","ST",53209,"Rufus King High School","School",NA,36600,50400,51900
+"197",14.14,"Christopher","Hudson",3728,"22ND","ST","",532061839,1641,"MILLER PARK","WAY",53214,"Culver's","Job",NA,NA,NA,NA
+"198",2.2,"Virginia","Davidson",7916,"HAMPTON","AV","",532184610,8400,"BURLEIGH","ST",53222,"Milwaukee School of Languages","School",34200,NA,NA,60000
+"199",8.1,"Grace","Wilkins",2501,"23RD","ST","",532061527,6000,"RYAN","RD",53132,"Milwaukee County Sports Complex","Sport",NA,NA,45000,NA
+"200",8.6,"Julian","Coleman",4911,"57TH","ST","",532184241,6000,"RYAN","RD",53132,"Milwaukee County Sports Complex","Sport",NA,33600,55800,58800
+"201",18.13,"Virginia","Stewart",2666,"4TH","ST","",532120000,5130,"53RD","ST",53218,"Hampton Fieldhouse","Sport",29700,30600,NA,NA
+"202",6.2,"Madeleine","Simpson",3941,"69TH","ST","",532202409,2751,"LENOX","ST",53207,"Bay View High School","School",25200,26400,NA,44400
+"203",11.12,"Grace","Reid",5658,"65TH","ST","",532182326,1532,"WELLS","ST",53233,"Jimmy Johns","Job",NA,NA,NA,48000
+"204",5.7,"Yvonne","Harris",1020,"35TH","ST","",532151408,517,"WISCONSIN","AVE",53202,"Milwaukee Federal Building","Job",NA,36600,NA,49200
+"205",13.12,"Frank","Brown",7818,"FIEBRANTZ","AV","",532222021,2419,"KENWOOD","BLVD",53211,"Helene Zelazo Center for the Performing Arts","Band Rehearsal",32400,34500,NA,54300
+"206",5.6,"Amelia","MacDonald",2962,"89TH","ST","",532224606,517,"WISCONSIN","AVE",53202,"Milwaukee Federal Building","Job",33300,36000,NA,53100
+"207",13.15,"Theresa","Reid",2239,"34TH","ST","",532080000,2419,"KENWOOD","BLVD",53211,"Helene Zelazo Center for the Performing Arts","Band Rehearsal",32400,NA,NA,45300
+"208",5.13,"Ian","Campbell",3831,"BIRCHWOOD","AV","",532213931,517,"WISCONSIN","AVE",53202,"Milwaukee Federal Building","Job",27900,29400,NA,45600
+"209",3.8,"Simon","Churchill",6700,"MARION","ST","",532161142,4965,"20TH","ST",53221,"Ronal Reagan High School","School",NA,NA,NA,48900
+"210",3.9,"Lily","Thomson",3650,"15TH","ST","",532062303,4965,"20TH","ST",53221,"Ronal Reagan High School","School",NA,35400,NA,NA
+"211",17.12,"Donna","Turner",5018,"85TH","ST","",532254211,9050,"SWAN","RD",53224,"Northwest YMCA","Sport",30600,31800,NA,50700
+"212",7.2,"Grace","Baker",3358,"DOWNER","AV","",532112933,5225,"LINCOLN CREEK","DR",53218,"Congress School","School",31500,NA,NA,57300
+"213",14.11,"Brian","Baker",1734,"6TH","ST","",532043502,1641,"MILLER PARK","WAY",53214,"Culver's","Job",35100,37200,NA,49800
+"214",1.11,"Chloe","Skinner",2916,"11TH","ST","",532060000,1801,"OLIVE","ST",53209,"Rufus King High School","School",NA,36900,NA,NA
+"215",5.3,"Max","Martin",3503,"34TH","ST","",532210000,517,"WISCONSIN","AVE",53202,"Milwaukee Federal Building","Job",NA,35100,48600,52200
+"216",8.15,"Simon","Ball",2331,"PIERCE","ST","",532041069,6000,"RYAN","RD",53132,"Milwaukee County Sports Complex","Sport",NA,31500,NA,45900
+"217",17.4,"Theresa","Kerr",1686,"VAN BUREN","ST","",532022018,9050,"SWAN","RD",53224,"Northwest YMCA","Sport",NA,NA,61200,NA
+"218",15.17,"Sally","Clarkson",2530,"VICTORY","LA","3",532096133,1111,"VEL R PHILLIPS","AVE",53203,"Fiserv Forum","Event",NA,26700,56700,57300
+"219",20.8,"Oliver","Clarkson",1113,"15TH","ST","",532330000,2520,"NATIONAL","AVE",53204,"McDonald's","Job",36000,39000,NA,47100
+"220",9.1,"Sean","Clark",8896,"96TH","ST","6",532242074,1818,"CANAL","ST",53233,"Marquette University Valley Fields","Sport",NA,29400,NA,NA
+"221",5.8,"Bernadette","Martin",1200,"SINGER","CR","13",532121872,517,"WISCONSIN","AVE",53202,"Milwaukee Federal Building","Job",NA,NA,NA,45900
+"222",10.15,"Benjamin","Sanderson",6926,"CONGRESS","ST","",532185413,3401,"WISCONSIN","AVE",53208,"Marquette University High School","School",25200,NA,44100,NA
+"223",18.12,"Gabrielle","McDonald",3138,"67TH","CT","",532194110,5130,"53RD","ST",53218,"Hampton Fieldhouse","Sport",27000,NA,NA,49200
+"224",9.1,"Trevor","Butler",1421,"ARTHUR","AV","",532153350,1818,"CANAL","ST",53233,"Marquette University Valley Fields","Sport",NA,29400,50400,51000
+"225",3.15,"Ryan","Gill",1226,"21ST","ST","",532042024,4965,"20TH","ST",53221,"Ronal Reagan High School","School",NA,NA,NA,56400
+"226",12.17,"Edward","Chapman",2547,"OAKLAND","AV","",532113931,2907,"OAKLAND","AVE",53211,"Blaze Pizza","Job",NA,NA,NA,45000
+"227",3.13,"Trevor","Wright",3387,"KINNICKINNIC","AV","C",532073121,4965,"20TH","ST",53221,"Ronal Reagan High School","School",27000,29400,NA,56400
+"228",15.8,"Megan","Jones",5733,"FOUNTAIN","AV","",532234227,1111,"VEL R PHILLIPS","AVE",53203,"Fiserv Forum","Event",NA,31200,NA,53700
+"229",1.8,"Gordon","Pullman",1747,"29TH","ST","",532152205,1801,"OLIVE","ST",53209,"Rufus King High School","School",NA,NA,61200,63600
+"230",17.11,"Julia","Ogden",2837,"7TH","ST","",532153907,9050,"SWAN","RD",53224,"Northwest YMCA","Sport",NA,30600,49500,52200
+"231",3.19,"Liam","Scott",1930,"HOWARD","AV","",532211930,4965,"20TH","ST",53221,"Ronal Reagan High School","School",NA,NA,NA,48300
+"232",16.9,"Jonathan","Manning",6700,"APPLETON","AV","335",532162750,400,"KILBOURN","AVE",53203,"UW-Milwaukee Panther Arena","Event",NA,NA,NA,51000
+"233",3.11,"Rose","Rutherford",2408,"10TH","ST","",532153249,4965,"20TH","ST",53221,"Ronal Reagan High School","School",28800,NA,NA,49200
+"234",17.3,"Trevor","Peters",2929,"PALMER","ST","",532122428,9050,"SWAN","RD",53224,"Northwest YMCA","Sport",26100,NA,NA,63300
+"235",17.1,"Sally","Forsyth",2705,"46TH","ST","",532193207,9050,"SWAN","RD",53224,"Northwest YMCA","Sport",26100,28200,48600,50700
+"236",12.2,"Olivia","Henderson",1822,"10TH","ST","",532043303,2907,"OAKLAND","AVE",53211,"Blaze Pizza","Job",NA,31800,NA,61500
+"237",20.14,"Sophie","Buckland",1612,"31ST","ST","",532151933,2520,"NATIONAL","AVE",53204,"McDonald's","Job",33300,35700,NA,NA
+"238",8.1,"Ruth","Randall",5409,"15TH","PL","",532214326,6000,"RYAN","RD",53132,"Milwaukee County Sports Complex","Sport",26100,29100,NA,48900
+"239",18.11,"Evan","Lawrence",8430,"MORGAN","AV","8",532281518,5130,"53RD","ST",53218,"Hampton Fieldhouse","Sport",NA,29400,NA,61800
+"240",4.7,"Stewart","Wright",5646,"24TH","ST","",532214214,4601,"84TH","ST",53225,"Hmong American Peace Academy","School",28800,NA,NA,49200
+"241",16.16,"Madeleine","Duncan",1633,"ARLINGTON","PL","402",532022279,400,"KILBOURN","AVE",53203,"UW-Milwaukee Panther Arena","Event",NA,36300,NA,60600
+"242",10,"Wendy","Morrison",2210,"ALLIS","ST","",532071321,3401,"WISCONSIN","AVE",53208,"Marquette University High School","School",NA,NA,NA,59400
+"243",16,"Dan","Scott",2379,"58TH","ST","",532102209,400,"KILBOURN","AVE",53203,"UW-Milwaukee Panther Arena","Event",NA,NA,NA,63600
+"244",2.13,"Chloe","Powell",5416,"42ND","ST","",532094627,8400,"BURLEIGH","ST",53222,"Milwaukee School of Languages","School",29700,33300,NA,61200
+"245",5.5,"Bella","Young",1550,"PEARL","ST","",532042728,517,"WISCONSIN","AVE",53202,"Milwaukee Federal Building","Job",NA,27900,59400,60300
+"246",4.14,"Ian","Cameron",1818,"12TH","ST","",532051723,4601,"84TH","ST",53225,"Hmong American Peace Academy","School",25200,NA,NA,NA
+"247",2.4,"Hannah","James",9060,"95TH","ST","",532246705,8400,"BURLEIGH","ST",53222,"Milwaukee School of Languages","School",36000,36900,NA,NA
+"248",11.2,"Joe","Ellison",3069,"38TH","ST","4",532153521,1532,"WELLS","ST",53233,"Jimmy Johns","Job",34200,37200,NA,NA
+"249",20.7,"Jason","Harris",7919,"MORGAN","AV","4",532201007,2520,"NATIONAL","AVE",53204,"McDonald's","Job",NA,37800,NA,50400
+"250",19.7,"Harry","Allan",2612,"9TH","ST","",532063115,6215,"WARNIMONT","AVE",53220,"Driver's Education Class","Event",NA,35700,NA,59100
+"251",16.18,"Stephen","Watson",3410,"7TH","ST","",532121451,400,"KILBOURN","AVE",53203,"UW-Milwaukee Panther Arena","Event",NA,NA,NA,51000
+"252",11.11,"Wanda","Brown",2812,"53RD","ST","",532101613,1532,"WELLS","ST",53233,"Jimmy Johns","Job",NA,NA,NA,58500
+"253",2.19,"Sonia","Arnold",2868,"DELAWARE","AV","",532072560,8400,"BURLEIGH","ST",53222,"Milwaukee School of Languages","School",26100,28200,NA,47100
+"254",4.18,"Eric","Wallace",10955,"CAMERON","AV","",532253814,4601,"84TH","ST",53225,"Hmong American Peace Academy","School",NA,27900,NA,45000
+"255",1.3,"Andrew","Powell",7771,"BECKETT","AV","",532185317,1801,"OLIVE","ST",53209,"Rufus King High School","School",NA,NA,NA,62400
+"256",15.16,"Wanda","MacLeod",3806,"18TH","ST","",532211556,1111,"VEL R PHILLIPS","AVE",53203,"Fiserv Forum","Event",26100,NA,NA,NA
+"257",1.15,"Deirdre","Abraham",2925,"60TH","ST","",532101402,1801,"OLIVE","ST",53209,"Rufus King High School","School",27900,28800,NA,60300
+"258",4.17,"Julian","Watson",8853,"SWAN","RD","",532242055,4601,"84TH","ST",53225,"Hmong American Peace Academy","School",25200,28200,50400,53400
+"259",5.1,"John","Vance",1565,"RAMSEY","AV","",532210000,517,"WISCONSIN","AVE",53202,"Milwaukee Federal Building","Job",NA,30300,NA,59100
+"260",20,"Adrian","Grant",1511,"38TH","ST","",532082329,2520,"NATIONAL","AVE",53204,"McDonald's","Job",29700,30900,NA,48900
+"261",15.2,"Alexandra","Parr",1724,"2ND","ST","",532044007,1111,"VEL R PHILLIPS","AVE",53203,"Fiserv Forum","Event",NA,NA,NA,51600
+"262",1.17,"Lucas","Allan",2314,"WELLS","ST","1",532331819,1801,"OLIVE","ST",53209,"Rufus King High School","School",28800,30600,NA,45900
+"263",12.1,"Jason","Davidson",2168,"17TH","ST","",532150000,2907,"OAKLAND","AVE",53211,"Blaze Pizza","Job",36000,NA,NA,63900
+"264",16.6,"Angela","Bond",6845,"FOND DU LAC","AV","",532183918,400,"KILBOURN","AVE",53203,"UW-Milwaukee Panther Arena","Event",27000,29400,NA,51900
+"265",4.8,"Alexander","Parr",3300,"DELAWARE","AV","",532073704,4601,"84TH","ST",53225,"Hmong American Peace Academy","School",NA,NA,57600,60000
+"266",1.18,"Megan","Taylor",2114,"SUMMIT","AV","12",532021322,1801,"OLIVE","ST",53209,"Rufus King High School","School",29700,33000,NA,53700
+"267",18.9,"Jason","Jones",9001,"CONCORDIA","AV","",532223637,5130,"53RD","ST",53218,"Hampton Fieldhouse","Sport",27000,29100,NA,62400
+"268",2.7,"Brian","Terry",104,"CLIFFORD","ST","",532071530,8400,"BURLEIGH","ST",53222,"Milwaukee School of Languages","School",34200,36300,NA,57000
+"269",11.18,"Phil","Pullman",1340,"HOLMES","AV","1",532213574,1532,"WELLS","ST",53233,"Jimmy Johns","Job",25200,NA,NA,51300
+"270",7.13,"Abigail","Fraser",2675,"68TH","ST","2",532192617,5225,"LINCOLN CREEK","DR",53218,"Congress School","School",NA,28500,NA,52800
+"271",19.16,"Brandon","Rutherford",3032,"PIERCE","ST","2",532151266,6215,"WARNIMONT","AVE",53220,"Driver's Education Class","Event",NA,NA,NA,NA
+"272",16.3,"Abigail","Pullman",6101,"AVALON","ST","",532215104,400,"KILBOURN","AVE",53203,"UW-Milwaukee Panther Arena","Event",36000,NA,NA,58800
+"273",18.2,"Sean","Sutherland",1344,"40TH","ST","",532082842,5130,"53RD","ST",53218,"Hampton Fieldhouse","Sport",NA,32400,50400,51300
+"274",18.19,"Deirdre","Burgess",2400,"BRADFORD","AV","302",532114166,5130,"53RD","ST",53218,"Hampton Fieldhouse","Sport",35100,38100,NA,57000
+"275",6.11,"Faith","Buckland",6447,"BIRCH","AV","",532183032,2751,"LENOX","ST",53207,"Bay View High School","School",34200,NA,NA,63300
+"276",7.17,"Eric","Powell",3725,"52ND","ST","",532162938,5225,"LINCOLN CREEK","DR",53218,"Congress School","School",NA,NA,49500,51900
+"277",8.7,"Paul","Simpson",11915,"KAUL","AV","",532251009,6000,"RYAN","RD",53132,"Milwaukee County Sports Complex","Sport",NA,33300,NA,54000
+"278",13.4,"Christian","Grant",2511,"CRAMER","ST","",532113905,2419,"KENWOOD","BLVD",53211,"Helene Zelazo Center for the Performing Arts","Band Rehearsal",NA,35700,NA,52800
+"279",7.7,"John","Fisher",1313,"23RD","ST","",532041908,5225,"LINCOLN CREEK","DR",53218,"Congress School","School",25200,27000,NA,55800
+"280",20.2,"Sophie","Ferguson",3811,"4TH","ST","",532121111,2520,"NATIONAL","AVE",53204,"McDonald's","Job",NA,33900,NA,55500
+"281",18,"Sam","Piper",4535,"66TH","ST","",532185512,5130,"53RD","ST",53218,"Hampton Fieldhouse","Sport",30600,NA,NA,46200
+"282",1.5,"Lily","Hughes",2025,"37TH","ST","",532080000,1801,"OLIVE","ST",53209,"Rufus King High School","School",30600,33900,NA,49200
+"283",8.12,"Dorothy","Blake",1820,"18TH","ST","",532043114,6000,"RYAN","RD",53132,"Milwaukee County Sports Complex","Sport",NA,36000,56700,59400
+"284",15.15,"Bernadette","Jones",2305,"SCOTT","ST","2W",532041930,1111,"VEL R PHILLIPS","AVE",53203,"Fiserv Forum","Event",26100,27000,NA,49500
+"285",13.19,"Justin","Vaughan",1733,"CAMBRIDGE","AV","302",532021814,2419,"KENWOOD","BLVD",53211,"Helene Zelazo Center for the Performing Arts","Band Rehearsal",NA,30600,NA,62100
+"286",1.19,"Joshua","Short",11925,"CARMEN","AV","",532252113,1801,"OLIVE","ST",53209,"Rufus King High School","School",31500,NA,NA,59100
+"287",20.11,"Fiona","Kelly",4006,"WHITNALL","AV","",532074463,2520,"NATIONAL","AVE",53204,"McDonald's","Job",25200,NA,47700,50100
+"288",16.15,"Claire","Vance",5220,"LOVERS LANE","RD","4",532253079,400,"KILBOURN","AVE",53203,"UW-Milwaukee Panther Arena","Event",25200,NA,NA,45600
+"289",8.4,"Trevor","Hill",508,"CHAMBERS","ST","",532122308,6000,"RYAN","RD",53132,"Milwaukee County Sports Complex","Sport",NA,29700,45000,45900
+"290",19.17,"Jennifer","Glover",6766,"APPLETON","AV","7",532162785,6215,"WARNIMONT","AVE",53220,"Driver's Education Class","Event",NA,NA,NA,53400
+"291",5.15,"Lucas","James",5061,"48TH","ST","",532184443,517,"WISCONSIN","AVE",53202,"Milwaukee Federal Building","Job",NA,35400,NA,47100
+"292",17.1,"Keith","Springer",316,"CONCORDIA","AV","",532120000,9050,"SWAN","RD",53224,"Northwest YMCA","Sport",NA,29700,NA,NA
+"293",2.14,"Gabrielle","Russell",2862,"37TH","ST","",532101821,8400,"BURLEIGH","ST",53222,"Milwaukee School of Languages","School",NA,36000,NA,57600
+"294",3.1,"Hannah","Edmunds",3260,"98TH","ST","",532274212,4965,"20TH","ST",53221,"Ronal Reagan High School","School",35100,35700,NA,NA
+"295",2.15,"Jan","Walsh",4961,"26TH","ST","",532095506,8400,"BURLEIGH","ST",53222,"Milwaukee School of Languages","School",NA,36000,NA,45900
+"296",1.9,"Leonard","Bond",9119,"LISBON","AV","6",532222732,1801,"OLIVE","ST",53209,"Rufus King High School","School",NA,35100,NA,53100
+"297",19.12,"Jake","Miller",625,"BRUCE","ST","",532041531,6215,"WARNIMONT","AVE",53220,"Driver's Education Class","Event",NA,32700,58500,59700
+"298",4.2,"Edward","Sharp",2977,"58TH","ST","",532101544,4601,"84TH","ST",53225,"Hmong American Peace Academy","School",NA,NA,NA,54900
+"299",20.15,"Emma","Morgan",3346,"26TH","ST","",532061240,2520,"NATIONAL","AVE",53204,"McDonald's","Job",33300,36300,NA,NA
+"300",6.1,"Anna","Parr",2188,"46TH","ST","",532081227,2751,"LENOX","ST",53207,"Bay View High School","School",NA,34500,NA,NA
+"301",10.11,"Felicity","McDonald",5378,"GREEN BAY","AV","",532095060,3401,"WISCONSIN","AVE",53208,"Marquette University High School","School",NA,NA,NA,NA
+"302",7,"Rachel","Allan",2130,"7TH","ST","104",532152744,5225,"LINCOLN CREEK","DR",53218,"Congress School","School",NA,32700,53100,55200
+"303",6.18,"Ruth","Mitchell",923,"10TH","ST","A",532041339,2751,"LENOX","ST",53207,"Bay View High School","School",33300,35400,57600,59700
+"304",2.11,"Abigail","Mills",6611,"19TH","ST","",532215218,8400,"BURLEIGH","ST",53222,"Milwaukee School of Languages","School",NA,NA,NA,48000
+"305",5.4,"Dorothy","Duncan",9419,"CAPITOL","DR","",532221536,517,"WISCONSIN","AVE",53202,"Milwaukee Federal Building","Job",NA,NA,NA,46200
+"306",13.9,"Virginia","Terry",1400,"IONA","TR","",532215020,2419,"KENWOOD","BLVD",53211,"Helene Zelazo Center for the Performing Arts","Band Rehearsal",NA,28200,NA,61500
+"307",2.16,"Jessica","Cameron",3175,"75TH","ST","1",532162766,8400,"BURLEIGH","ST",53222,"Milwaukee School of Languages","School",36000,39000,46800,49800
+"308",7.8,"Joseph","Roberts",3442,"4TH","ST","",532121435,5225,"LINCOLN CREEK","DR",53218,"Congress School","School",NA,31200,NA,60900
+"309",18.6,"Bernadette","Carr",6423,"SPOKANE","ST","",532235438,5130,"53RD","ST",53218,"Hampton Fieldhouse","Sport",NA,33300,NA,49500
+"310",9.4,"Nicholas","Greene",1534,"VLIET","ST","",532052012,1818,"CANAL","ST",53233,"Marquette University Valley Fields","Sport",NA,35100,NA,51300
+"311",6.4,"Jake","Thomson",3327,"IONA","TR","1",532214089,2751,"LENOX","ST",53207,"Bay View High School","School",NA,NA,NA,51000
+"312",8,"Fiona","Graham",2830,"4TH","ST","",532122318,6000,"RYAN","RD",53132,"Milwaukee County Sports Complex","Sport",NA,34800,58500,61800
+"313",13.13,"Natalie","Parr",7251,"LAKEFIELD","DR","1",532194052,2419,"KENWOOD","BLVD",53211,"Helene Zelazo Center for the Performing Arts","Band Rehearsal",27000,27900,NA,56700
+"314",9.11,"Amy","Rees",4230,"BURRELL","ST","",532075004,1818,"CANAL","ST",53233,"Marquette University Valley Fields","Sport",35100,38100,46800,49800
+"315",7.14,"Sarah","Tucker",4871,"104TH","ST","",532254015,5225,"LINCOLN CREEK","DR",53218,"Congress School","School",27000,28200,NA,61500
+"316",11.3,"Emily","Slater",557,"17TH","ST","106",532332104,1532,"WELLS","ST",53233,"Jimmy Johns","Job",27000,27900,45000,45900
+"317",14.4,"Katherine","Short",1122,"GRANT","ST","3",532152781,1641,"MILLER PARK","WAY",53214,"Culver's","Job",NA,27000,NA,50400
+"318",3.14,"Sean","Kelly",3386,"23RD","ST","",532061713,4965,"20TH","ST",53221,"Ronal Reagan High School","School",NA,NA,NA,55200
+"319",15,"Penelope","Marshall",7200,"CARMEN","AV","",532182235,1111,"VEL R PHILLIPS","AVE",53203,"Fiserv Forum","Event",29700,30600,NA,55800
+"320",13.8,"Alexander","Mathis",3940,"SHERMAN","BL","5",532162449,2419,"KENWOOD","BLVD",53211,"Helene Zelazo Center for the Performing Arts","Band Rehearsal",29700,NA,NA,52500
+"321",6.7,"Pippa","Knox",1685,"FRANKLIN","PL","B",532022201,2751,"LENOX","ST",53207,"Bay View High School","School",NA,34200,57600,58500
+"322",10.19,"Maria","Morrison",1905,"ATKINSON","AV","5",532062453,3401,"WISCONSIN","AVE",53208,"Marquette University High School","School",NA,NA,52200,55500
+"323",8.17,"Dominic","Rutherford",7921,"HADLEY","ST","",532224927,6000,"RYAN","RD",53132,"Milwaukee County Sports Complex","Sport",NA,NA,NA,57900
+"324",2.1,"Bella","Short",2351,"48TH","ST","",532102802,8400,"BURLEIGH","ST",53222,"Milwaukee School of Languages","School",NA,NA,NA,NA
+"325",7.4,"Matt","Payne",2506,"LEGION","ST","",532043651,5225,"LINCOLN CREEK","DR",53218,"Congress School","School",NA,32400,NA,55800
+"326",17.7,"Steven","Graham",4121,"24TH","PL","",532096607,9050,"SWAN","RD",53224,"Northwest YMCA","Sport",31500,33300,NA,54900
+"327",10.17,"Victor","Walker",3301,"GREENFIELD","AV","B",532151516,3401,"WISCONSIN","AVE",53208,"Marquette University High School","School",36000,36900,NA,49500
+"328",4.1,"Irene","Quinn",6525,"19TH","ST","",532215216,4601,"84TH","ST",53225,"Hmong American Peace Academy","School",NA,28800,61200,63900
+"329",19.18,"Neil","Nash",7567,"76TH","ST","",532230000,6215,"WARNIMONT","AVE",53220,"Driver's Education Class","Event",NA,NA,NA,53100
+"330",9.13,"Joe","Abraham",1604,"33RD","ST","",532080000,1818,"CANAL","ST",53233,"Marquette University Valley Fields","Sport",27900,30900,NA,62400
+"331",10.2,"Faith","Chapman",3350,"58TH","ST","",532163126,3401,"WISCONSIN","AVE",53208,"Marquette University High School","School",NA,NA,NA,NA
+"332",15.14,"Heather","Johnston",1635,"52ND","ST","",532082225,1111,"VEL R PHILLIPS","AVE",53203,"Fiserv Forum","Event",35100,38400,NA,51000
+"333",14.17,"Peter","Coleman",3951,"81ST","ST","",532222931,1641,"MILLER PARK","WAY",53214,"Culver's","Job",32400,33900,NA,NA
+"334",14,"Carol","Watson",1429,"21ST","ST","5",532051945,1641,"MILLER PARK","WAY",53214,"Culver's","Job",NA,33000,NA,47400
+"335",20.6,"Rachel","Piper",3315,"15TH","PL","",532155029,2520,"NATIONAL","AVE",53204,"McDonald's","Job",36000,38700,NA,NA
+"336",6.3,"Diane","Ross",627,"5TH","ST","",532040000,2751,"LENOX","ST",53207,"Bay View High School","School",32400,NA,46800,49200
+"337",14.5,"Liam","Hart",7836,"64TH","CT","",532234162,1641,"MILLER PARK","WAY",53214,"Culver's","Job",34200,36600,54900,57300
+"338",7.1,"Olivia","Hughes",2244,"21ST","ST","",532152554,5225,"LINCOLN CREEK","DR",53218,"Congress School","School",30600,NA,NA,NA
+"339",8.9,"Mary","Dyer",7933,"DENVER","AV","",532234941,6000,"RYAN","RD",53132,"Milwaukee County Sports Complex","Sport",33300,NA,NA,55200
+"340",12.15,"Michelle","Mills",2826,"CRAMER","ST","",532113555,2907,"OAKLAND","AVE",53211,"Blaze Pizza","Job",NA,36000,61200,64800
+"341",10.5,"Liam","Manning",7673,"EDGEWORTH","DR","",532234320,3401,"WISCONSIN","AVE",53208,"Marquette University High School","School",NA,NA,59400,62400
+"342",13.6,"Abigail","Chapman",3334,"HIGHLAND","BL","216",532083254,2419,"KENWOOD","BLVD",53211,"Helene Zelazo Center for the Performing Arts","Band Rehearsal",29700,30900,NA,47100
+"343",12.16,"Molly","Cornish",3901,"5TH","ST","",532121135,2907,"OAKLAND","AVE",53211,"Blaze Pizza","Job",33300,36900,43200,46800
+"344",18.4,"Eric","Mitchell",1908,"52ND","ST","",532081752,5130,"53RD","ST",53218,"Hampton Fieldhouse","Sport",NA,28500,NA,NA
+"345",6.12,"Phil","Hamilton",2601,"12TH","ST","",532150000,2751,"LENOX","ST",53207,"Bay View High School","School",36000,37200,49500,50700
+"346",20.17,"Gabrielle","Morgan",7711,"BENDER","AV","3",532181117,2520,"NATIONAL","AVE",53204,"McDonald's","Job",30600,NA,NA,53700
+"347",18.14,"Julian","Rees",2641,"44TH","ST","",532102401,5130,"53RD","ST",53218,"Hampton Fieldhouse","Sport",34200,36000,52200,54000
+"348",10.9,"Diane","Bond",3577,"60TH","ST","",532201301,3401,"WISCONSIN","AVE",53208,"Marquette University High School","School",27900,30000,NA,55200
+"349",6.6,"Wanda","Hamilton",901,"DAKOTA","ST","",532072207,2751,"LENOX","ST",53207,"Bay View High School","School",30600,31500,NA,47700
+"350",3.17,"Gordon","Piper",1226,"HOWARD","AV","",532074046,4965,"20TH","ST",53221,"Ronal Reagan High School","School",NA,NA,NA,56100
+"351",6.17,"Melanie","Stewart",4830,"CLEVELAND","AV","",532193232,2751,"LENOX","ST",53207,"Bay View High School","School",31500,35100,NA,60300
+"352",8.8,"Ruth","Morgan",5524,"LONG ISLAND","DR","",532095054,6000,"RYAN","RD",53132,"Milwaukee County Sports Complex","Sport",27900,NA,60300,63600
+"353",7.19,"Emily","Howard",2220,"LAYTON","AV","103",532212742,5225,"LINCOLN CREEK","DR",53218,"Congress School","School",34200,35400,54900,56100
+"354",13.2,"Michael","Ince",2862,"9TH","ST","",532063214,2419,"KENWOOD","BLVD",53211,"Helene Zelazo Center for the Performing Arts","Band Rehearsal",30600,31800,NA,NA
+"355",13.7,"Jasmine","Kerr",3239,"58TH","ST","306",532194331,2419,"KENWOOD","BLVD",53211,"Helene Zelazo Center for the Performing Arts","Band Rehearsal",NA,32400,NA,48600
+"356",4.16,"Lily","Vance",4627,"39TH","ST","",532095859,4601,"84TH","ST",53225,"Hmong American Peace Academy","School",NA,36000,NA,NA
+"357",20.5,"Andrea","Welch",1516,"LAYTON","BL","",532151925,2520,"NATIONAL","AVE",53204,"McDonald's","Job",NA,27300,55800,57000
+"358",11.9,"David","Chapman",5673,"HONEY CREEK","DR","",532214013,1532,"WELLS","ST",53233,"Jimmy Johns","Job",28800,NA,NA,60300
+"359",14.3,"Julian","Wright",3401,"24TH","ST","",532061304,1641,"MILLER PARK","WAY",53214,"Culver's","Job",29700,NA,NA,62100
+"360",4.11,"Sean","Fraser",8461,"107TH","ST","",532242221,4601,"84TH","ST",53225,"Hmong American Peace Academy","School",32400,34800,61200,63600
+"361",12.18,"Kimberly","Terry",1738,"60TH","ST","",532081634,2907,"OAKLAND","AVE",53211,"Blaze Pizza","Job",35100,37500,NA,47400
+"362",2.5,"Ruth","Terry",4908,"LYNNDALE","AV","",532202004,8400,"BURLEIGH","ST",53222,"Milwaukee School of Languages","School",32400,34500,NA,54300
+"363",15.12,"Jason","Ince",2652,"15TH","PL","",532153316,1111,"VEL R PHILLIPS","AVE",53203,"Fiserv Forum","Event",36000,39600,49500,53100
+"364",19.14,"Vanessa","Skinner",1404,"ARMOUR","AV","1",532212850,6215,"WARNIMONT","AVE",53220,"Driver's Education Class","Event",NA,NA,54000,NA
+"365",2.3,"David","Davies",8505,"BURLEIGH","ST","3",532223750,8400,"BURLEIGH","ST",53222,"Milwaukee School of Languages","School",NA,NA,NA,57600
+"366",8.14,"Emma","Black",2829,"WISCONSIN","AV","312",532084085,6000,"RYAN","RD",53132,"Milwaukee County Sports Complex","Sport",NA,30600,56700,58500
+"367",14.9,"Joshua","Robertson",8149,"107TH","ST","R",532242571,1641,"MILLER PARK","WAY",53214,"Culver's","Job",NA,36000,48600,NA
+"368",12.7,"Evan","Murray",3956,"88TH","ST","C",532222747,2907,"OAKLAND","AVE",53211,"Blaze Pizza","Job",27900,28800,47700,NA
+"369",1.12,"Angela","Clarkson",3244,"26TH","ST","",532061238,1801,"OLIVE","ST",53209,"Rufus King High School","School",NA,36600,NA,48300
+"370",10.14,"Owen","Miller",4274,"90TH","CT","",532221604,3401,"WISCONSIN","AVE",53208,"Marquette University High School","School",28800,32100,NA,50100
+"371",5.2,"Theresa","Thomson",1812,"ATKINSON","AV","",532062448,517,"WISCONSIN","AVE",53202,"Milwaukee Federal Building","Job",NA,27000,54900,56700
+"372",8.18,"Leah","Tucker",2543,"27TH","ST","",532103109,6000,"RYAN","RD",53132,"Milwaukee County Sports Complex","Sport",NA,29400,NA,NA
+"373",4.5,"Phil","Edmunds",2720,"FREDERICK","AV","339",532113631,4601,"84TH","ST",53225,"Hmong American Peace Academy","School",26100,29700,45900,NA
+"374",5.11,"Victor","Wilkins",7901,"BROWN DEER","RD","",532231909,517,"WISCONSIN","AVE",53202,"Milwaukee Federal Building","Job",32400,35700,NA,NA
+"375",19.4,"Hannah","Fraser",3530,"ROOSEVELT","DR","",532160000,6215,"WARNIMONT","AVE",53220,"Driver's Education Class","Event",NA,NA,NA,61200
+"376",19,"Oliver","Lyman",2558,"BREMEN","ST","",532123002,6215,"WARNIMONT","AVE",53220,"Driver's Education Class","Event",28800,30900,NA,47100
+"377",1.4,"Heather","Payne",4809,"89TH","ST","",532254105,1801,"OLIVE","ST",53209,"Rufus King High School","School",NA,NA,NA,NA
+"378",4.6,"William","Quinn",2239,"38TH","ST","",532080000,4601,"84TH","ST",53225,"Hmong American Peace Academy","School",27900,NA,57600,61200
+"379",20.19,"Simon","Simpson",228,"VAN BECK","AV","",532074454,2520,"NATIONAL","AVE",53204,"McDonald's","Job",36000,36600,NA,56400
+"380",11.1,"Abigail","Lee",3331,"82ND","ST","",532223840,1532,"WELLS","ST",53233,"Jimmy Johns","Job",NA,32700,55800,57900
+"381",11.19,"Max","Howard",2461,"28TH","ST","",532103104,1532,"WELLS","ST",53233,"Jimmy Johns","Job",31500,33600,NA,60600
+"382",15.1,"Dominic","Poole",2258,"21ST","ST","",532152554,1111,"VEL R PHILLIPS","AVE",53203,"Fiserv Forum","Event",NA,38400,NA,61800
+"383",1.6,"Faith","MacDonald",610,"62ND","ST","",532141854,1801,"OLIVE","ST",53209,"Rufus King High School","School",35100,35700,NA,55500
+"384",10.3,"Claire","Ball",817,"1ST","ST","",532041816,3401,"WISCONSIN","AVE",53208,"Marquette University High School","School",NA,29400,NA,NA
+"385",20.1,"Boris","Lee",2013,"51ST","ST","",532081747,2520,"NATIONAL","AVE",53204,"McDonald's","Job",33300,35700,NA,45600
+"386",15.13,"Max","Fraser",6333,"CONGRESS","ST","",532185515,1111,"VEL R PHILLIPS","AVE",53203,"Fiserv Forum","Event",27900,NA,NA,57300
+"387",17.18,"Sean","Russell",6622,"CARMEN","AV","",532182314,9050,"SWAN","RD",53224,"Northwest YMCA","Sport",NA,30600,NA,53100
+"388",5.12,"Carolyn","Jones",2019,"ROOSEVELT","DR","1",532096321,517,"WISCONSIN","AVE",53202,"Milwaukee Federal Building","Job",33300,NA,58500,61800
+"389",7.3,"Rose","James",2735,"SHORE","DR","",532072323,5225,"LINCOLN CREEK","DR",53218,"Congress School","School",NA,NA,NA,44100
+"390",7.15,"Wanda","Rees",2653,"35TH","ST","",532100000,5225,"LINCOLN CREEK","DR",53218,"Congress School","School",NA,NA,49500,51300
+"391",7.5,"Sue","Sanderson",3707,"58TH","BL","",532162850,5225,"LINCOLN CREEK","DR",53218,"Congress School","School",34200,NA,47700,50100
+"392",1.16,"Jason","Tucker",2240,"LAYTON","AV","112",532215404,1801,"OLIVE","ST",53209,"Rufus King High School","School",NA,NA,NA,55500
+"393",17.2,"Virginia","Rutherford",4632,"20TH","ST","5",532212878,9050,"SWAN","RD",53224,"Northwest YMCA","Sport",27000,28200,NA,51600
+"394",18.5,"Natalie","Hart",9111,"DIXON","ST","7",532141354,5130,"53RD","ST",53218,"Hampton Fieldhouse","Sport",NA,NA,NA,57600
+"395",9.14,"Melanie","Hart",9926,"SARASOTA","PL","3",532221459,1818,"CANAL","ST",53233,"Marquette University Valley Fields","Sport",NA,37200,57600,58800
+"396",8.11,"Carolyn","Ellison",9011,"HAWTHORNE","AV","3",532264537,6000,"RYAN","RD",53132,"Milwaukee County Sports Complex","Sport",NA,NA,NA,46500
+"397",3.7,"Frank","Russell",1554,"UNION","ST","",532042648,4965,"20TH","ST",53221,"Ronal Reagan High School","School",NA,32400,NA,58500
+"398",4.12,"Connor","Springer",6412,"CUSTER","AV","",532183037,4601,"84TH","ST",53225,"Hmong American Peace Academy","School",27900,NA,59400,NA
+"399",15.11,"Amanda","Henderson",2823,"11TH","ST","",532153811,1111,"VEL R PHILLIPS","AVE",53203,"Fiserv Forum","Event",NA,29400,NA,56400
+"400",14.6,"Elizabeth","Gill",3569,"11TH","ST","",532063032,1641,"MILLER PARK","WAY",53214,"Culver's","Job",NA,NA,NA,NA
