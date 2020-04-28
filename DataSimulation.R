@@ -116,8 +116,8 @@ ldt <- edt
 # offset created by selecting a random number between 0:12 (multiple of 5 minutes within an hour), 
 #   multiply by amount of second in a minute, and add it to ept & edt to create lpt or ldt
 for(x in 1:length(ept)){
-  offset_pickup <- sample(0:12, 1)*5*60
-  offset_dropoff <- sample(0:12, 1)*5*60
+  offset_pickup <- sample(2:12, 1)*5*60
+  offset_dropoff <- sample(2:12, 1)*5*60
   lpt[x] <- ept[x] + offset_pickup
   ldt[x] <- edt[x] + offset_pickup
 }
