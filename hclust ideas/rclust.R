@@ -3,9 +3,6 @@ library(data.table)
 # Calculate the cost of each given path
 cost <- function(path, pdist=pdist, ptime=ptime, weight, data) {
   cost <- NULL
-  # shiny app will have a slider that controls lambda (how important ptime will be)
-  # for (i in 1:(length(path)-1)) cost[i] <- pdist[path[i],path[i+1]]
-  #for (i in 1:(length(path)-1)) cost[i] <- (1-weight)*pdist[path[i],path[i+1]] + weight*ptime[path[i],path[i+1]]
   
   # Build dtime vector
   dtime <- rep(0, length(path))
@@ -32,9 +29,10 @@ cost <- function(path, pdist=pdist, ptime=ptime, weight, data) {
   lst <- routeTime$lt - cumsum(dtime)
   
   # Logic of function (testing if path works)
-  if( max(est, na.rm=T) > min(lst, na.rm=T) ){
-  #if (sum(est < rev(cummin(rev(lst))), na.rm=T) < length(est)){
-    return(100000000)
+  cumin.lst <- NA; 
+  cumin.lst[!is.na(lst)] <- rev(cummin(na.omit(rev(lst))))
+  if (sum(!(est < cumin.lst),na.rm=T)  && weight!=0){
+    return(list(cost=Inf))
   }
   else{
     st <- min(lst, max(est), na.rm=T)
@@ -44,13 +42,13 @@ cost <- function(path, pdist=pdist, ptime=ptime, weight, data) {
     trip_time <- trip_time + wait_time
     new_time <- wait_time + dtime
     for (i in 1:(length(path)-1)) cost[i] <- (1-weight)*pdist[path[i],path[i+1]] + weight*trip_time[i]
-    return(sum(cost))
+    return(list(cost=sum(cost),st=st,wait_time=wait_time,trip_time=trip_time))
   }
 }
 
 # Searching among possible routes by variety of combination of "a" and "b" and pick the optimal one.
 rcost <- function(a,b,pdist=pdist,ptime=ptime,weight,data) {
-  rcosts <- NULL
+  rcosts <- list()
   if (is.numeric(a) && is.numeric(b)) {
     routs <- list(c(paste0("p",a),paste0("p",b),paste0("d",a),paste0("d",b)),
                   c(paste0("p",a),paste0("p",b),paste0("d",b),paste0("d",a)),
@@ -74,10 +72,9 @@ rcost <- function(a,b,pdist=pdist,ptime=ptime,weight,data) {
   } else {
     routs <- list(c(a,b),c(b,a))
   }
-  for (i in 1:length(routs)) rcosts[i] <- cost(routs[[i]], pdist, ptime, weight, data)
-  # May need to add some logic to remove the very high or NA value from rcosts
-  indx <- which.min(rcosts)
-  return(list(rcost=rcosts[indx], route=routs[[indx]]))
+  for (i in 1:length(routs)) rcosts[[i]] <- cost(routs[[i]], pdist, ptime, weight, data)
+  indx <- which.min(unlist(rcosts)[names(unlist(rcosts))=="cost"])
+  return(list(rcost=rcosts[[indx]], route=routs[[indx]]))
 }
 
 # Calculate all of the pairwise costs needed to start the algorithm
@@ -86,7 +83,7 @@ pcosts <- function(pdist=pdist,ptime=ptime,weight, data) {
   pcosts <- list(rcosts=matrix(NA,nr=N,nc=N), routes=array(list(),dim=c(N,N)))
   for (i in 1:(N-1)) for (j in (i+1):N) {
     pcost.ij <- rcost(i,j,pdist,ptime,weight,data)
-    pcosts$rcosts[i,j] <- pcosts$rcosts[j,i] <- pcost.ij$rcost
+    pcosts$rcosts[i,j] <- pcosts$rcosts[j,i] <- pcost.ij$rcost$cost
     pcosts$routes[i,j] <- pcosts$routes[j,i] <- list(pcost.ij$route)
   }
   colnames(pcosts$rcosts) <- rownames(pcosts$rcosts) <- colnames(pcosts$routes) <- rownames(pcosts$routes) <- paste0("-",1:N)
@@ -94,12 +91,11 @@ pcosts <- function(pdist=pdist,ptime=ptime,weight, data) {
 }
 
 # Route hclust function
-rhclust <- function(pdist,ptime,weight, data) {
+rhclust <- function(pdist,ptime,weight,data) {
   temp <- list(pcosts(pdist,ptime,weight,data)); N <- dim(pdist)[1]/2;
   rhclust <- list(merge=matrix(0,nr=N-1,nc=2), merge.route=list())
   for (i in 1:(N-2)) {
     indx <- rownames(which(temp[[i]]$rcosts==min(temp[[i]]$rcosts, na.rm = T), arr.ind = T))[1:2]
-    print(as.numeric(indx))
     rhclust$merge[i,] <- as.numeric(indx); rhclust$merge.route[i] <- temp[[i]]$routes[indx[1],indx[2]]; 
     rhclust$height[i] <- temp[[i]]$rcosts[indx[1],indx[2]]
     ind <- !colnames(temp[[i]]$rcosts)%in%indx
@@ -110,7 +106,7 @@ rhclust <- function(pdist,ptime,weight, data) {
     for (j in 1:length(inds)) {
       if (sign(as.numeric(inds[[j]]))==-1) inds[[j]] <- -as.numeric(inds[[j]]) else inds[[j]] <- rhclust$merge.route[[as.numeric(inds[[j]])]]
       tmp <- rcost(inds[[j]], rhclust$merge.route[[i]], pdist, ptime, weight, data)
-      cost.j$rcosts[j] <- tmp$rcost; cost.j$routes[[j]] <- tmp$route
+      cost.j$rcosts[j] <- tmp$rcost$cost; cost.j$routes[[j]] <- tmp$route
     }
     temp[[(i+1)]]$rcosts <- cbind(rbind(temp[[(i+1)]]$rcosts,cost.j$rcosts[-length(cost.j$rcosts)]),cost.j$rcosts)
     temp[[(i+1)]]$routes <- cbind(rbind(temp[[(i+1)]]$routes,cost.j$routes[-length(cost.j$routes)]),cost.j$routes)
@@ -119,26 +115,25 @@ rhclust <- function(pdist,ptime,weight, data) {
   }
   rhclust$merge[(i+1),] <- as.numeric(tmp); 
   rhclust$merge.route[(i+1)] <- temp[[(i+1)]]$routes[1,2]; 
-  rhclust$height[(i+1)] <- temp[[(i+1)]]$rcosts[1,2]
+  rhclust$height[(i+1)] <- temp[[(i+1)]]$rcosts[1,2]; rhclust$height[rhclust$height==Inf] <- max(rhclust$height[rhclust$height<Inf])
   rhclust$labels <- NULL; rhclust$method <- "pool"; rhclust$dist.method <- "pdist"; rhclust$call <- sys.call()
   rhclust$order <- 1:N; class(rhclust) <- "hclust"
   rhclust$order <- unlist(as.dendrogram(rhclust))
   return(rhclust)
 }
 
-temp <- rhclust(pdis, ptim, 0.5, data)
-cutree(temp,3)
-plot(temp)
-rect.hclust(temp, k=3, border=2:6)
-
-
-data <- read.csv('~/Documents/GitHub/DataScienceCapstone/Data/dataForSpecificTimeAlgorithm.csv')
+data <- read.csv('https://raw.githubusercontent.com/joechudzik/DataScienceCapstone/master/Data/dataForSpecificTimeAlgorithm.csv')
 data <- data[1:10,]
 pdis <- read.csv('https://raw.githubusercontent.com/joechudzik/DataScienceCapstone/master/Data/pdist.csv')
 row.names(pdis) <- pdis[,1]; pdis <- pdis[,-1]
 ptim <- read.csv('https://raw.githubusercontent.com/joechudzik/DataScienceCapstone/master/Data/ptime.csv')
 row.names(ptim) <- ptim$X; ptim <- ptim[,-1]
 
+system.time(temp <- rhclust(pdis, ptim, 0.5, data))
+cutree(temp,3)
+plot(temp)
+rect.hclust(temp, k=3, border=2:6)
+
 test_path <- c('p1','p2','d1','d2')
 test_weight = 0.5
-
+cost(test_path, pdis, ptim, test_weight, data)

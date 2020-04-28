@@ -42,21 +42,19 @@ test <- rhclust(pdis, ptim, 05, data)
 # Newly designed hclust algorithm
 
 # low time importance
-lowTimeImp <- rhclust(pdis, ptim, 0)
+lowTimeImp <- rhclust(pdis, ptim, 0, data)
 cutree(lowTimeImp,3)
-lowTimeImp$merge.route[5:7]
-lowTimeImp$height[5:7]
 plot(lowTimeImp, main='Low time importance')
 rect.hclust(lowTimeImp, k=3, border=2:6)
 
 # medium time importance
-medTimeImp <- rhclust(pdis, ptim, 0.5)
+medTimeImp <- rhclust(pdis, ptim, 0.5, data)
 cutree(medTimeImp,3)
 plot(medTimeImp, main='Medium time importance')
 rect.hclust(medTimeImp, k=3, border=2:6)
 
 # high time importance
-highTimeImp <- rhclust(pdis, ptim, 1)
+highTimeImp <- rhclust(pdis, ptim, 1, data)
 cutree(highTimeImp,3)
 plot(highTimeImp, main='High time importance')
 rect.hclust(highTimeImp, k=3, border=2:6)

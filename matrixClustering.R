@@ -47,7 +47,7 @@ dataForSpecificTimeAlgorithm$lpt[sample(nrow(dataForSpecificTimeAlgorithm),143)]
 dataForSpecificTimeAlgorithm$edt[sample(nrow(dataForSpecificTimeAlgorithm),289)] <- NA
 dataForSpecificTimeAlgorithm$ldt[sample(nrow(dataForSpecificTimeAlgorithm),78)] <- NA
 
-write.csv(dataForSpecificTimeAlgorithm, '~/Documents/GitHub/DataScienceCapstone/Data/dataForSpecificTimeAlgorithm.csv')
+#write.csv(dataForSpecificTimeAlgorithm, '~/Documents/GitHub/DataScienceCapstone/Data/dataForSpecificTimeAlgorithm.csv')
 
 
 data <- dataForSpecificTimeAlgorithm
