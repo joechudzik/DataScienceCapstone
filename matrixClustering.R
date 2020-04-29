@@ -225,27 +225,3 @@ rownames(correlationTimeMatrix) <- c(paste0('p', rep(1:matSize), sep=''), paste0
 #write.csv(correlationTimeMatrix, '~/Documents/GitHub/DataScienceCapstone/Data/ptime.csv')
 
 
-
-
-
-
-
-###################################
-###### PERFORM CO CLUSTERING ######
-###################################
-
-# Using the above created correlation distance matrix...
-
-out <- coclusterContinuous(correlationDistanceMatrix, nbcocluster=c(2,2))
-
-
-clusters <- hclust(dist(correlationDistanceMatrix, method='euclidean'), method='average')
-plot(clusters)
-
-clustersWCars <- cutree(clusters, k=3)
-plot(clustersWCars)
-
-rect.hclust(clusters, k=3, border=2:6)
-abline(h=3, col='red')
-
-
